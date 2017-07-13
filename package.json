@@ -1,0 +1,42 @@
+{
+  "name": "Genesis-Sass-Bourbon-Neat-Grunt-Dev-Theme",
+  "version": "1.0.0",
+  "description": "starter theme for genesis",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n8finch/Genesis-Sass-Bourbon-Neat-Grunt-Dev-Theme"
+  },
+  "keywords": [
+    "genesis",
+    "starter",
+    "theme",
+    "sass"
+  ],
+  "author": "Nate Finch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/n8finch/Genesis-Sass-Bourbon-Neat-Grunt-Dev-Theme/issues"
+  },
+  "homepage": "https://github.com/n8finch/Genesis-Sass-Bourbon-Neat-Grunt-Dev-Theme#readme",
+
+  "//": "Remove any dependencies not required",
+  "devDependencies": {
+    "bourbon": "^4.2.6",
+    "bourbon-neat": "^1.7.2",
+
+    "autoprefixer": "^6.3.7",
+    "cssnano": "^3.7.3",
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.8.0"
+  }
+}
