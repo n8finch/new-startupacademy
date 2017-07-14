@@ -1,6 +1,6 @@
 <?php
 
-//* Template Name: AEPO Home
+//* Template Name: Get Your Pass
 //* Force full width content layout
 add_filter( 'genesis_site_layout', '__genesis_return_full_width_content' );
 
@@ -9,28 +9,51 @@ remove_action( 'genesis_loop', 'genesis_do_loop' );
 
 // Add custom homepage content
 add_action( 'genesis_loop', 'one_pager_homepage_content' );
-function one_pager_homepage_content() { ?>
+function one_pager_homepage_content() {
+	global $post;
+	$hero_url = get_the_post_thumbnail_url($post->ID);
 
-	<!-- Widgeted Section -->
-	<section id="section-id" class="section-class">
-		<article class="wrap">
-			<?php
-			genesis_widget_area( 'welcome-section', array(
-				'before'	=> '<div class="welcome-section widget-area">',
-				'after'		=> '</div>',
-			) );
-			?>
-		</article>
+	?>
+
+	<!-- Hero Image Header Section -->
+	<section class="hero-image-header" style="background-image: url('<?php echo $hero_url; ?>'); height: 80vh;">
+		Hero Image Header Section
 	</section>
 
-	<!-- Custom Fields Section -->
-	<section id="section-id" class="section-class">
-		<article class="wrap">
-			<?php
-			echo 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut sem at leo rhoncus semper molestie nec ante. Quisque tincidunt eros vitae sollicitudin iaculis. Donec bibendum mi est, at viverra nulla iaculis suscipit. Curabitur nec risus laoreet, suscipit augue non, suscipit metus. Maecenas pellentesque convallis est, at accumsan dui pretium sit amet. Quisque ultricies sapien a laoreet commodo. Curabitur eu tellus ut est porttitor varius ut eu tellus. Integer non eros non lorem laoreet tincidunt. Nam ac aliquet eros. Etiam ornare nisi erat, quis mollis elit pretium convallis. Cras gravida ante in eleifend efficitur. Vestibulum a rutrum arcu. Vivamus sodales ornare purus sed luctus.';
-			?>
-		</article>
+	<!-- Hero Image Header Section -->
+	<section class="slanted-section background-light" >
+		<div class="slanted-section-r-l-inner background-light" >
+			<div class="skew-inner">
+				<p>
+					Pricing Section
+				</p>
+			</div>
+		</div>
 	</section>
+
+	<!-- All Passes Include Section -->
+	<section class="slanted-section background-medium">
+		<div class="slanted-section-l-r-inner background-medium" >
+			<div class="skew-inner">
+				<p>
+					All passes include
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Every Pass Includes Section -->
+	<section class="slanted-section background-dark">
+		<div class="slanted-section-r-l-inner background-dark" >
+			<div class="skew-inner">
+				<p>
+					Every pass includes
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<?php the_content(); ?>
 
 
 <?php }

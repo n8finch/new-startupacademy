@@ -5,7 +5,8 @@
 
 	.site-inner,
 	.wrap {
-		max-width: 1140px;
+		// max-width: 1140px;
+		max-width: 100%;
 	}
 
 	.content-sidebar-sidebar .content-sidebar-wrap,
@@ -46,7 +47,8 @@
 
 	.site-inner,
 	.wrap {
-		max-width: 960px;
+		// max-width: 960px;
+		max-width: 100%;
 	}
 
 	.content-sidebar-sidebar .content-sidebar-wrap,
@@ -83,6 +85,7 @@
 	.site-inner,
 	.wrap {
 		max-width: 800px;
+		max-width: 100%;
 	}
 
 	.content,
@@ -277,7 +280,7 @@
 	}
 
 	.site-inner {
-		padding: 5% 5% 0;
+		// padding: 5% 5% 0;
 	}
 
 	.wrap {

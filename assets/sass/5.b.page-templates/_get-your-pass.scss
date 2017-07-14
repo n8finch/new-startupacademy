@@ -1,0 +1,89 @@
+.page-template-page-get-your-pass {
+
+	.background-light,
+	.background-light:before,
+	.background-light:after, {
+		background-color: #F6F5F5;
+	}
+
+	.background-medium,
+	.background-medium:before,
+	.background-medium:after, {
+		background-color: #EFEFEF;
+	}
+
+	.background-dark,
+	.background-dark:before,
+	.background-dark:after, {
+		background-color: #E7E7E7;
+	}
+
+	.hero-image-header {
+		background-size: cover;
+	}
+
+	.slanted-section {
+		height: 100vh;
+		position: relative;
+		z-index: 1;
+	}
+
+	.slanted-section-r-l-inner:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		overflow: visible;
+		width: 100%;
+		height: 50px;
+		z-index: 1;
+		transform: skewY(-2deg);
+		top: -20px;
+	}
+
+	.slanted-section-r-l-inner:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		overflow: visible;
+		width: 100%;
+		height: 50px;
+		z-index: -1;
+		transform: skewY(2deg);
+		bottom: -20px;
+	}
+
+	.slanted-section-l-r-inner:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		overflow: visible;
+		width: 100%;
+		height: 50px;
+		z-index: -1;
+		transform: skewY(2deg);
+		top: -20px;
+	}
+
+	.slanted-section-l-r-inner:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		overflow: visible;
+		width: 100%;
+		height: 50px;
+		z-index: -1;
+		transform: skewY(-2deg);
+		bottom: -20px;
+	}
+
+	.skew-inner {
+		padding: 60px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}
