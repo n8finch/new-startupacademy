@@ -1,89 +1,154 @@
+.background-light,
+.background-light:before,
+.background-light:after, {
+	background-color: #F6F5F5;
+}
+
+.background-medium,
+.background-medium:before,
+.background-medium:after, {
+	background-color: #EFEFEF;
+}
+
+.background-dark,
+.background-dark:before,
+.background-dark:after, {
+	background-color: #E7E7E7;
+}
+
+.hero-image-header {
+	background-size: cover;
+	background-position: center;
+}
+
+.slanted-section {
+	height: 800px;
+	position: relative;
+	z-index: 1;
+}
+
+.slanted-section-r-l-inner:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	overflow: visible;
+	width: 100%;
+	height: 50px;
+	z-index: 1;
+	transform: skewY(-2deg);
+	top: -20px;
+}
+
+.slanted-section-r-l-inner:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	overflow: visible;
+	width: 100%;
+	height: 50px;
+	z-index: -1;
+	transform: skewY(2deg);
+	bottom: -20px;
+}
+
+.slanted-section-l-r-inner:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	overflow: visible;
+	width: 100%;
+	height: 50px;
+	z-index: -1;
+	transform: skewY(2deg);
+	top: -20px;
+}
+
+.slanted-section-l-r-inner:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	overflow: visible;
+	width: 100%;
+	height: 50px;
+	z-index: -1;
+	transform: skewY(-2deg);
+	bottom: -20px;
+}
+
+.skew-inner {
+	padding: 60px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .page-template-page-get-your-pass {
 
-	.background-light,
-	.background-light:before,
-	.background-light:after, {
-		background-color: #F6F5F5;
+	.hero-text-wrapper {
+		color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+		text-align: center;
 	}
 
-	.background-medium,
-	.background-medium:before,
-	.background-medium:after, {
-		background-color: #EFEFEF;
+	#get-your-pass-price-boxes,
+	#get-your-pass-price-lists {
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+		max-width: 1000px;
+
 	}
 
-	.background-dark,
-	.background-dark:before,
-	.background-dark:after, {
-		background-color: #E7E7E7;
+	.get-your-pass-price-box,
+	.get-your-pass-price-list {
+		margin: 19px;
+		width: 318px;
+		text-align: center;
 	}
 
-	.hero-image-header {
-		background-size: cover;
-	}
-
-	.slanted-section {
-		height: 100vh;
+	.get-your-pass-price-box {
+		background-color: white;
+		box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.15);
+		padding: 50px 23px 23px;
 		position: relative;
-		z-index: 1;
+
+		// p {
+		// 	position: relative;
+		// }
+
+		h2 {
+			font-size: 24px;
+			font-size: 2.4rem;
+		}
+
+		.price-box-price {
+			font-weight: bold;
+			font-size: 52px;
+			font-size: 5.2rem;
+			margin-bottom: 0;
+		}
+
+		a {
+			bottom: 20px;
+			left: 14px;
+			// position: absolute;
+		}
+
+		button {
+			background-color: #ff9b02;
+			border-radius: 4px;
+			box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.16);
+			color: white;
+			padding: 16px;
+			width: 270px;
+		}
 	}
 
-	.slanted-section-r-l-inner:before {
-		content: '';
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		overflow: visible;
-		width: 100%;
-		height: 50px;
-		z-index: 1;
-		transform: skewY(-2deg);
-		top: -20px;
-	}
-
-	.slanted-section-r-l-inner:after {
-		content: '';
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		overflow: visible;
-		width: 100%;
-		height: 50px;
-		z-index: -1;
-		transform: skewY(2deg);
-		bottom: -20px;
-	}
-
-	.slanted-section-l-r-inner:before {
-		content: '';
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		overflow: visible;
-		width: 100%;
-		height: 50px;
-		z-index: -1;
-		transform: skewY(2deg);
-		top: -20px;
-	}
-
-	.slanted-section-l-r-inner:after {
-		content: '';
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		overflow: visible;
-		width: 100%;
-		height: 50px;
-		z-index: -1;
-		transform: skewY(-2deg);
-		bottom: -20px;
-	}
-
-	.skew-inner {
-		padding: 60px;
-		margin-left: auto;
-		margin-right: auto;
-	}
 
 }
