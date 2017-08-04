@@ -4,8 +4,8 @@
 		color: white;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		height: 100%;
+		justify-content: center;
 		text-align: center;
 	}
 
@@ -54,7 +54,7 @@
 		}
 
 		button {
-			background-color: #ff9b02;
+			background-color: $color__orange;
 			border-radius: 4px;
 			box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.16);
 			color: white;
@@ -95,11 +95,76 @@
 		}
 	}
 
+	#get-your-pass-every-pass-includes {
+		h2,
+		p {
+			text-align: center;
+		}
+
+		.every-pass-includes-items {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin: 60px auto 30px;
+			max-width: 1000px;
+
+			.every-pass-includes-item {
+				max-width: 300px;
+				text-align: center;
+				width: 300px;
+
+				img {
+					height: 128px;
+				}
+
+			}
+		}
+
+		button {
+			background-color: $color__orange;
+			border-radius: 4px;
+			box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.16);
+			color: white;
+			padding: 16px;
+			width: 270px;
+		}
+	}
+
+	.slanted-section-r-l-inner:after {
+		height: 0;
+		transform: none;
+	}
+
+	#become-an-entrepreneur {
+		color: white;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		justify-content: center;
+		max-height: 400px;
+		text-align: center;
+
+		button {
+			background-color: transparent;
+			border: 2px solid white;
+			border-radius: 4px;
+			color: white;
+			padding: 16px;
+			width: 270px;
+		}
+
+		button:hover {
+			background-color: white;
+			border: 2px solid white;
+			border-radius: 4px;
+			color: $color__orange;
+		}
+	}
 
 }
 
 .under-header-div {
-	border: 2px solid #ff9b02;
+	border: 2px solid $color__orange;
 	margin: auto;
 	width: 40px;
 }

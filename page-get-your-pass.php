@@ -111,18 +111,43 @@ function one_pager_homepage_content() {
 	<section class="slanted-section background-dark">
 		<div class="slanted-section-r-l-inner background-dark" >
 			<div class="skew-inner">
-				<p>
-					Every pass includes
-				</p>
+				<div id="get-your-pass-every-pass-includes">
+					<h2>EVERY PASS INCLUDES</h2>
+					<div class="every-pass-includes-items">
+						<div class="every-pass-includes-item">
+							<img src="<?php echo $acf_fields['every_pass_includes_image_1']; ?>" />
+							<h3><?php echo $acf_fields['every_pass_includes_text_1']; ?></h3>
+						</div>
+						<div class="every-pass-includes-item">
+							<img src="<?php echo $acf_fields['every_pass_includes_image_2']; ?>" />
+							<h3><?php echo $acf_fields['every_pass_includes_text_2']; ?></h3>
+						</div>
+						<div class="every-pass-includes-item">
+							<img src="<?php echo $acf_fields['every_pass_includes_image_3']; ?>" />
+							<h3><?php echo $acf_fields['every_pass_includes_text_3']; ?></h3>
+						</div>
+					</div>
+					<p><?php echo $acf_fields['every_pass_includes_bottom_text']; ?></p>
+					<p>
+						<a href="<?php echo $acf_fields['every_pass_includes_button_link'];?>">
+							<button><?php echo $acf_fields['every_pass_includes_button_text'];?></button>
+						</a>
+					</p>
+				</div>
 			</div>
 		</div>
 	</section>
 
-	<?php the_content(); ?>
+	<!-- Become and Entrepreneur Section -->
+	<section id="become-an-entrepreneur" style="background-image: url('<?php echo $acf_fields['become_an_entrepreneur_image']; ?>'); height: 80vh;">
+		<h2><?php echo $acf_fields['become_an_entrepreneur_title'];?></h2>
+		<p><?php echo $acf_fields['become_an_entrepreneur_text'];?></p>
+		<a href="<?php echo $acf_fields['become_an_entrepreneur_button_link'];?>">
+			<button><?php echo $acf_fields['become_an_entrepreneur_button_text'];?></button>
+		</a>
 
+	</section>
 
 <?php }
-
-
 //* Run the Genesis loop
 genesis();

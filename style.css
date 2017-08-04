@@ -1654,8 +1654,8 @@ p.entry-meta {
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   height: 100%;
+  justify-content: center;
   text-align: center;
 }
 .page-template-page-get-your-pass #get-your-pass-price-boxes,
@@ -1722,6 +1722,60 @@ p.entry-meta {
 }
 .page-template-page-get-your-pass #get-your-pass-all-passes-include .passes-include-items .passes-include-item .passes-include-list-item {
   margin-left: 20px;
+}
+.page-template-page-get-your-pass #get-your-pass-every-pass-includes h2,
+.page-template-page-get-your-pass #get-your-pass-every-pass-includes p {
+  text-align: center;
+}
+.page-template-page-get-your-pass #get-your-pass-every-pass-includes .every-pass-includes-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 60px auto 30px;
+  max-width: 1000px;
+}
+.page-template-page-get-your-pass #get-your-pass-every-pass-includes .every-pass-includes-items .every-pass-includes-item {
+  max-width: 300px;
+  text-align: center;
+  width: 300px;
+}
+.page-template-page-get-your-pass #get-your-pass-every-pass-includes .every-pass-includes-items .every-pass-includes-item img {
+  height: 128px;
+}
+.page-template-page-get-your-pass #get-your-pass-every-pass-includes button {
+  background-color: #ff9b02;
+  border-radius: 4px;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.16);
+  color: white;
+  padding: 16px;
+  width: 270px;
+}
+.page-template-page-get-your-pass .slanted-section-r-l-inner:after {
+  height: 0;
+  transform: none;
+}
+.page-template-page-get-your-pass #become-an-entrepreneur {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  max-height: 400px;
+  text-align: center;
+}
+.page-template-page-get-your-pass #become-an-entrepreneur button {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 4px;
+  color: white;
+  padding: 16px;
+  width: 270px;
+}
+.page-template-page-get-your-pass #become-an-entrepreneur button:hover {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 4px;
+  color: #ff9b02;
 }
 
 .under-header-div {
