@@ -40,14 +40,15 @@ textarea:focus,
 }
 
 a {
-	color: #c3251d;
-	text-decoration: underline;
+	color: #ff9b02;
+	font-weight: 600;
+    text-decoration: none;
 }
 
 a:focus,
 a:hover {
-	color: #333;
-	text-decoration: none;
+	color: #ff9b02;
+	text-decoration: underline;
 }
 
 p {

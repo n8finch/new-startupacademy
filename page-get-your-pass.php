@@ -77,6 +77,9 @@ function one_pager_homepage_content() {
 			<div class="skew-inner">
 				<div id="get-your-pass-all-passes-include">
 					<h2>ALL PAID PASSES INCLUDE</h2>
+					<div class="under-header-div">
+						<!-- Statys empty for border -->
+					</div>
 					<div class="passes-include-items">
 						<?php
 						$rows = $acf_fields['all_paid_passes_list_items'];
@@ -85,8 +88,8 @@ function one_pager_homepage_content() {
 								?>
 								<div class="passes-include-item">
 								<?php
-								echo '<img src="'.$acf_fields['all_paid_passes_list_image'].'"/>';
-								echo $row["all_paid_passes_list_item"];
+								echo '<span><img src="' . $acf_fields['all_paid_passes_list_image'] . '"/></span>';
+								echo '<span class="passes-include-list-item">' . $row["all_paid_passes_list_item"] .'</span>';
 								?>
 								</div>
 								<?php
@@ -96,7 +99,7 @@ function one_pager_homepage_content() {
 					</div>
 					<p>
 						<?php
-						// echo $acf_fields['all_paid_passes_list_text'];
+						echo $acf_fields['all_paid_passes_list_text'];
 						?>
 					</p>
 				</div>

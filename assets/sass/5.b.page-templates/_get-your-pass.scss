@@ -65,21 +65,41 @@
 
 	#get-your-pass-all-passes-include {
 
-		max-width: 1000px;
-
-		h2 {
+		h2,
+		p {
+			margin: 30px auto;
 			text-align: center;
 		}
 
-		.all_paid_passes_list_items {
+		.passes-include-items {
 			display: flex;
 			flex-wrap: wrap;
+			justify-content: space-between;
+			margin: 60px auto 30px;
+			max-width: 1000px;
 
-			.all_paid_passes_list_item {
+			.passes-include-item {
+				align-items: center;
+				display: flex;
+				max-width: 300px;
+				width: 300px;
 
+				img {
+					height: 50px;
+				}
+
+				.passes-include-list-item {
+					margin-left: 20px;
+				}
 			}
 		}
 	}
 
 
+}
+
+.under-header-div {
+	border: 2px solid #ff9b02;
+	margin: auto;
+	width: 40px;
 }

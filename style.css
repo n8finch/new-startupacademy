@@ -377,14 +377,15 @@ textarea:focus,
 }
 
 a {
-  color: #c3251d;
-  text-decoration: underline;
+  color: #ff9b02;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 a:focus,
 a:hover {
-  color: #333;
-  text-decoration: none;
+  color: #ff9b02;
+  text-decoration: underline;
 }
 
 p {
@@ -1698,15 +1699,35 @@ p.entry-meta {
   padding: 16px;
   width: 270px;
 }
-.page-template-page-get-your-pass #get-your-pass-all-passes-include {
-  max-width: 1000px;
-}
-.page-template-page-get-your-pass #get-your-pass-all-passes-include h2 {
+.page-template-page-get-your-pass #get-your-pass-all-passes-include h2,
+.page-template-page-get-your-pass #get-your-pass-all-passes-include p {
+  margin: 30px auto;
   text-align: center;
 }
-.page-template-page-get-your-pass #get-your-pass-all-passes-include .all_paid_passes_list_items {
+.page-template-page-get-your-pass #get-your-pass-all-passes-include .passes-include-items {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 60px auto 30px;
+  max-width: 1000px;
+}
+.page-template-page-get-your-pass #get-your-pass-all-passes-include .passes-include-items .passes-include-item {
+  align-items: center;
+  display: flex;
+  max-width: 300px;
+  width: 300px;
+}
+.page-template-page-get-your-pass #get-your-pass-all-passes-include .passes-include-items .passes-include-item img {
+  height: 50px;
+}
+.page-template-page-get-your-pass #get-your-pass-all-passes-include .passes-include-items .passes-include-item .passes-include-list-item {
+  margin-left: 20px;
+}
+
+.under-header-div {
+  border: 2px solid #ff9b02;
+  margin: auto;
+  width: 40px;
 }
 
 /* # Sidebars
