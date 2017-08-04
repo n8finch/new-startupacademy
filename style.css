@@ -462,8 +462,8 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
-  font-size: 3rem;
+  font-size: 34px;
+  font-size: 3.4rem;
 }
 
 h3 {
@@ -1082,6 +1082,93 @@ img.alignright,
   margin: 0 0 28px;
 }
 
+.background-light,
+.background-light:before,
+.background-light:after {
+  background-color: #F6F5F5;
+}
+
+.background-medium,
+.background-medium:before,
+.background-medium:after {
+  background-color: #EFEFEF;
+}
+
+.background-dark,
+.background-dark:before,
+.background-dark:after {
+  background-color: #E7E7E7;
+}
+
+.hero-image-header {
+  background-size: cover;
+  background-position: center;
+}
+
+.slanted-section {
+  height: 800px;
+  position: relative;
+  z-index: 1;
+}
+
+.slanted-section-r-l-inner:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: visible;
+  width: 100%;
+  height: 50px;
+  z-index: 1;
+  transform: skewY(-2deg);
+  top: -20px;
+}
+
+.slanted-section-r-l-inner:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: visible;
+  width: 100%;
+  height: 50px;
+  z-index: -1;
+  transform: skewY(2deg);
+  bottom: -20px;
+}
+
+.slanted-section-l-r-inner:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: visible;
+  width: 100%;
+  height: 50px;
+  z-index: -1;
+  transform: skewY(2deg);
+  top: -20px;
+}
+
+.slanted-section-l-r-inner:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: visible;
+  width: 100%;
+  height: 50px;
+  z-index: -1;
+  transform: skewY(-2deg);
+  bottom: -20px;
+}
+
+.skew-inner {
+  padding: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* # Widgets
 ---------------------------------------------------------------------------------------------------- */
 .widget {
@@ -1276,12 +1363,18 @@ img.alignright,
 
 /* # Site Navigation
 ---------------------------------------------------------------------------------------------------- */
+.page-template .genesis-nav-menu a {
+  border-radius: 4px;
+  color: white;
+}
+
 .genesis-nav-menu {
   clear: both;
   font-size: 16px;
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 1;
+  margin-top: 20px;
   width: 100%;
 }
 
@@ -1295,8 +1388,12 @@ img.alignright,
 .genesis-nav-menu a {
   color: #333;
   display: block;
-  padding: 32px 20px;
+  padding: 12px 20px;
   text-decoration: none;
+}
+
+.genesis-nav-menu .menu-highlight a {
+  background-color: #ff9b02;
 }
 
 .genesis-nav-menu a:focus,
@@ -1552,93 +1649,6 @@ p.entry-meta {
   color: #fff;
 }
 
-.background-light,
-.background-light:before,
-.background-light:after {
-  background-color: #F6F5F5;
-}
-
-.background-medium,
-.background-medium:before,
-.background-medium:after {
-  background-color: #EFEFEF;
-}
-
-.background-dark,
-.background-dark:before,
-.background-dark:after {
-  background-color: #E7E7E7;
-}
-
-.hero-image-header {
-  background-size: cover;
-  background-position: center;
-}
-
-.slanted-section {
-  height: 800px;
-  position: relative;
-  z-index: 1;
-}
-
-.slanted-section-r-l-inner:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  overflow: visible;
-  width: 100%;
-  height: 50px;
-  z-index: 1;
-  transform: skewY(-2deg);
-  top: -20px;
-}
-
-.slanted-section-r-l-inner:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  overflow: visible;
-  width: 100%;
-  height: 50px;
-  z-index: -1;
-  transform: skewY(2deg);
-  bottom: -20px;
-}
-
-.slanted-section-l-r-inner:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  overflow: visible;
-  width: 100%;
-  height: 50px;
-  z-index: -1;
-  transform: skewY(2deg);
-  top: -20px;
-}
-
-.slanted-section-l-r-inner:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  overflow: visible;
-  width: 100%;
-  height: 50px;
-  z-index: -1;
-  transform: skewY(-2deg);
-  bottom: -20px;
-}
-
-.skew-inner {
-  padding: 60px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .page-template-page-get-your-pass .hero-text-wrapper {
   color: white;
   display: flex;
@@ -1687,6 +1697,16 @@ p.entry-meta {
   color: white;
   padding: 16px;
   width: 270px;
+}
+.page-template-page-get-your-pass #get-your-pass-all-passes-include {
+  max-width: 1000px;
+}
+.page-template-page-get-your-pass #get-your-pass-all-passes-include h2 {
+  text-align: center;
+}
+.page-template-page-get-your-pass #get-your-pass-all-passes-include .all_paid_passes_list_items {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* # Sidebars

@@ -76,16 +76,29 @@ function one_pager_homepage_content() {
 		<div class="slanted-section-l-r-inner background-medium" >
 			<div class="skew-inner">
 				<div id="get-your-pass-all-passes-include">
-
-					<?php
-					$rows = $acf_fields['all_paid_passes_list_items'];
-					if($rows) {
-						foreach($rows as $row)	{
-							echo $row["all_paid_passes_list_item"];
+					<h2>ALL PAID PASSES INCLUDE</h2>
+					<div class="passes-include-items">
+						<?php
+						$rows = $acf_fields['all_paid_passes_list_items'];
+						if($rows) {
+							foreach($rows as $row)	{
+								?>
+								<div class="passes-include-item">
+								<?php
+								echo '<img src="'.$acf_fields['all_paid_passes_list_image'].'"/>';
+								echo $row["all_paid_passes_list_item"];
+								?>
+								</div>
+								<?php
+							}
 						}
-					}
-					?>
-					<p><?php echo $acf_fields['all_paid_passes_list_text']; ?></p>
+						?>
+					</div>
+					<p>
+						<?php
+						// echo $acf_fields['all_paid_passes_list_text'];
+						?>
+					</p>
 				</div>
 			</div>
 		</div>
