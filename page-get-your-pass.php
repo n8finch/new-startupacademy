@@ -27,44 +27,46 @@ function one_pager_homepage_content() {
 	<section class="slanted-section background-light" >
 		<div class="slanted-section-r-l-inner background-light" >
 			<div class="skew-inner">
-				<div id="get-your-pass-price-boxes">
-					<div class="get-your-pass-price-box">
-						<h3><?php echo $acf_fields['get_your_pass_price_box_title_1']; ?></h3>
-						<p><?php echo $acf_fields['get_your_pass_price_box_text_1']; ?></p>
-						<p class="price-box-price"><?php echo $acf_fields['get_your_pass_price_box_price_1']; ?></p>
-						<p> </p>
-						<a href="<?php echo $acf_fields['get_your_pass_price_box_button_link_1']; ?>">
-							<button><?php echo $acf_fields['get_your_pass_price_box_button_text_1']; ?></button>
-						</a>
+				<div class="div-overlap-top">
+					<div id="get-your-pass-price-boxes">
+						<div class="get-your-pass-price-box">
+							<h3><?php echo $acf_fields['get_your_pass_price_box_title_1']; ?></h3>
+							<p><?php echo $acf_fields['get_your_pass_price_box_text_1']; ?></p>
+							<p class="price-box-price"><?php echo $acf_fields['get_your_pass_price_box_price_1']; ?></p>
+							<p> </p>
+							<a href="<?php echo $acf_fields['get_your_pass_price_box_button_link_1']; ?>">
+								<button><?php echo $acf_fields['get_your_pass_price_box_button_text_1']; ?></button>
+							</a>
+						</div>
+						<div class="get-your-pass-price-box">
+							<h3><?php echo $acf_fields['get_your_pass_price_box_title_2']; ?></h3>
+							<p><?php echo $acf_fields['get_your_pass_price_box_text_2']; ?></p>
+							<p class="price-box-price"><?php echo $acf_fields['get_your_pass_price_box_price_2']; ?></p>
+							<p>USD / MONTH</p>
+							<a href="<?php echo $acf_fields['get_your_pass_price_box_button_link_2']; ?>">
+								<button><?php echo $acf_fields['get_your_pass_price_box_button_text_2']; ?></button>
+							</a>
+						</div>
+						<div class="get-your-pass-price-box">
+							<h3><?php echo $acf_fields['get_your_pass_price_box_title_3']; ?></h3>
+							<p><?php echo $acf_fields['get_your_pass_price_box_text_3']; ?></p>
+							<p class="price-box-price"><?php echo $acf_fields['get_your_pass_price_box_price_3']; ?></p>
+							<p>USD / MONTH</p>
+							<a href="<?php echo $acf_fields['get_your_pass_price_box_button_link_3']; ?>">
+								<button><?php echo $acf_fields['get_your_pass_price_box_button_text_3']; ?></button>
+							</a>
+						</div>
 					</div>
-					<div class="get-your-pass-price-box">
-						<h3><?php echo $acf_fields['get_your_pass_price_box_title_2']; ?></h3>
-						<p><?php echo $acf_fields['get_your_pass_price_box_text_2']; ?></p>
-						<p class="price-box-price"><?php echo $acf_fields['get_your_pass_price_box_price_2']; ?></p>
-						<p>USD / MONTH</p>
-						<a href="<?php echo $acf_fields['get_your_pass_price_box_button_link_2']; ?>">
-							<button><?php echo $acf_fields['get_your_pass_price_box_button_text_2']; ?></button>
-						</a>
-					</div>
-					<div class="get-your-pass-price-box">
-						<h3><?php echo $acf_fields['get_your_pass_price_box_title_3']; ?></h3>
-						<p><?php echo $acf_fields['get_your_pass_price_box_text_3']; ?></p>
-						<p class="price-box-price"><?php echo $acf_fields['get_your_pass_price_box_price_3']; ?></p>
-						<p>USD / MONTH</p>
-						<a href="<?php echo $acf_fields['get_your_pass_price_box_button_link_3']; ?>">
-							<button><?php echo $acf_fields['get_your_pass_price_box_button_text_3']; ?></button>
-						</a>
-					</div>
-				</div>
-				<div id="get-your-pass-price-lists">
-					<div class="get-your-pass-price-list">
-						<p><?php echo $acf_fields['list_1_content']; ?></p>
-					</div>
-					<div class="get-your-pass-price-list">
-						<p><?php echo $acf_fields['list_2_content']; ?></p>
-					</div>
-					<div class="get-your-pass-price-list">
-						<p><?php echo $acf_fields['list_3_content']; ?></p>
+					<div id="get-your-pass-price-lists">
+						<div class="get-your-pass-price-list">
+							<p><?php echo $acf_fields['list_1_content']; ?></p>
+						</div>
+						<div class="get-your-pass-price-list">
+							<p><?php echo $acf_fields['list_2_content']; ?></p>
+						</div>
+						<div class="get-your-pass-price-list">
+							<p><?php echo $acf_fields['list_3_content']; ?></p>
+						</div>
 					</div>
 				</div>
 			</div>

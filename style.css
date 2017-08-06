@@ -1120,7 +1120,7 @@ img.alignright,
   overflow: visible;
   width: 100%;
   height: 50px;
-  z-index: 1;
+  z-index: 0;
   transform: skewY(-2deg);
   top: -20px;
 }
@@ -1133,7 +1133,7 @@ img.alignright,
   overflow: visible;
   width: 100%;
   height: 50px;
-  z-index: -1;
+  z-index: 0;
   transform: skewY(2deg);
   bottom: -20px;
 }
@@ -1146,7 +1146,7 @@ img.alignright,
   overflow: visible;
   width: 100%;
   height: 50px;
-  z-index: -1;
+  z-index: 0;
   transform: skewY(2deg);
   top: -20px;
 }
@@ -1159,7 +1159,7 @@ img.alignright,
   overflow: visible;
   width: 100%;
   height: 50px;
-  z-index: -1;
+  z-index: 0;
   transform: skewY(-2deg);
   bottom: -20px;
 }
@@ -1168,6 +1168,11 @@ img.alignright,
   padding: 60px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (max-width: 460px) {
+  .skew-inner {
+    padding: 60px 10px;
+  }
 }
 
 /* # Widgets
@@ -1658,12 +1663,40 @@ p.entry-meta {
   justify-content: center;
   text-align: center;
 }
+.page-template-page-get-your-pass .div-overlap-top {
+  top: -130px;
+  position: relative;
+}
+.page-template-page-get-your-pass .slanted-section.background-light .skew-inner {
+  height: 830px;
+}
+@media screen and (max-width: 860px) {
+  .page-template-page-get-your-pass .slanted-section.background-light .skew-inner {
+    height: 2375px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .page-template-page-get-your-pass .slanted-section.background-light .skew-inner {
+    height: 2400px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .page-template-page-get-your-pass .slanted-section.background-light .skew-inner {
+    height: 2365px;
+  }
+}
 .page-template-page-get-your-pass #get-your-pass-price-boxes,
 .page-template-page-get-your-pass #get-your-pass-price-lists {
   display: flex;
   justify-content: center;
   margin: 0 auto;
   max-width: 1000px;
+}
+@media screen and (max-width: 860px) {
+  .page-template-page-get-your-pass #get-your-pass-price-boxes,
+  .page-template-page-get-your-pass #get-your-pass-price-lists {
+    flex-wrap: wrap;
+  }
 }
 .page-template-page-get-your-pass .get-your-pass-price-box,
 .page-template-page-get-your-pass .get-your-pass-price-list {
@@ -1718,7 +1751,10 @@ p.entry-meta {
   width: 300px;
 }
 .page-template-page-get-your-pass #get-your-pass-all-passes-include .passes-include-items .passes-include-item img {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 25px;
   height: 50px;
+  width: 50px;
 }
 .page-template-page-get-your-pass #get-your-pass-all-passes-include .passes-include-items .passes-include-item .passes-include-list-item {
   margin-left: 20px;
@@ -1730,7 +1766,7 @@ p.entry-meta {
 .page-template-page-get-your-pass #get-your-pass-every-pass-includes .every-pass-includes-items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin: 60px auto 30px;
   max-width: 1000px;
 }
@@ -1755,6 +1791,7 @@ p.entry-meta {
   transform: none;
 }
 .page-template-page-get-your-pass #become-an-entrepreneur {
+  background-size: cover;
   color: white;
   display: flex;
   flex-direction: column;
@@ -1803,15 +1840,22 @@ p.entry-meta {
   background-color: #444444;
   clear: both;
   color: white;
-  font-size: 18px;
-  font-size: 1.8rem;
+  font-size: 15px;
+  font-size: 1.5rem;
   padding: 60px 0;
+}
+.footer-widgets h3 {
+  font-weight: 600;
+}
+.footer-widgets a {
+  color: white;
 }
 
 .footer-widgets .wrap {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1100px;
 }
 
 .footer-widgets-1,
@@ -1819,6 +1863,29 @@ p.entry-meta {
 .footer-widgets-3,
 .footer-widgets-4 {
   width: 24%;
+}
+
+.footer-widgets-4 {
+  text-align: right;
+}
+.footer-widgets-4 .widget_text,
+.footer-widgets-4 .widget-wrap {
+  height: 100%;
+}
+.footer-widgets-4 .textwidget {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+.footer-widgets-4 img {
+  max-width: 100px;
+}
+.footer-widgets-4 p {
+  margin-bottom: 15px;
+}
+.footer-widgets-4 .fa {
+  margin: 0 10px;
 }
 
 /* # Site Footer
@@ -1899,10 +1966,6 @@ p.entry-meta {
   .content,
   .content-sidebar-sidebar .content,
   .content-sidebar-sidebar .content-sidebar-wrap,
-  .footer-widgets-1,
-  .footer-widgets-2,
-  .footer-widgets-3,
-  .footer-widgets-4,
   .genesis-responsive-menu .genesis-nav-menu .sub-menu,
   .genesis-responsive-menu .genesis-nav-menu .sub-menu a,
   .sidebar-content-sidebar .content,
@@ -2071,6 +2134,15 @@ p.entry-meta {
   .genesis-responsive-menu .genesis-nav-menu .sub-menu .sub-menu {
     margin: 0;
   }
+
+  .footer-widgets-1,
+  .footer-widgets-2,
+  .footer-widgets-3,
+  .footer-widgets-4 {
+    margin-bottom: 60px;
+    text-align: center;
+    width: 50%;
+  }
 }
 @media only screen and (max-width: 860px) {
   body,
@@ -2120,6 +2192,15 @@ p.entry-meta {
   .two-sixths,
   .two-thirds {
     margin: 0;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer-widgets-1,
+  .footer-widgets-2,
+  .footer-widgets-3,
+  .footer-widgets-4 {
+    text-align: center;
     width: 100%;
   }
 }
