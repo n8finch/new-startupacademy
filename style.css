@@ -1107,7 +1107,7 @@ img.alignright,
 }
 
 .slanted-section {
-  height: 800px;
+  height: auto;
   position: relative;
   z-index: 1;
 }
@@ -1800,41 +1800,36 @@ p.entry-meta {
 /* # Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
 .footer-widgets {
-  background-color: #fff;
+  background-color: #444444;
   clear: both;
+  color: white;
   font-size: 18px;
   font-size: 1.8rem;
   padding: 60px 0;
 }
 
+.footer-widgets .wrap {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 .footer-widgets-1,
 .footer-widgets-2,
-.footer-widgets-3 {
-  width: 380px;
-}
-
-.footer-widgets-1 {
-  margin-right: 70px;
-}
-
-.footer-widgets-1,
-.footer-widgets-2 {
-  float: left;
-}
-
-.footer-widgets-3 {
-  float: right;
+.footer-widgets-3,
+.footer-widgets-4 {
+  width: 24%;
 }
 
 /* # Site Footer
 ---------------------------------------------------------------------------------------------------- */
 .site-footer {
-  background-color: #fff;
-  border-top: 1px solid #eee;
-  font-size: 16px;
-  font-size: 1.6rem;
+  background-color: #444444;
+  color: white;
+  font-size: 13px;
+  font-size: 1.3rem;
   line-height: 1;
-  padding: 60px 0;
+  padding: 15px 0;
   text-align: center;
 }
 
@@ -1870,16 +1865,6 @@ p.entry-meta {
   .sidebar-primary {
     width: 300px;
   }
-
-  .footer-widgets-1,
-  .footer-widgets-2,
-  .footer-widgets-3 {
-    width: 340px;
-  }
-
-  .footer-widgets-1 {
-    margin-right: 60px;
-  }
 }
 @media only screen and (max-width: 1200px) {
   .site-inner,
@@ -1903,16 +1888,6 @@ p.entry-meta {
   .content-sidebar-sidebar .content {
     width: 400px;
   }
-
-  .footer-widgets-1,
-  .footer-widgets-2,
-  .footer-widgets-3 {
-    width: 300px;
-  }
-
-  .footer-widgets-1 {
-    margin-right: 30px;
-  }
 }
 @media only screen and (max-width: 1023px) {
   .site-inner,
@@ -1927,6 +1902,7 @@ p.entry-meta {
   .footer-widgets-1,
   .footer-widgets-2,
   .footer-widgets-3,
+  .footer-widgets-4,
   .genesis-responsive-menu .genesis-nav-menu .sub-menu,
   .genesis-responsive-menu .genesis-nav-menu .sub-menu a,
   .sidebar-content-sidebar .content,
@@ -2094,11 +2070,6 @@ p.entry-meta {
 
   .genesis-responsive-menu .genesis-nav-menu .sub-menu .sub-menu {
     margin: 0;
-  }
-
-  .footer-widgets-1,
-  .footer-widgets-2 {
-    margin: 0 auto 40px;
   }
 }
 @media only screen and (max-width: 860px) {

@@ -149,3 +149,10 @@ function genesis_sample_comments_gravatar( $args ) {
 	return $args;
 
 }
+
+//* Change the footer text
+add_filter('genesis_footer_creds_text', 'sp_footer_creds_filter');
+function sp_footer_creds_filter( $creds ) {
+	$creds = '[footer_copyright] All Rights Reserved. StartupAcademy.org is a StartInno venture.';
+	return $creds;
+}

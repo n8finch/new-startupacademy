@@ -2,28 +2,36 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .footer-widgets {
-	background-color: #fff;
+	background-color: #444444;
 	clear: both;
+	color: white;
 	font-size: 18px;
 	font-size: 1.8rem;
 	padding: 60px 0;
 }
 
+.footer-widgets .wrap {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
 .footer-widgets-1,
 .footer-widgets-2,
-.footer-widgets-3 {
-	width: 380px;
+.footer-widgets-3,
+.footer-widgets-4 {
+	width: 24%;
 }
 
 .footer-widgets-1 {
-	margin-right: 70px;
+	// margin-right: 70px;
 }
 
 .footer-widgets-1,
 .footer-widgets-2 {
-	float: left;
+	// float: left;
 }
 
 .footer-widgets-3 {
-	float: right;
+	// float: right;
 }
