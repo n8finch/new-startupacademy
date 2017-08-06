@@ -1101,11 +1101,6 @@ img.alignright,
   background-color: #E7E7E7;
 }
 
-.hero-image-header {
-  background-size: cover;
-  background-position: center;
-}
-
 .slanted-section {
   height: auto;
   position: relative;
@@ -1501,6 +1496,10 @@ img.alignright,
 
 .site-footer .genesis-nav-menu a {
   padding: 0 20px 10px;
+}
+
+.hero-image-header {
+  background-size: cover;
 }
 
 /* ## Entries
