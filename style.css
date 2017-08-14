@@ -1666,7 +1666,34 @@ body.home.page .hero-text-wrapper {
   flex-direction: column;
   height: 100vh;
   justify-content: center;
-  text-align: center;
+  margin-left: 10%;
+  text-align: left;
+  width: 900px;
+}
+body.home.page .hero-text-wrapper .homepage-hero-orange-button {
+  background-color: #ff9b02;
+  border-radius: 4px;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.16);
+  font-weight: bold;
+  margin-right: 16px;
+  padding: 12px 18px;
+  width: 171px;
+}
+body.home.page .hero-text-wrapper .homepage-hero-orange-button:hover {
+  background-color: white;
+  color: #ff9b02;
+}
+body.home.page .hero-text-wrapper .homepage-hero-transparent-button {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 4px;
+  font-weight: bold;
+  padding: 12px 18px;
+  width: 171px;
+}
+body.home.page .hero-text-wrapper .homepage-hero-transparent-button:hover {
+  background-color: white;
+  color: #ff9b02;
 }
 body.home.page .div-overlap-top {
   top: -130px;

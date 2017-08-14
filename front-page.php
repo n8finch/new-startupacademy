@@ -39,8 +39,16 @@ function one_pager_homepage_content() {
 	<!-- Hero Image Header Section -->
 	<section class="hero-image-header" style="background-image: url('<?php echo $hero_url; ?>'); height: 100vh;">
 		<div class="hero-text-wrapper">
-			<h1><?php echo $acf_fields['get_your_pass_hero_title']; ?></h1>
-			<p><?php echo $acf_fields['get_your_pass_hero_text']; ?></p>
+			<h1><?php echo $acf_fields['homepage_hero_title']; ?></h1>
+			<p><?php echo $acf_fields['homepage_hero_text']; ?></p>
+			<div class="">
+				<a href="<?php echo $acf_fields['homepage_orange_button_link']; ?>">
+					<button class="homepage-hero-orange-button"><?php echo $acf_fields['homepage_orange_button_text']; ?></button>
+				</a>
+				<a href="<?php echo $acf_fields['homepage_transparent_button_link']; ?>">
+					<button class="homepage-hero-transparent-button"><?php echo $acf_fields['homepage_transparent_button_text']; ?></button>
+				</a>
+			</div>
 		</div>
 	</section>
 
@@ -59,48 +67,7 @@ function one_pager_homepage_content() {
 	<section class="slanted-section background-light" >
 		<div class="slanted-section-r-l-inner background-light" >
 			<div class="skew-inner">
-				<div class="div-overlap-top">
-					<div id="get-your-pass-price-boxes">
-						<div class="get-your-pass-price-box">
-							<h3><?php echo $acf_fields['get_your_pass_price_box_title_1']; ?></h3>
-							<p><?php echo $acf_fields['get_your_pass_price_box_text_1']; ?></p>
-							<p class="price-box-price"><?php echo $acf_fields['get_your_pass_price_box_price_1']; ?></p>
-							<p> </p>
-							<a href="<?php echo $acf_fields['get_your_pass_price_box_button_link_1']; ?>">
-								<button><?php echo $acf_fields['get_your_pass_price_box_button_text_1']; ?></button>
-							</a>
-						</div>
-						<div class="get-your-pass-price-box">
-							<h3><?php echo $acf_fields['get_your_pass_price_box_title_2']; ?></h3>
-							<p><?php echo $acf_fields['get_your_pass_price_box_text_2']; ?></p>
-							<p class="price-box-price"><?php echo $acf_fields['get_your_pass_price_box_price_2']; ?></p>
-							<p>USD / MONTH</p>
-							<a href="<?php echo $acf_fields['get_your_pass_price_box_button_link_2']; ?>">
-								<button><?php echo $acf_fields['get_your_pass_price_box_button_text_2']; ?></button>
-							</a>
-						</div>
-						<div class="get-your-pass-price-box">
-							<h3><?php echo $acf_fields['get_your_pass_price_box_title_3']; ?></h3>
-							<p><?php echo $acf_fields['get_your_pass_price_box_text_3']; ?></p>
-							<p class="price-box-price"><?php echo $acf_fields['get_your_pass_price_box_price_3']; ?></p>
-							<p>USD / MONTH</p>
-							<a href="<?php echo $acf_fields['get_your_pass_price_box_button_link_3']; ?>">
-								<button><?php echo $acf_fields['get_your_pass_price_box_button_text_3']; ?></button>
-							</a>
-						</div>
-					</div>
-					<div id="get-your-pass-price-lists">
-						<div class="get-your-pass-price-list">
-							<p><?php echo $acf_fields['list_1_content']; ?></p>
-						</div>
-						<div class="get-your-pass-price-list">
-							<p><?php echo $acf_fields['list_2_content']; ?></p>
-						</div>
-						<div class="get-your-pass-price-list">
-							<p><?php echo $acf_fields['list_3_content']; ?></p>
-						</div>
-					</div>
-				</div>
+
 			</div>
 		</div>
 	</section>
@@ -109,34 +76,7 @@ function one_pager_homepage_content() {
 	<section class="slanted-section background-medium">
 		<div class="slanted-section-l-r-inner background-medium" >
 			<div class="skew-inner">
-				<div id="get-your-pass-all-passes-include">
-					<h2>ALL PAID PASSES INCLUDE</h2>
-					<div class="under-header-div">
-						<!-- Statys empty for border -->
-					</div>
-					<div class="passes-include-items">
-						<?php
-						$rows = $acf_fields['all_paid_passes_list_items'];
-						if($rows) {
-							foreach($rows as $row)	{
-								?>
-								<div class="passes-include-item">
-								<?php
-								echo '<span><img src="' . $acf_fields['all_paid_passes_list_image'] . '"/></span>';
-								echo '<span class="passes-include-list-item">' . $row["all_paid_passes_list_item"] .'</span>';
-								?>
-								</div>
-								<?php
-							}
-						}
-						?>
-					</div>
-					<p>
-						<?php
-						echo $acf_fields['all_paid_passes_list_text'];
-						?>
-					</p>
-				</div>
+
 			</div>
 		</div>
 	</section>
@@ -145,42 +85,12 @@ function one_pager_homepage_content() {
 	<section class="slanted-section background-dark">
 		<div class="slanted-section-r-l-inner background-dark" >
 			<div class="skew-inner">
-				<div id="get-your-pass-every-pass-includes">
-					<h2>EVERY PASS INCLUDES</h2>
-					<div class="every-pass-includes-items">
-						<div class="every-pass-includes-item">
-							<img src="<?php echo $acf_fields['every_pass_includes_image_1']; ?>" />
-							<h3><?php echo $acf_fields['every_pass_includes_text_1']; ?></h3>
-						</div>
-						<div class="every-pass-includes-item">
-							<img src="<?php echo $acf_fields['every_pass_includes_image_2']; ?>" />
-							<h3><?php echo $acf_fields['every_pass_includes_text_2']; ?></h3>
-						</div>
-						<div class="every-pass-includes-item">
-							<img src="<?php echo $acf_fields['every_pass_includes_image_3']; ?>" />
-							<h3><?php echo $acf_fields['every_pass_includes_text_3']; ?></h3>
-						</div>
-					</div>
-					<p><?php echo $acf_fields['every_pass_includes_bottom_text']; ?></p>
-					<p>
-						<a href="<?php echo $acf_fields['every_pass_includes_button_link'];?>">
-							<button><?php echo $acf_fields['every_pass_includes_button_text'];?></button>
-						</a>
-					</p>
-				</div>
+
 			</div>
 		</div>
 	</section>
 
-	<!-- Become and Entrepreneur Section -->
-	<section id="become-an-entrepreneur" style="background-image: url('<?php echo $acf_fields['become_an_entrepreneur_image']; ?>'); height: 80vh;">
-		<h2><?php echo $acf_fields['become_an_entrepreneur_title'];?></h2>
-		<p><?php echo $acf_fields['become_an_entrepreneur_text'];?></p>
-		<a href="<?php echo $acf_fields['become_an_entrepreneur_button_link'];?>">
-			<button><?php echo $acf_fields['become_an_entrepreneur_button_text'];?></button>
-		</a>
 
-	</section>
 
 <?php }
 //* Run the Genesis loop
