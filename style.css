@@ -1699,6 +1699,14 @@ body.home.page .div-overlap-top {
   top: -130px;
   position: relative;
 }
+body.home.page #homepage-section-learn-from {
+  background-color: #d8d8d8;
+  height: 400px;
+}
+body.home.page #homepage-section-partners {
+  background-color: white;
+  height: 400px;
+}
 
 .page-template-page-get-your-pass .hero-text-wrapper {
   color: white;

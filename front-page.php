@@ -52,7 +52,7 @@ function one_pager_homepage_content() {
 		</div>
 	</section>
 
-	<!-- Video -->
+	<!-- Video What is StartupAcademy -->
 	<section class="slanted-section background-white" >
 		<div class="slanted-section-l-r-inner background-white" >
 			<div class="skew-inner">
@@ -63,7 +63,7 @@ function one_pager_homepage_content() {
 			</div>
 		</div>
 	</section>
-	<!-- Pricing Section -->
+	<!-- What is 3 Step Start? 1.Think Like An Entrepreneur -->
 	<section class="slanted-section background-light" >
 		<div class="slanted-section-r-l-inner background-light" >
 			<div class="skew-inner">
@@ -72,7 +72,7 @@ function one_pager_homepage_content() {
 		</div>
 	</section>
 
-	<!-- All Passes Include Section -->
+	<!-- 2 Launch Your Startup Idea -->
 	<section class="slanted-section background-medium">
 		<div class="slanted-section-l-r-inner background-medium" >
 			<div class="skew-inner">
@@ -81,12 +81,26 @@ function one_pager_homepage_content() {
 		</div>
 	</section>
 
-	<!-- Every Pass Includes Section -->
+	<!-- 3. Grow Your Startup -->
 	<section class="slanted-section background-dark">
 		<div class="slanted-section-r-l-inner background-dark" >
 			<div class="skew-inner">
 
 			</div>
+		</div>
+	</section>
+
+	<!-- LEARN FROM WORLD CLASS ENTREPRENEURS -->
+	<section class="homepage-section-learn-from">
+		<div class="">
+
+		</div>
+	</section>
+
+	<!-- OUR PARTNERS -->
+	<section class="homepage-section-partners">
+		<div class="">
+
 		</div>
 	</section>
 
