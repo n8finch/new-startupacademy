@@ -164,33 +164,6 @@
 		transform: none;
 	}
 
-	#become-an-entrepreneur {
-		background-size: cover;
-		color: white;
-		display: flex;
-		flex-direction: column;
-		height: 100%;
-		justify-content: center;
-		max-height: 400px;
-		text-align: center;
-
-		button {
-			background-color: transparent;
-			border: 2px solid white;
-			border-radius: 4px;
-			color: white;
-			padding: 16px;
-			width: 270px;
-		}
-
-		button:hover {
-			background-color: white;
-			border: 2px solid white;
-			border-radius: 4px;
-			color: $color__orange;
-		}
-	}
-
 }
 
 .under-header-div {

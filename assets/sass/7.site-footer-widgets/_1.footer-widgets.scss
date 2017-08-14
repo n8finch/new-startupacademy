@@ -16,6 +16,11 @@
 	a {
 		color: white;
 	}
+
+	a:hover {
+		color: $color__orange;
+		text-decoration: none;
+	}
 }
 
 .footer-widgets .wrap {

@@ -22,15 +22,14 @@
     "url": "https://github.com/n8finch/Genesis-Sass-Bourbon-Neat-Grunt-Dev-Theme/issues"
   },
   "homepage": "https://github.com/n8finch/Genesis-Sass-Bourbon-Neat-Grunt-Dev-Theme#readme",
-
   "//": "Remove any dependencies not required",
   "devDependencies": {
+    "autoprefixer": "^6.3.7",
     "bourbon": "^4.2.6",
     "bourbon-neat": "^1.7.2",
-
-    "autoprefixer": "^6.3.7",
     "cssnano": "^3.7.3",
     "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-jshint": "^1.0.0",

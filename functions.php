@@ -158,3 +158,30 @@ function sp_footer_creds_filter( $creds ) {
 	$creds = '[footer_copyright] All Rights Reserved. StartupAcademy.org is a StartInno venture.';
 	return $creds;
 }
+
+
+add_shortcode( 'start_footer_social', 'start_footer_social_shortcode' );
+function start_footer_social_shortcode() {
+	echo '<p>
+		<a href="#"><span class="fa fa-twitter"></span></a>
+		<a href="#"><span class="fa fa-facebook"></span></a>
+		<a href="#"><span class="fa fa-instagram"></span></a>
+		<a href="#"><span class="fa fa-linkedin"></span></a>
+		</p>';
+}
+
+add_action('genesis_before_footer', 'start_do_before_footer_section', 1 );
+function start_do_before_footer_section() {
+	?>
+
+	<!-- Become and Entrepreneur Section -->
+	<section id="become-an-entrepreneur" style="background-image: url('http://newstartinno.dev/wp-content/uploads/2017/08/img-background-1@3x.jpg'); height: 80vh;">
+		<h2>BECOME AN ENTREPRENEUR<br/>#JUSTSTART</h2>
+		<p>Start your journey today and get instant access to online tools and resources.</p>
+		<a href="#">
+			<button>START FOR FREE</button>
+		</a>
+
+	</section>
+	<?php
+}

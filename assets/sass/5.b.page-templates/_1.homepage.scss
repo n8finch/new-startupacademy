@@ -1,0 +1,15 @@
+body.home.page {
+	.hero-text-wrapper {
+		color: white;
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.div-overlap-top {
+		top: -130px;
+    	position: relative;
+	}
+}

@@ -1,6 +1,6 @@
 <?php
 
-//* Template Name: Get Your Pass
+//* Template Name: Homepage
 //* Force full width content layout
 add_filter( 'genesis_site_layout', '__genesis_return_full_width_content' );
 
@@ -37,13 +37,24 @@ function one_pager_homepage_content() {
 	?>
 
 	<!-- Hero Image Header Section -->
-	<section class="hero-image-header" style="background-image: url('<?php echo $hero_url; ?>'); height: 80vh;">
+	<section class="hero-image-header" style="background-image: url('<?php echo $hero_url; ?>'); height: 100vh;">
 		<div class="hero-text-wrapper">
 			<h1><?php echo $acf_fields['get_your_pass_hero_title']; ?></h1>
 			<p><?php echo $acf_fields['get_your_pass_hero_text']; ?></p>
 		</div>
 	</section>
 
+	<!-- Video -->
+	<section class="slanted-section background-white" >
+		<div class="slanted-section-l-r-inner background-white" >
+			<div class="skew-inner">
+				<div class="div-overlap-top">
+
+
+				</div>
+			</div>
+		</div>
+	</section>
 	<!-- Pricing Section -->
 	<section class="slanted-section background-light" >
 		<div class="slanted-section-r-l-inner background-light" >
@@ -159,6 +170,16 @@ function one_pager_homepage_content() {
 				</div>
 			</div>
 		</div>
+	</section>
+
+	<!-- Become and Entrepreneur Section -->
+	<section id="become-an-entrepreneur" style="background-image: url('<?php echo $acf_fields['become_an_entrepreneur_image']; ?>'); height: 80vh;">
+		<h2><?php echo $acf_fields['become_an_entrepreneur_title'];?></h2>
+		<p><?php echo $acf_fields['become_an_entrepreneur_text'];?></p>
+		<a href="<?php echo $acf_fields['become_an_entrepreneur_button_link'];?>">
+			<button><?php echo $acf_fields['become_an_entrepreneur_button_text'];?></button>
+		</a>
+
 	</section>
 
 <?php }

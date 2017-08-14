@@ -40,8 +40,8 @@
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:focus,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover  {
-	color: #c3251d;
-	text-decoration: underline;
+	color: $color__orange;
+	text-decoration: none;
 }
 
 .genesis-nav-menu .sub-menu {

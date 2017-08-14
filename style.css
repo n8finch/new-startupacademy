@@ -1083,6 +1083,12 @@ img.alignright,
   margin: 0 0 28px;
 }
 
+.background-white,
+.background-white:before,
+.background-white:after {
+  background-color: #FFFFFF;
+}
+
 .background-light,
 .background-light:before,
 .background-light:after {
@@ -1402,8 +1408,8 @@ img.alignright,
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:focus,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-  color: #c3251d;
-  text-decoration: underline;
+  color: #ff9b02;
+  text-decoration: none;
 }
 
 .genesis-nav-menu .sub-menu {
@@ -1654,6 +1660,19 @@ p.entry-meta {
   color: #fff;
 }
 
+body.home.page .hero-text-wrapper {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
+}
+body.home.page .div-overlap-top {
+  top: -130px;
+  position: relative;
+}
+
 .page-template-page-get-your-pass .hero-text-wrapper {
   color: white;
   display: flex;
@@ -1789,30 +1808,6 @@ p.entry-meta {
   height: 0;
   transform: none;
 }
-.page-template-page-get-your-pass #become-an-entrepreneur {
-  background-size: cover;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
-  max-height: 400px;
-  text-align: center;
-}
-.page-template-page-get-your-pass #become-an-entrepreneur button {
-  background-color: transparent;
-  border: 2px solid white;
-  border-radius: 4px;
-  color: white;
-  padding: 16px;
-  width: 270px;
-}
-.page-template-page-get-your-pass #become-an-entrepreneur button:hover {
-  background-color: white;
-  border: 2px solid white;
-  border-radius: 4px;
-  color: #ff9b02;
-}
 
 .under-header-div {
   border: 2px solid #ff9b02;
@@ -1848,6 +1843,10 @@ p.entry-meta {
 }
 .footer-widgets a {
   color: white;
+}
+.footer-widgets a:hover {
+  color: #ff9b02;
+  text-decoration: none;
 }
 
 .footer-widgets .wrap {
@@ -1889,6 +1888,31 @@ p.entry-meta {
 
 /* # Site Footer
 ---------------------------------------------------------------------------------------------------- */
+#become-an-entrepreneur {
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  max-height: 400px;
+  text-align: center;
+}
+#become-an-entrepreneur button {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 4px;
+  color: white;
+  padding: 16px;
+  width: 270px;
+}
+#become-an-entrepreneur button:hover {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 4px;
+  color: #ff9b02;
+}
+
 .site-footer {
   background-color: #444444;
   color: white;
