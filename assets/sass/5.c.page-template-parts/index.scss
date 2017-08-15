@@ -1,5 +1,45 @@
 // Lesson Cards
 
 .lesson-cards {
-	
+
+	@media screen and (max-width: 1000px) {
+		flex-wrap: nowrap;
+		height: auto;
+	}
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: 400px;
+
+	a {
+		color: #333333;
+		text-decoration: none;
+	}
+
+	.lesson-card {
+
+		@media screen and (max-width: 600px) {
+			width: 400px;
+		}
+
+		@media screen and (max-width: 350px) {
+			padding: 10px 10px;
+			width: 300px;
+		}
+
+		border-radius: 4px;
+		box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.15);
+		display: inline-flex;
+		justify-content: space-between;
+		height: 90px;
+		margin: 10px;
+		max-width: 475px;
+		padding: 20px 10px;
+		width: 475px;
+
+		small {
+			color: $color__orange;
+		}
+	}
 }

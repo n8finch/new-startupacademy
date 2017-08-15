@@ -1,4 +1,9 @@
 body.home.page {
+
+	.skew-inner {
+		max-width: 1100px;
+	}
+
 	.hero-text-wrapper {
 
 		@media screen and (max-width: 860px) {
@@ -77,18 +82,6 @@ body.home.page {
 				height: 750px;
 			}
 
-			// @media screen and (max-width: 860px) {
-			// 	height: 500px;
-			// }
-			//
-			// @media screen and (max-width: 460px) {
-			// 	height: 500px;
-			// }
-			//
-			// @media screen and (max-width: 350px) {
-			// 	height: 500px;
-			// }
-
 			height: 500px;
 		}
 
@@ -102,7 +95,7 @@ body.home.page {
 
 			div {
 				margin: 20px;
-				max-width: 500px;
+				max-width: 450px;
 			}
 
 			.homepage-video-content {
@@ -121,7 +114,47 @@ body.home.page {
 
 	}
 
+	.what-is {
+		text-align: center;
+		margin: 0 auto;
 
+		h2 {
+			margin-bottom: 20px;
+		}
+
+		p {
+			margin-top: 20px;
+		}
+
+		button {
+			width: 250px;
+		}
+	}
+
+	.lessons {
+		.under-header-div {
+			margin: 20px 0;
+		}
+
+		button {
+			margin-bottom: 20px;
+		}
+	}
+
+	.lessons.align-left {
+		text-align: left;
+	}
+
+	.lessons.align-right {
+		text-align: right;
+	}
+
+	.big-lesson-number {
+		color: $color__orange;
+		font-size: 72px;
+		font-size: 7.2rem;
+		font-weight: 600;
+	}
 
 	#homepage-section-step-1 {
 

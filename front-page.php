@@ -80,7 +80,45 @@ function one_pager_homepage_content() {
 	<section id="homepage-section-step-1" class="slanted-section background-light" >
 		<div class="slanted-section-r-l-inner background-light" >
 			<div class="skew-inner">
-
+				<div class="what-is">
+					<h2><?php echo $acf_fields['section_1_main_title']?></h2>
+					<div class="under-header-div"></div>
+					<p><?php echo $acf_fields['section_1_main_text']?></p>
+					<a href="<?php echo $acf_fields['section_1_main_button_link']?>">
+						<button><?php echo $acf_fields['section_1_main_button_text']?></button>
+					</a>
+				</div>
+				<div id="step-1-lessons" class="lessons align-left">
+					<div class="big-lesson-number">1</div>
+					<h2><?php echo $acf_fields['section_1_title']?></h2>
+					<div class="under-header-div"></div>
+					<a href="<?php echo $acf_fields['section_1_button_link']?>">
+						<button><?php echo $acf_fields['section_1_button_text']?></button>
+					</a>
+					<p><small>*STEP 1 is completely free with a discovery pass</small></p>
+					<p><?php echo $acf_fields['section_1_text']?></p>
+					<div class="lesson-cards">
+						<?php
+						$rows = $acf_fields['section_1_classes'];
+						if ( $rows ) {
+							foreach( $rows as $row ) {
+								?>
+								<a href="<?php echo $row['class_link']?>">
+									<div class="lesson-card">
+										<div class="lesson-number"><?php echo $row['class_number']?></div>
+										<div class="lesson-info">
+											<div><?php echo $row['class_title']?></div>
+											<div><small><?php echo $row['class_author']?></small></div>
+										</div>
+										<div class=""><span class="dashicons dashicons-arrow-right-alt2"></span></div>
+									</div>
+								</a>
+								<?php
+							}
+						}
+						?>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -89,7 +127,9 @@ function one_pager_homepage_content() {
 	<section id="homepage-section-step-2" class="slanted-section background-medium">
 		<div class="slanted-section-l-r-inner background-medium" >
 			<div class="skew-inner">
+				<div id="step-2-lessons" class="lessons align-right">
 
+				</div>
 			</div>
 		</div>
 	</section>
@@ -98,7 +138,9 @@ function one_pager_homepage_content() {
 	<section id="homepage-section-step-3" class="slanted-section background-dark">
 		<div class="slanted-section-r-l-inner background-dark" >
 			<div class="skew-inner">
+				<div id="step-3-lessons" class="lessons align-left">
 
+				</div>
 			</div>
 		</div>
 	</section>
