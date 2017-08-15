@@ -617,17 +617,19 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 .button {
-  background-color: #333;
+  background-color: #ff9b02;
   border: 0;
+  border-radius: 4px;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.16);
   color: #fff;
   cursor: pointer;
   font-size: 16px;
   font-size: 1.6rem;
   font-weight: 700;
-  padding: 16px 24px;
+  padding: 12px 18px;
   text-decoration: none;
   white-space: normal;
-  width: auto;
+  width: 171px;
 }
 
 button:focus,
@@ -640,8 +642,8 @@ input[type="submit"]:focus,
 input[type="submit"]:hover,
 .button:focus,
 .button:hover {
-  background-color: #c3251d;
-  color: #fff;
+  background-color: white;
+  color: #ff9b02;
 }
 
 .entry-content .button:focus,
@@ -1667,8 +1669,30 @@ body.home.page .hero-text-wrapper {
   height: 100vh;
   justify-content: center;
   margin-left: 10%;
+  max-width: 900px;
   text-align: left;
-  width: 900px;
+  width: auto;
+}
+@media screen and (max-width: 860px) {
+  body.home.page .hero-text-wrapper {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 460px) {
+  body.home.page .hero-text-wrapper {
+    height: 650px;
+  }
+}
+@media screen and (max-width: 350px) {
+  body.home.page .hero-text-wrapper {
+    height: 650px;
+  }
+}
+@media screen and (max-width: 460px) {
+  body.home.page .hero-text-wrapper h1 {
+    font-size: 36px;
+    font-size: 3.6rem;
+  }
 }
 body.home.page .hero-text-wrapper .homepage-hero-orange-button {
   background-color: #ff9b02;
@@ -1678,6 +1702,12 @@ body.home.page .hero-text-wrapper .homepage-hero-orange-button {
   margin-right: 16px;
   padding: 12px 18px;
   width: 171px;
+}
+@media screen and (max-width: 460px) {
+  body.home.page .hero-text-wrapper .homepage-hero-orange-button {
+    margin-bottom: 10px;
+    width: 90%;
+  }
 }
 body.home.page .hero-text-wrapper .homepage-hero-orange-button:hover {
   background-color: white;
@@ -1691,16 +1721,51 @@ body.home.page .hero-text-wrapper .homepage-hero-transparent-button {
   padding: 12px 18px;
   width: 171px;
 }
+@media screen and (max-width: 460px) {
+  body.home.page .hero-text-wrapper .homepage-hero-transparent-button {
+    width: 90%;
+  }
+}
 body.home.page .hero-text-wrapper .homepage-hero-transparent-button:hover {
   background-color: white;
   color: #ff9b02;
 }
-body.home.page .div-overlap-top {
-  top: -130px;
+body.home.page #homepage-section-video .background-white .skew-inner {
+  height: 500px;
+}
+@media screen and (max-width: 1215px) {
+  body.home.page #homepage-section-video .background-white .skew-inner {
+    height: 750px;
+  }
+}
+body.home.page #homepage-section-video .div-overlap-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   position: relative;
+  top: -150px;
+  width: 100%;
+}
+body.home.page #homepage-section-video .div-overlap-top div {
+  margin: 20px;
+  max-width: 500px;
+}
+body.home.page #homepage-section-video .div-overlap-top .homepage-video-content {
+  margin-top: 150px;
+}
+@media screen and (max-width: 1215px) {
+  body.home.page #homepage-section-video .div-overlap-top .homepage-video-content {
+    margin-top: 20px;
+  }
+}
+body.home.page #homepage-section-video .div-overlap-top .under-header-div {
+  margin: 20px 0;
+}
+body.home.page #homepage-section-step-3 .slanted-section-r-l-inner:after {
+  height: 0;
 }
 body.home.page #homepage-section-learn-from {
-  background-color: #d8d8d8;
+  background-color: #222222;
   height: 400px;
 }
 body.home.page #homepage-section-partners {

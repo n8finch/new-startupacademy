@@ -37,7 +37,7 @@ function one_pager_homepage_content() {
 	?>
 
 	<!-- Hero Image Header Section -->
-	<section class="hero-image-header" style="background-image: url('<?php echo $hero_url; ?>'); height: 100vh;">
+	<section class="hero-image-header" style="background-image: url('<?php echo $hero_url; ?>');">
 		<div class="hero-text-wrapper">
 			<h1><?php echo $acf_fields['homepage_hero_title']; ?></h1>
 			<p><?php echo $acf_fields['homepage_hero_text']; ?></p>
@@ -53,18 +53,31 @@ function one_pager_homepage_content() {
 	</section>
 
 	<!-- Video What is StartupAcademy -->
-	<section class="slanted-section background-white" >
+	<section id="homepage-section-video" class="slanted-section background-white" >
 		<div class="slanted-section-l-r-inner background-white" >
 			<div class="skew-inner">
 				<div class="div-overlap-top">
-
-
+					<div class="homepage-video-container">
+						<img src="http://newstartinno.dev/wp-content/uploads/2017/08/video-image-holder.png" />
+						<!-- <video>
+							<source src="https://player.vimeo.com/video/191234056" type="video/mp4">
+							<source src="https://player.vimeo.com/video/191234056" type="video/ogg">
+						</video> -->
+					</div>
+					<div class="homepage-video-content">
+						<h2><?php echo $acf_fields['homepage_video_title']?></h2>
+						<div class="under-header-div"></div>
+						<p><?php echo $acf_fields['homepage_video_text']?></p>
+						<a href="<?php echo $acf_fields['homepage_video_button_link']?>">
+							<button><?php echo $acf_fields['homepage_video_button_text']?></button>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- What is 3 Step Start? 1.Think Like An Entrepreneur -->
-	<section class="slanted-section background-light" >
+	<section id="homepage-section-step-1" class="slanted-section background-light" >
 		<div class="slanted-section-r-l-inner background-light" >
 			<div class="skew-inner">
 
@@ -73,7 +86,7 @@ function one_pager_homepage_content() {
 	</section>
 
 	<!-- 2 Launch Your Startup Idea -->
-	<section class="slanted-section background-medium">
+	<section id="homepage-section-step-2" class="slanted-section background-medium">
 		<div class="slanted-section-l-r-inner background-medium" >
 			<div class="skew-inner">
 
@@ -82,7 +95,7 @@ function one_pager_homepage_content() {
 	</section>
 
 	<!-- 3. Grow Your Startup -->
-	<section class="slanted-section background-dark">
+	<section id="homepage-section-step-3" class="slanted-section background-dark">
 		<div class="slanted-section-r-l-inner background-dark" >
 			<div class="skew-inner">
 
@@ -91,15 +104,17 @@ function one_pager_homepage_content() {
 	</section>
 
 	<!-- LEARN FROM WORLD CLASS ENTREPRENEURS -->
-	<section class="homepage-section-learn-from">
+	<section id="homepage-section-learn-from">
 		<div class="">
+			LEARN FROM WORLD CLASS ENTREPRENEURS
 
 		</div>
 	</section>
 
 	<!-- OUR PARTNERS -->
-	<section class="homepage-section-partners">
+	<section id="homepage-section-partners">
 		<div class="">
+			OUR PARTNERS
 
 		</div>
 	</section>
