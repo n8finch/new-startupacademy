@@ -1795,8 +1795,22 @@ body.home.page .big-lesson-number {
   font-size: 7.2rem;
   font-weight: 600;
 }
+body.home.page #homepage-section-step-2 .under-header-div {
+  float: right;
+}
+body.home.page #homepage-section-step-2 .section-text {
+  clear: both;
+}
 body.home.page #homepage-section-step-3 .slanted-section-r-l-inner:after {
   height: 0;
+}
+body.home.page #homepage-section-step-3 .lesson-cards {
+  height: 300px;
+}
+@media screen and (max-width: 1000px) {
+  body.home.page #homepage-section-step-3 .lesson-cards {
+    height: auto;
+  }
 }
 body.home.page #homepage-section-learn-from {
   background-color: #222222;
@@ -1966,14 +1980,16 @@ body.home.page #homepage-section-partners {
   text-decoration: none;
 }
 .lesson-cards .lesson-card {
+  align-items: center;
   border-radius: 4px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.15);
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
-  height: 95px;
+  height: 100px;
   margin: 10px;
   max-width: 475px;
   padding: 20px 10px;
+  text-align: left;
   width: 475px;
 }
 @media screen and (max-width: 600px) {
@@ -1987,20 +2003,31 @@ body.home.page #homepage-section-partners {
     width: 95%;
   }
 }
+.lesson-cards .lesson-card div {
+  float: left;
+}
 .lesson-cards .lesson-card .lesson-number {
-  min-width: 50px;
+  width: 50px;
 }
 @media screen and (max-width: 350px) {
   .lesson-cards .lesson-card .lesson-number {
-    min-width: 50px;
+    width: 50px;
   }
 }
 .lesson-cards .lesson-card .lesson-info {
-  min-width: 250px;
+  width: 325px;
 }
 @media screen and (max-width: 350px) {
   .lesson-cards .lesson-card .lesson-info {
-    min-width: 50px;
+    width: 275px;
+  }
+}
+.lesson-cards .lesson-card .lesson-chevron {
+  width: 30px;
+}
+@media screen and (max-width: 350px) {
+  .lesson-cards .lesson-card .lesson-chevron {
+    width: 30px;
   }
 }
 .lesson-cards .lesson-card small {

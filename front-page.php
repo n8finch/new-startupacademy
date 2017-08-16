@@ -108,9 +108,10 @@ function one_pager_homepage_content() {
 										<div class="lesson-number"><?php echo $row['class_number']?></div>
 										<div class="lesson-info">
 											<div><?php echo $row['class_title']?></div>
-											<div><small><?php echo $row['class_author']?></small></div>
+											<br/>
+											<small><?php echo $row['class_author']?></small>
 										</div>
-										<div class=""><span class="dashicons dashicons-arrow-right-alt2"></span></div>
+										<div class="lesson-chevron"><span class="dashicons dashicons-arrow-right-alt2"></span></div>
 									</div>
 								</a>
 								<?php
@@ -128,7 +129,32 @@ function one_pager_homepage_content() {
 		<div class="slanted-section-l-r-inner background-medium" >
 			<div class="skew-inner">
 				<div id="step-2-lessons" class="lessons align-right">
-
+					<div class="big-lesson-number">2</div>
+					<h2><?php echo $acf_fields['section_2_title']?></h2>
+					<div class="under-header-div"></div>
+					<p class="section-text"><?php echo $acf_fields['section_2_text']?></p>
+					<div class="lesson-cards">
+						<?php
+						$rows = $acf_fields['section_2_classes'];
+						if ( $rows ) {
+							foreach( $rows as $row ) {
+								?>
+								<a href="<?php echo $row['class_link']?>">
+									<div class="lesson-card">
+										<div class="lesson-number"><?php echo $row['class_number']?></div>
+										<div class="lesson-info">
+											<div><?php echo $row['class_title']?></div>
+											<br/>
+											<small><?php echo $row['class_author']?></small>
+										</div>
+										<div class="lesson-chevron"><span class="dashicons dashicons-arrow-right-alt2"></span></div>
+									</div>
+								</a>
+								<?php
+							}
+						}
+						?>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -139,7 +165,32 @@ function one_pager_homepage_content() {
 		<div class="slanted-section-r-l-inner background-dark" >
 			<div class="skew-inner">
 				<div id="step-3-lessons" class="lessons align-left">
-
+					<div class="big-lesson-number">3</div>
+					<h2><?php echo $acf_fields['section_3_title']?></h2>
+					<div class="under-header-div"></div>
+					<p class="section-text"><?php echo $acf_fields['section_3_text']?></p>
+					<div class="lesson-cards">
+						<?php
+						$rows = $acf_fields['section_3_classes'];
+						if ( $rows ) {
+							foreach( $rows as $row ) {
+								?>
+								<a href="<?php echo $row['class_link']?>">
+									<div class="lesson-card">
+										<div class="lesson-number"><?php echo $row['class_number']?></div>
+										<div class="lesson-info">
+											<div><?php echo $row['class_title']?></div>
+											<br/>
+											<small><?php echo $row['class_author']?></small>
+										</div>
+										<div class="lesson-chevron"><span class="dashicons dashicons-arrow-right-alt2"></span></div>
+									</div>
+								</a>
+								<?php
+							}
+						}
+						?>
+					</div>
 				</div>
 			</div>
 		</div>

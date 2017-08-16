@@ -163,13 +163,29 @@ body.home.page {
 
 	#homepage-section-step-2 {
 
+		.under-header-div {
+			float: right;
+		}
+
+		.section-text {
+			clear: both;
+		}
+
 	}
 
 	#homepage-section-step-3 {
 
-
 		.slanted-section-r-l-inner:after {
 			height: 0;
+		}
+
+		.lesson-cards {
+
+			@media screen and (max-width: 1000px) {
+				height: auto;
+			}
+
+			height: 300px;
 		}
 
 	}
