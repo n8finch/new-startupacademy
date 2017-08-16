@@ -203,6 +203,34 @@ function one_pager_homepage_content() {
 			<h2><?php echo $acf_fields['homepage_learn_title']; ?></h2>
 			<div class="under-header-div"></div>
 			<p><?php echo $acf_fields['homepage_learn_text']; ?></p>
+			<div class="homepage-coaches-container">
+				<?php
+				$args = array(
+					'orderby'          => 'date',
+					'order'            => 'DESC',
+					'post_type'        => 'coach',
+					'post_status'      => 'publish',
+					'suppress_filters' => true
+				);
+				$coaches = get_posts( $args );
+				if( $coaches ) {
+					foreach( $coaches as $coach ) {
+						$coach_name = $coach->post_title;
+						$coach_excerpt = $coach->post_excerpt;
+						$coach_pic = get_the_post_thumbnail_url($coach->ID);
+						?>
+						<div class="coach-card">
+							<img class="coach-image" src="<?php echo $coach_pic?>" />
+							<div>
+								<div class="coach-name"><?php echo $coach_name; ?></div>
+								<div class="coach_excerpt"><?php echo $coach_excerpt; ?></div>
+							</div>
+						</div>
+						<?php
+					}
+				}
+				?>
+			</div>
 			<a href="<?php echo $acf_fields['homepage_learn_button_link']; ?>">
 				<button><?php echo $acf_fields['homepage_learn_button_text']; ?></button>
 			</a>

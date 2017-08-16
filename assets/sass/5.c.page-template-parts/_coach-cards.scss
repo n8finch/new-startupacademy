@@ -1,0 +1,29 @@
+.coach-card {
+	background-color: white;
+	border-bottom: 4px solid $color__orange;
+	border-radius: 4px;
+	color: black;
+	display: flex;
+	font-size: 12px;
+	font-size: 1.2rem;
+	height: 125px;
+	margin: 12px;
+	padding: 5px;
+	position: relative;
+	text-align: left;
+	width: 300px;
+
+	img {
+		height: 100px;
+		width: 100px;
+	}
+
+	.coach-name {
+		font-weight: 600;
+		margin-left: 5px;
+	}
+
+	.coach_excerpt {
+		margin-left: 5px;
+	}
+}

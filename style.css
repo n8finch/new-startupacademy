@@ -2026,6 +2026,7 @@ body.home.page #homepage-section-partners .partner-list img {
   float: left;
 }
 .lesson-cards .lesson-card .lesson-number {
+  padding-left: 10px;
   width: 50px;
 }
 @media screen and (max-width: 350px) {
@@ -2051,6 +2052,33 @@ body.home.page #homepage-section-partners .partner-list img {
 }
 .lesson-cards .lesson-card small {
   color: #ff9b02;
+}
+
+.coach-card {
+  background-color: white;
+  border-bottom: 4px solid #ff9b02;
+  border-radius: 4px;
+  color: black;
+  display: flex;
+  font-size: 12px;
+  font-size: 1.2rem;
+  height: 125px;
+  margin: 12px;
+  padding: 5px;
+  position: relative;
+  text-align: left;
+  width: 300px;
+}
+.coach-card img {
+  height: 100px;
+  width: 100px;
+}
+.coach-card .coach-name {
+  font-weight: 600;
+  margin-left: 5px;
+}
+.coach-card .coach_excerpt {
+  margin-left: 5px;
 }
 
 /* # Sidebars
