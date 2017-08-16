@@ -23,20 +23,36 @@
 			width: 400px;
 		}
 
-		@media screen and (max-width: 350px) {
+		@media screen and (max-width: 450px) {
 			padding: 10px 10px;
-			width: 300px;
+			width: 95%;
 		}
 
 		border-radius: 4px;
 		box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.15);
 		display: inline-flex;
 		justify-content: space-between;
-		height: 90px;
+		height: 95px;
 		margin: 10px;
 		max-width: 475px;
 		padding: 20px 10px;
 		width: 475px;
+
+		.lesson-number {
+			@media screen and (max-width: 350px) {
+				min-width: 50px;
+			}
+
+			min-width: 50px;
+		}
+
+		.lesson-info {
+			@media screen and (max-width: 350px) {
+				min-width: 50px;
+			}
+
+			min-width: 250px;
+		}
 
 		small {
 			color: $color__orange;

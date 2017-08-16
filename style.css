@@ -1970,7 +1970,7 @@ body.home.page #homepage-section-partners {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.15);
   display: inline-flex;
   justify-content: space-between;
-  height: 90px;
+  height: 95px;
   margin: 10px;
   max-width: 475px;
   padding: 20px 10px;
@@ -1981,10 +1981,26 @@ body.home.page #homepage-section-partners {
     width: 400px;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 450px) {
   .lesson-cards .lesson-card {
     padding: 10px 10px;
-    width: 300px;
+    width: 95%;
+  }
+}
+.lesson-cards .lesson-card .lesson-number {
+  min-width: 50px;
+}
+@media screen and (max-width: 350px) {
+  .lesson-cards .lesson-card .lesson-number {
+    min-width: 50px;
+  }
+}
+.lesson-cards .lesson-card .lesson-info {
+  min-width: 250px;
+}
+@media screen and (max-width: 350px) {
+  .lesson-cards .lesson-card .lesson-info {
+    min-width: 50px;
   }
 }
 .lesson-cards .lesson-card small {
