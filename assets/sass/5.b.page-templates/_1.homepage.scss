@@ -156,11 +156,6 @@ body.home.page {
 		font-weight: 600;
 	}
 
-	#homepage-section-step-1 {
-
-
-	}
-
 	#homepage-section-step-2 {
 
 		.under-header-div {
@@ -192,11 +187,38 @@ body.home.page {
 
 	#homepage-section-learn-from {
 		background-color: #222222;
-		height: 400px;
+		color: white;
+		text-align: center;
+
+		.under-header-div {
+			border-color: white;
+			margin: 20px auto;
+		}
+
+		button {
+			width: 254px;
+		}
 	}
 
 	#homepage-section-partners {
 		background-color: white;
-		height: 400px;
+		text-align: center;
+
+		.under-header-div {
+			margin: 20px auto;
+		}
+
+		.gen-image {
+			width: 300px;
+			margin-bottom: 20px;
+		}
+
+		.partner-list {
+
+			img {
+				margin: 40px;
+				width: 230px;
+			}
+		}
 	}
 }

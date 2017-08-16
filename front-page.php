@@ -33,6 +33,7 @@ add_action( 'genesis_loop', 'one_pager_homepage_content' );
 function one_pager_homepage_content() {
 	global $post;
 	$acf_fields = get_fields($post->ID);
+
 	$hero_url = get_the_post_thumbnail_url($post->ID);
 	?>
 
@@ -198,17 +199,38 @@ function one_pager_homepage_content() {
 
 	<!-- LEARN FROM WORLD CLASS ENTREPRENEURS -->
 	<section id="homepage-section-learn-from">
-		<div class="">
-			LEARN FROM WORLD CLASS ENTREPRENEURS
-
+		<div class="skew-inner">
+			<h2><?php echo $acf_fields['homepage_learn_title']; ?></h2>
+			<div class="under-header-div"></div>
+			<p><?php echo $acf_fields['homepage_learn_text']; ?></p>
+			<a href="<?php echo $acf_fields['homepage_learn_button_link']; ?>">
+				<button><?php echo $acf_fields['homepage_learn_button_text']; ?></button>
+			</a>
 		</div>
 	</section>
 
 	<!-- OUR PARTNERS -->
 	<section id="homepage-section-partners">
-		<div class="">
-			OUR PARTNERS
-
+		<div class="skew-inner">
+			<h2><?php echo $acf_fields['homepage_our_partners_title']; ?></h2>
+			<div class="under-header-div"></div>
+			<p><?php echo $acf_fields['homepage_our_partners_text']; ?></p>
+			<div class="partner-list">
+				<?php
+				$rows = $acf_fields['homepage_our_partners_list'];
+				if ( $rows ) {
+					foreach( $rows as $row ) {
+						?>
+						<a href="<?php echo $row['partner_link']?>">
+							<img src="<?php echo $row['partner_image']?>" />
+						</a>
+						<?php
+					}
+				}
+				?>
+			</div>
+			<p>We are also a proud supporter of</p><br />
+			<img class="gen-image" src="http://newstartinno.dev/wp-content/uploads/2016/10/img-gen@2x.png" />
 		</div>
 	</section>
 
