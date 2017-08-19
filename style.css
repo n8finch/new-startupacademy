@@ -1824,6 +1824,19 @@ body.home.page #homepage-section-learn-from .under-header-div {
 body.home.page #homepage-section-learn-from button {
   width: 254px;
 }
+body.home.page #homepage-section-learn-from .homepage-coaches-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 286px;
+  left: -185px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+  width: 175%;
+}
+body.home.page #homepage-section-learn-from .homepage-coaches-container .coach-card.offset-class {
+  left: -200px;
+}
 body.home.page #homepage-section-partners {
   background-color: white;
   text-align: center;
@@ -2000,6 +2013,7 @@ body.home.page #homepage-section-partners .partner-list img {
 }
 .lesson-cards .lesson-card {
   align-items: center;
+  background-color: white;
   border-radius: 4px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.15);
   display: flex;
@@ -2064,7 +2078,7 @@ body.home.page #homepage-section-partners .partner-list img {
   font-size: 1.2rem;
   height: 125px;
   margin: 12px;
-  padding: 5px;
+  padding: 10px 5px;
   position: relative;
   text-align: left;
   width: 300px;

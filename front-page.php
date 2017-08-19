@@ -206,20 +206,23 @@ function one_pager_homepage_content() {
 			<div class="homepage-coaches-container">
 				<?php
 				$args = array(
-					'orderby'          => 'date',
+					'orderby'          => 'rand',
 					'order'            => 'DESC',
 					'post_type'        => 'coach',
 					'post_status'      => 'publish',
+					'posts_per_page'   => 10,
 					'suppress_filters' => true
 				);
 				$coaches = get_posts( $args );
 				if( $coaches ) {
+					$counter = 1;
 					foreach( $coaches as $coach ) {
 						$coach_name = $coach->post_title;
 						$coach_excerpt = $coach->post_excerpt;
 						$coach_pic = get_the_post_thumbnail_url($coach->ID);
+						$counter > 5 ? $offset_class = 'offset-class' : '';
 						?>
-						<div class="coach-card">
+						<div class="coach-card <?php echo $offset_class; ?>">
 							<img class="coach-image" src="<?php echo $coach_pic?>" />
 							<div>
 								<div class="coach-name"><?php echo $coach_name; ?></div>
@@ -227,6 +230,7 @@ function one_pager_homepage_content() {
 							</div>
 						</div>
 						<?php
+						$counter++;
 					}
 				}
 				?>
