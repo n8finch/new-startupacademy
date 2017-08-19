@@ -203,6 +203,9 @@ function one_pager_homepage_content() {
 			<h2><?php echo $acf_fields['homepage_learn_title']; ?></h2>
 			<div class="under-header-div"></div>
 			<p><?php echo $acf_fields['homepage_learn_text']; ?></p>
+			<a href="<?php echo $acf_fields['homepage_learn_button_link']; ?>">
+				<button><?php echo $acf_fields['homepage_learn_button_text']; ?></button>
+			</a>
 			<div class="homepage-coaches-container">
 				<?php
 				$args = array(
@@ -210,7 +213,7 @@ function one_pager_homepage_content() {
 					'order'            => 'DESC',
 					'post_type'        => 'coach',
 					'post_status'      => 'publish',
-					'posts_per_page'   => 10,
+					'posts_per_page'   => 12,
 					'suppress_filters' => true
 				);
 				$coaches = get_posts( $args );
@@ -220,7 +223,7 @@ function one_pager_homepage_content() {
 						$coach_name = $coach->post_title;
 						$coach_excerpt = $coach->post_excerpt;
 						$coach_pic = get_the_post_thumbnail_url($coach->ID);
-						$counter > 5 ? $offset_class = 'offset-class' : '';
+						$counter > 6 ? $offset_class = 'offset-class' : '';
 						?>
 						<div class="coach-card <?php echo $offset_class; ?>">
 							<img class="coach-image" src="<?php echo $coach_pic?>" />
@@ -235,9 +238,6 @@ function one_pager_homepage_content() {
 				}
 				?>
 			</div>
-			<a href="<?php echo $acf_fields['homepage_learn_button_link']; ?>">
-				<button><?php echo $acf_fields['homepage_learn_button_text']; ?></button>
-			</a>
 		</div>
 	</section>
 

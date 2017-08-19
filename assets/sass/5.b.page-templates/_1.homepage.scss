@@ -190,6 +190,15 @@ body.home.page {
 		color: white;
 		text-align: center;
 
+		.skew-inner {
+			padding: 60px 0;
+			margin-left: 0;
+			margin-right: 0;
+			max-width: none;
+			overflow: hidden;
+			width: 100%;
+		}
+
 		.under-header-div {
 			border-color: white;
 			margin: 20px auto;
@@ -201,17 +210,38 @@ body.home.page {
 
 		.homepage-coaches-container {
 
+			@media screen and (max-width: 950px) {
+				left: 0;
+			}
+
+			@media screen and (max-width: 600px) {
+				height: 900px;
+				justify-content: center;
+				margin: 20px auto;
+				width: 100vw;
+			}
+
 			display: flex;
 		    flex-wrap: wrap;
 			height: 286px;
 			left: -185px;
 			margin-bottom: 20px;
+			margin-top: 20px;
 			overflow: hidden;
 			position: relative;
 		    width: 175%;
 
 			.coach-card.offset-class {
-				left: -200px;
+
+				@media screen and (max-width: 950px) {
+					left: 0;
+				}
+
+				@media screen and (max-width: 600px) {
+					display: none;
+				}
+
+				left: -165px;
 			}
 		}
 	}

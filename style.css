@@ -1817,6 +1817,14 @@ body.home.page #homepage-section-learn-from {
   color: white;
   text-align: center;
 }
+body.home.page #homepage-section-learn-from .skew-inner {
+  padding: 60px 0;
+  margin-left: 0;
+  margin-right: 0;
+  max-width: none;
+  overflow: hidden;
+  width: 100%;
+}
 body.home.page #homepage-section-learn-from .under-header-div {
   border-color: white;
   margin: 20px auto;
@@ -1830,12 +1838,36 @@ body.home.page #homepage-section-learn-from .homepage-coaches-container {
   height: 286px;
   left: -185px;
   margin-bottom: 20px;
+  margin-top: 20px;
   overflow: hidden;
   position: relative;
   width: 175%;
 }
+@media screen and (max-width: 950px) {
+  body.home.page #homepage-section-learn-from .homepage-coaches-container {
+    left: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  body.home.page #homepage-section-learn-from .homepage-coaches-container {
+    height: 900px;
+    justify-content: center;
+    margin: 20px auto;
+    width: 100vw;
+  }
+}
 body.home.page #homepage-section-learn-from .homepage-coaches-container .coach-card.offset-class {
-  left: -200px;
+  left: -165px;
+}
+@media screen and (max-width: 950px) {
+  body.home.page #homepage-section-learn-from .homepage-coaches-container .coach-card.offset-class {
+    left: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  body.home.page #homepage-section-learn-from .homepage-coaches-container .coach-card.offset-class {
+    display: none;
+  }
 }
 body.home.page #homepage-section-partners {
   background-color: white;
