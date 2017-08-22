@@ -13,6 +13,10 @@
 
 	.three-step-floating-menu {
 
+		@media screen and (max-width: 1126px) {
+			display: none;
+		}
+
 		border-radius: 4px;
 		box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.16);
 		display: flex;
@@ -62,6 +66,12 @@
 	}
 
 	.lessons {
+
+		@media screen and (max-width: 1126px) {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
 		margin-left: 25%;
 		max-width: 1000px;
 
@@ -72,6 +82,74 @@
 		button {
 			margin-bottom: 20px;
 		}
+
+		.lesson-cards {
+
+			display: block;
+			height: auto;
+
+			.lesson-card {
+				flex-wrap: wrap;
+				height: auto;
+			    max-width: 768px;
+				width: 100%;
+
+				.lesson-number {
+
+				}
+
+				.lesson-info {
+
+					@media screen and (max-width: 825px) {
+						width: auto;
+					}
+
+					@media screen and (max-width: 450px) {
+						width: 50%;
+					}
+
+					width: 550px;
+
+					small {
+						color: black;
+						font-weight: 400;
+					}
+
+					.author {
+						color: $color__orange;
+					}
+				}
+
+				.lesson-chevron {
+					color: $color__orange;
+				}
+
+				button {
+					padding: 5px;
+					width: 75px;
+				}
+
+				.lesson-activities {
+					width: 100%
+				}
+
+				.activity-wrapper {
+
+					@media screen and (max-width: 450px) {
+						width: 80%;
+					}
+
+					background-color: #eeeeee;
+					display: flex;
+					font-weight: 400;
+					justify-content: space-between;
+					margin: 5px 0 5px 50px;
+					padding: 5px 10px;
+					width: 90%;
+				}
+			}
+		}
+
 	}
 
 	.lessons.align-left {
@@ -79,6 +157,12 @@
 	}
 
 	.lessons.align-right {
+
+		@media screen and (max-width: 825px) {
+			margin-right: 0;
+		}
+
+		margin-right: 5%;
 		text-align: right;
 	}
 
@@ -89,14 +173,27 @@
 		font-weight: 600;
 	}
 
+	#step-1-lessons {
+
+		.skew-inner {
+			padding-top: 10px;
+		}
+	}
+
 	#step-2-lessons {
 
 		.under-header-div {
 			float: right;
 		}
 
-		p {
+		.section-text {
 			clear: both;
+		}
+
+		button {
+			background-color: white;
+			border: 1px solid black;
+			color: black;
 		}
 
 	}
@@ -113,7 +210,12 @@
 				height: auto;
 			}
 
-			height: 300px;
+		}
+
+		button {
+			background-color: white;
+			border: 1px solid black;
+			color: black;
 		}
 
 	}

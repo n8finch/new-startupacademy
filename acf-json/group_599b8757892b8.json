@@ -180,10 +180,10 @@
                 "class": "",
                 "id": ""
             },
-            "collapsed": "",
+            "collapsed": "field_599b8757c028c",
             "min": "",
             "max": "",
-            "layout": "table",
+            "layout": "block",
             "button_label": "Add Row",
             "sub_fields": [
                 {
@@ -280,6 +280,120 @@
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
+                },
+                {
+                    "key": "field_599bae860990c",
+                    "label": "Activity 1 Title",
+                    "name": "activity_1_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": "",
+                    "conditional_logic": "",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_599baea00990d",
+                    "label": "Activity 1 Link",
+                    "name": "activity_1_link",
+                    "type": "text",
+                    "instructions": "",
+                    "required": "",
+                    "conditional_logic": "",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_599baeaa0990e",
+                    "label": "Activity 2 Title",
+                    "name": "activity_2_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": "",
+                    "conditional_logic": "",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_599baeb10990f",
+                    "label": "Activity 2 Link",
+                    "name": "activity_2_link",
+                    "type": "text",
+                    "instructions": "",
+                    "required": "",
+                    "conditional_logic": "",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_599baebe09910",
+                    "label": "Activity 3 Title",
+                    "name": "activity_3_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": "",
+                    "conditional_logic": "",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_599baed009911",
+                    "label": "Activity 3 Link",
+                    "name": "activity_3_link",
+                    "type": "text",
+                    "instructions": "",
+                    "required": "",
+                    "conditional_logic": "",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 }
             ]
         },
@@ -357,7 +471,7 @@
             "maxlength": ""
         },
         {
-            "key": "field_599b87579281c",
+            "key": "field_599baef90991e",
             "label": "Section 2 Classes",
             "name": "section_2_classes",
             "type": "repeater",
@@ -369,20 +483,20 @@
                 "class": "",
                 "id": ""
             },
-            "collapsed": "",
+            "collapsed": "field_599baef909920",
             "min": "",
             "max": "",
-            "layout": "table",
+            "layout": "block",
             "button_label": "Add Row",
             "sub_fields": [
                 {
-                    "key": "field_599b8757d69a8",
+                    "key": "field_599baef90991f",
                     "label": "Class Number",
                     "name": "class_number",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
-                    "conditional_logic": 0,
+                    "conditional_logic": "",
                     "wrapper": {
                         "width": "",
                         "class": "",
@@ -395,13 +509,13 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_599b8757d6a36",
+                    "key": "field_599baef909920",
                     "label": "Class Title",
                     "name": "class_title",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
-                    "conditional_logic": 0,
+                    "conditional_logic": "",
                     "wrapper": {
                         "width": "",
                         "class": "",
@@ -414,13 +528,13 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_599b8757d6abf",
+                    "key": "field_599baef909921",
                     "label": "Class Link",
                     "name": "class_link",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
-                    "conditional_logic": 0,
+                    "conditional_logic": "",
                     "wrapper": {
                         "width": "",
                         "class": "",
@@ -433,13 +547,13 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_599b8757d6b50",
+                    "key": "field_599baef909922",
                     "label": "Class Author",
                     "name": "class_author",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
-                    "conditional_logic": 0,
+                    "conditional_logic": "",
                     "wrapper": {
                         "width": "",
                         "class": "",
@@ -452,13 +566,127 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_599b8757d6be4",
+                    "key": "field_599baef909923",
                     "label": "Author Link",
                     "name": "author_link",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
-                    "conditional_logic": 0,
+                    "conditional_logic": "",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_599baef909924",
+                    "label": "Activity 1 Title",
+                    "name": "activity_1_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": "",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_599baef909925",
+                    "label": "Activity 1 Link",
+                    "name": "activity_1_link",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": "",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_599baef909926",
+                    "label": "Activity 2 Title",
+                    "name": "activity_2_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": "",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_599baef909927",
+                    "label": "Activity 2 Link",
+                    "name": "activity_2_link",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": "",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_599baef909928",
+                    "label": "Activity 3 Title",
+                    "name": "activity_3_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": "",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_599baef909929",
+                    "label": "Activity 3 Link",
+                    "name": "activity_3_link",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": "",
                     "wrapper": {
                         "width": "",
                         "class": "",
@@ -546,7 +774,7 @@
             "maxlength": ""
         },
         {
-            "key": "field_599b875792a84",
+            "key": "field_599baef709912",
             "label": "Section 3 Classes",
             "name": "section_3_classes",
             "type": "repeater",
@@ -558,14 +786,14 @@
                 "class": "",
                 "id": ""
             },
-            "collapsed": "",
+            "collapsed": "field_599baef709914",
             "min": "",
             "max": "",
-            "layout": "table",
+            "layout": "block",
             "button_label": "Add Row",
             "sub_fields": [
                 {
-                    "key": "field_599b8757e8275",
+                    "key": "field_599baef709913",
                     "label": "Class Number",
                     "name": "class_number",
                     "type": "text",
@@ -584,7 +812,7 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_599b8757e8301",
+                    "key": "field_599baef709914",
                     "label": "Class Title",
                     "name": "class_title",
                     "type": "text",
@@ -603,7 +831,7 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_599b8757e844d",
+                    "key": "field_599baef709915",
                     "label": "Class Link",
                     "name": "class_link",
                     "type": "text",
@@ -622,7 +850,7 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_599b8757e8524",
+                    "key": "field_599baef709916",
                     "label": "Class Author",
                     "name": "class_author",
                     "type": "text",
@@ -641,9 +869,123 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_599b8757e85ba",
+                    "key": "field_599baef709917",
                     "label": "Author Link",
                     "name": "author_link",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_599baef709918",
+                    "label": "Activity 1 Title",
+                    "name": "activity_1_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_599baef709919",
+                    "label": "Activity 1 Link",
+                    "name": "activity_1_link",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_599baef70991a",
+                    "label": "Activity 2 Title",
+                    "name": "activity_2_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_599baef70991b",
+                    "label": "Activity 2 Link",
+                    "name": "activity_2_link",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_599baef70991c",
+                    "label": "Activity 3 Title",
+                    "name": "activity_3_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_599baef70991d",
+                    "label": "Activity 3 Link",
+                    "name": "activity_3_link",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -692,5 +1034,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1503369351
+    "modified": 1503375272
 }

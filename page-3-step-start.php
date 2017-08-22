@@ -69,8 +69,57 @@ function one_pager_homepage_content() {
 					</p>
 
 					<div class="lesson-cards">
-					
-					</div>
+						<?php
+						$rows = $acf_fields['section_1_classes'];
+						if ( $rows ) {
+							foreach( $rows as $row ) {
+								?>
+									<div class="lesson-card">
+										<div class="lesson-number"><?php echo $row['class_number']?></div>
+										<div class="lesson-info">
+											<div><?php echo $row['class_title']?></div>
+											<br/>
+											<small>with: <span class="author"><?php echo $row['class_author'];?></span></small>
+										</div>
+										<div class="lesson-button"><a href="<?php echo $row['class_link']; ?>"><button>FREE</button></a></div>
+										<div class="lesson-activities">
+											<?php if($row['activity_1_title']) {?>
+												<a href="<?php echo $row['activity_1_link']; ?>">
+													<div class="activity-wrapper">
+														<div>
+															<?php echo $row['activity_1_title']; ?>
+														</div>
+														<div class="lesson-chevron"><span class="dashicons dashicons-arrow-right-alt2"></span></div>
+													</div>
+												</a>
+											<?php } //end if?>
+											<?php if($row['activity_2_title']) {?>
+												<a href="<?php echo $row['activity_2_link']; ?>">
+													<div class="activity-wrapper">
+														<div>
+															<?php echo $row['activity_2_title']; ?>
+														</div>
+														<div class="lesson-chevron"><span class="dashicons dashicons-arrow-right-alt2"></span></div>
+													</div>
+												</a>
+											<?php } //end if?>
+											<?php if($row['activity_3_title']) {?>
+												<a href="<?php echo $row['activity_3_link']; ?>">
+													<div class="activity-wrapper">
+														<div>
+															<?php echo $row['activity_3_title']; ?>
+														</div>
+														<div class="lesson-chevron"><span class="dashicons dashicons-arrow-right-alt2"></span></div>
+													</div>
+												</a>
+											<?php } //end if?>
+										</div> <!-- end lesson activities-->
+									</div>
+								<?php
+							}
+						}
+						?>
+					</div> <!-- end lesson-cards -->
 				</div>
 			</div>
 		</div>
@@ -89,8 +138,57 @@ function one_pager_homepage_content() {
 						<small><?php echo $acf_fields['section_2_text']?></small>
 					</p>
 					<div class="lesson-cards">
-
-					</div>
+						<?php
+						$rows = $acf_fields['section_2_classes'];
+						if ( $rows ) {
+							foreach( $rows as $row ) {
+								?>
+									<div class="lesson-card">
+										<div class="lesson-number"><?php echo $row['class_number']?></div>
+										<div class="lesson-info">
+											<div><?php echo $row['class_title']?></div>
+											<br/>
+											<small>with: <span class="author"><?php echo $row['class_author'];?></span></small>
+										</div>
+										<div class="lesson-button"><a href="<?php echo $row['class_link']; ?>"><button><span class="fa fa-lock"></span> VIEW</button></a></div>
+										<div class="lesson-activities">
+											<?php if($row['activity_1_title']) {?>
+												<a href="<?php echo $row['activity_1_link']; ?>">
+													<div class="activity-wrapper">
+														<div>
+															<?php echo $row['activity_1_title']; ?>
+														</div>
+														<div class="lesson-chevron"><span class="dashicons dashicons-arrow-right-alt2"></span></div>
+													</div>
+												</a>
+											<?php } //end if?>
+											<?php if($row['activity_2_title']) {?>
+												<a href="<?php echo $row['activity_2_link']; ?>">
+													<div class="activity-wrapper">
+														<div>
+															<?php echo $row['activity_2_title']; ?>
+														</div>
+														<div class="lesson-chevron"><span class="dashicons dashicons-arrow-right-alt2"></span></div>
+													</div>
+												</a>
+											<?php } //end if?>
+											<?php if($row['activity_3_title']) {?>
+												<a href="<?php echo $row['activity_3_link']; ?>">
+													<div class="activity-wrapper">
+														<div>
+															<?php echo $row['activity_3_title']; ?>
+														</div>
+														<div class="lesson-chevron"><span class="dashicons dashicons-arrow-right-alt2"></span></div>
+													</div>
+												</a>
+											<?php } //end if?>
+										</div> <!-- end lesson activities-->
+									</div>
+								<?php
+							}
+						}
+						?>
+					</div> <!-- end lesson-cards -->
 				</div>
 			</div>
 		</div>
@@ -109,8 +207,57 @@ function one_pager_homepage_content() {
 						<small><?php echo $acf_fields['section_3_text']?></small>
 					</p>
 					<div class="lesson-cards">
-
-					</div>
+						<?php
+						$rows = $acf_fields['section_3_classes'];
+						if ( $rows ) {
+							foreach( $rows as $row ) {
+								?>
+									<div class="lesson-card">
+										<div class="lesson-number"><?php echo $row['class_number']?></div>
+										<div class="lesson-info">
+											<div><?php echo $row['class_title']?></div>
+											<br/>
+											<small>with: <span class="author"><?php echo $row['class_author'];?></span></small>
+										</div>
+										<div class="lesson-button"><a href="<?php echo $row['class_link']; ?>"><button><span class="fa fa-lock"></span> VIEW</button></a></div>
+										<div class="lesson-activities">
+											<?php if($row['activity_1_title']) {?>
+												<a href="<?php echo $row['activity_1_link']; ?>">
+													<div class="activity-wrapper">
+														<div>
+															<?php echo $row['activity_1_title']; ?>
+														</div>
+														<div class="lesson-chevron"><span class="dashicons dashicons-arrow-right-alt2"></span></div>
+													</div>
+												</a>
+											<?php } //end if?>
+											<?php if($row['activity_2_title']) {?>
+												<a href="<?php echo $row['activity_2_link']; ?>">
+													<div class="activity-wrapper">
+														<div>
+															<?php echo $row['activity_2_title']; ?>
+														</div>
+														<div class="lesson-chevron"><span class="dashicons dashicons-arrow-right-alt2"></span></div>
+													</div>
+												</a>
+											<?php } //end if?>
+											<?php if($row['activity_3_title']) {?>
+												<a href="<?php echo $row['activity_3_link']; ?>">
+													<div class="activity-wrapper">
+														<div>
+															<?php echo $row['activity_3_title']; ?>
+														</div>
+														<div class="lesson-chevron"><span class="dashicons dashicons-arrow-right-alt2"></span></div>
+													</div>
+												</a>
+											<?php } //end if?>
+										</div> <!-- end lesson activities-->
+									</div>
+								<?php
+							}
+						}
+						?>
+					</div> <!-- end lesson-cards -->
 				</div>
 			</div>
 		</div>

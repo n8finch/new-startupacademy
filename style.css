@@ -1918,6 +1918,11 @@ body.home.page #homepage-section-partners .partner-list img {
   top: 55%;
   z-index: 999;
 }
+@media screen and (max-width: 1126px) {
+  .page-template-page-3-step-start .three-step-floating-menu {
+    display: none;
+  }
+}
 .page-template-page-3-step-start .three-step-floating-menu > :first-child {
   border-radius: 4px 4px 0 0;
   background-color: #444444;
@@ -1938,17 +1943,83 @@ body.home.page #homepage-section-partners .partner-list img {
   margin-left: 25%;
   max-width: 1000px;
 }
+@media screen and (max-width: 1126px) {
+  .page-template-page-3-step-start .lessons {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .page-template-page-3-step-start .lessons .under-header-div {
   margin: 20px 0;
 }
 .page-template-page-3-step-start .lessons button {
   margin-bottom: 20px;
 }
+.page-template-page-3-step-start .lessons .lesson-cards {
+  display: block;
+  height: auto;
+}
+.page-template-page-3-step-start .lessons .lesson-cards .lesson-card {
+  flex-wrap: wrap;
+  height: auto;
+  max-width: 768px;
+  width: 100%;
+}
+.page-template-page-3-step-start .lessons .lesson-cards .lesson-card .lesson-info {
+  width: 550px;
+}
+@media screen and (max-width: 825px) {
+  .page-template-page-3-step-start .lessons .lesson-cards .lesson-card .lesson-info {
+    width: auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  .page-template-page-3-step-start .lessons .lesson-cards .lesson-card .lesson-info {
+    width: 50%;
+  }
+}
+.page-template-page-3-step-start .lessons .lesson-cards .lesson-card .lesson-info small {
+  color: black;
+  font-weight: 400;
+}
+.page-template-page-3-step-start .lessons .lesson-cards .lesson-card .lesson-info .author {
+  color: #ff9b02;
+}
+.page-template-page-3-step-start .lessons .lesson-cards .lesson-card .lesson-chevron {
+  color: #ff9b02;
+}
+.page-template-page-3-step-start .lessons .lesson-cards .lesson-card button {
+  padding: 5px;
+  width: 75px;
+}
+.page-template-page-3-step-start .lessons .lesson-cards .lesson-card .lesson-activities {
+  width: 100%;
+}
+.page-template-page-3-step-start .lessons .lesson-cards .lesson-card .activity-wrapper {
+  background-color: #eeeeee;
+  display: flex;
+  font-weight: 400;
+  justify-content: space-between;
+  margin: 5px 0 5px 50px;
+  padding: 5px 10px;
+  width: 90%;
+}
+@media screen and (max-width: 450px) {
+  .page-template-page-3-step-start .lessons .lesson-cards .lesson-card .activity-wrapper {
+    width: 80%;
+  }
+}
 .page-template-page-3-step-start .lessons.align-left {
   text-align: left;
 }
 .page-template-page-3-step-start .lessons.align-right {
+  margin-right: 5%;
   text-align: right;
+}
+@media screen and (max-width: 825px) {
+  .page-template-page-3-step-start .lessons.align-right {
+    margin-right: 0;
+  }
 }
 .page-template-page-3-step-start .big-lesson-number {
   color: #ff9b02;
@@ -1956,22 +2027,32 @@ body.home.page #homepage-section-partners .partner-list img {
   font-size: 7.2rem;
   font-weight: 600;
 }
+.page-template-page-3-step-start #step-1-lessons .skew-inner {
+  padding-top: 10px;
+}
 .page-template-page-3-step-start #step-2-lessons .under-header-div {
   float: right;
 }
-.page-template-page-3-step-start #step-2-lessons p {
+.page-template-page-3-step-start #step-2-lessons .section-text {
   clear: both;
+}
+.page-template-page-3-step-start #step-2-lessons button {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
 }
 .page-template-page-3-step-start #step-3-lessons .slanted-section-r-l-inner:after {
   height: 0;
-}
-.page-template-page-3-step-start #step-3-lessons .lesson-cards {
-  height: 300px;
 }
 @media screen and (max-width: 1000px) {
   .page-template-page-3-step-start #step-3-lessons .lesson-cards {
     height: auto;
   }
+}
+.page-template-page-3-step-start #step-3-lessons button {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
 }
 .page-template-page-3-step-start .slanted-section-r-l-inner:after {
   height: 0;
