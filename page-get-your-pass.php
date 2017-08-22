@@ -37,7 +37,7 @@ function one_pager_homepage_content() {
 	?>
 
 	<!-- Hero Image Header Section -->
-	<section class="hero-image-header" style="background-image: url('<?php echo $hero_url; ?>'); height: 80vh;">
+	<section class="hero-image-header" style="background-image: url('<?php echo $hero_url; ?>');">
 		<div class="hero-text-wrapper">
 			<h1><?php echo $acf_fields['get_your_pass_hero_title']; ?></h1>
 			<p><?php echo $acf_fields['get_your_pass_hero_text']; ?></p>
@@ -60,6 +60,7 @@ function one_pager_homepage_content() {
 							</a>
 						</div>
 						<div class="get-your-pass-price-box">
+							<div class="most-popular">MOST POPULAR</div>
 							<h3><?php echo $acf_fields['get_your_pass_price_box_title_2']; ?></h3>
 							<p><?php echo $acf_fields['get_your_pass_price_box_text_2']; ?></p>
 							<p class="price-box-price"><?php echo $acf_fields['get_your_pass_price_box_price_2']; ?></p>

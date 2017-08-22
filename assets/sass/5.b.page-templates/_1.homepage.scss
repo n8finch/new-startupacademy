@@ -4,6 +4,11 @@ body.home.page {
 		max-width: 1100px;
 	}
 
+	.hero-image-header {
+		background-size: cover;
+		height: 100vh;
+	}
+
 	.hero-text-wrapper {
 
 		@media screen and (max-width: 860px) {
@@ -242,6 +247,11 @@ body.home.page {
 				}
 
 				left: -165px;
+			}
+
+			a,
+			a:hover {
+				text-decoration: none;
 			}
 		}
 	}

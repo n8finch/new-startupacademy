@@ -1405,6 +1405,10 @@ img.alignright,
   background-color: #ff9b02;
 }
 
+.genesis-nav-menu .menu-highlight a:hover {
+  background-color: white;
+}
+
 .genesis-nav-menu a:focus,
 .genesis-nav-menu a:hover,
 .genesis-nav-menu .current-menu-item > a,
@@ -1508,6 +1512,7 @@ img.alignright,
 
 .hero-image-header {
   background-size: cover;
+  height: 60vh;
 }
 
 /* ## Entries
@@ -1664,6 +1669,10 @@ p.entry-meta {
 
 body.home.page .skew-inner {
   max-width: 1100px;
+}
+body.home.page .hero-image-header {
+  background-size: cover;
+  height: 100vh;
 }
 body.home.page .hero-text-wrapper {
   color: white;
@@ -1869,6 +1878,10 @@ body.home.page #homepage-section-learn-from .homepage-coaches-container .coach-c
     display: none;
   }
 }
+body.home.page #homepage-section-learn-from .homepage-coaches-container a,
+body.home.page #homepage-section-learn-from .homepage-coaches-container a:hover {
+  text-decoration: none;
+}
 body.home.page #homepage-section-partners {
   background-color: white;
   text-align: center;
@@ -1883,6 +1896,152 @@ body.home.page #homepage-section-partners .gen-image {
 body.home.page #homepage-section-partners .partner-list img {
   margin: 40px;
   width: 230px;
+}
+
+.page-template-page-3-step-start .hero-text-wrapper {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 700px;
+  text-align: center;
+}
+.page-template-page-3-step-start .three-step-floating-menu {
+  border-radius: 4px;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.16);
+  display: flex;
+  flex-direction: column;
+  left: 10%;
+  position: fixed;
+  top: 55%;
+  z-index: 999;
+}
+.page-template-page-3-step-start .three-step-floating-menu > :first-child {
+  border-radius: 4px 4px 0 0;
+  background-color: #444444;
+  color: white;
+}
+.page-template-page-3-step-start .three-step-floating-menu > :last-child {
+  border-radius: 0 0 4px 4px;
+  background-color: #ff9b02;
+  color: white;
+}
+.page-template-page-3-step-start .three-step-floating-menu a {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.page-template-page-3-step-start .lessons {
+  margin-left: 25%;
+  max-width: 1000px;
+}
+.page-template-page-3-step-start .lessons .under-header-div {
+  margin: 20px 0;
+}
+.page-template-page-3-step-start .lessons button {
+  margin-bottom: 20px;
+}
+.page-template-page-3-step-start .lessons.align-left {
+  text-align: left;
+}
+.page-template-page-3-step-start .lessons.align-right {
+  text-align: right;
+}
+.page-template-page-3-step-start .big-lesson-number {
+  color: #ff9b02;
+  font-size: 72px;
+  font-size: 7.2rem;
+  font-weight: 600;
+}
+.page-template-page-3-step-start #step-2-lessons .under-header-div {
+  float: right;
+}
+.page-template-page-3-step-start #step-2-lessons p {
+  clear: both;
+}
+.page-template-page-3-step-start #step-3-lessons .slanted-section-r-l-inner:after {
+  height: 0;
+}
+.page-template-page-3-step-start #step-3-lessons .lesson-cards {
+  height: 300px;
+}
+@media screen and (max-width: 1000px) {
+  .page-template-page-3-step-start #step-3-lessons .lesson-cards {
+    height: auto;
+  }
+}
+.page-template-page-3-step-start .slanted-section-r-l-inner:after {
+  height: 0;
+  transform: none;
+}
+
+body.page-template-page-coaches .skew-inner {
+  max-width: 1100px;
+}
+body.page-template-page-coaches .hero-text-wrapper {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+}
+@media screen and (max-width: 460px) {
+  body.page-template-page-coaches .hero-text-wrapper h1 {
+    font-size: 36px;
+    font-size: 3.6rem;
+  }
+}
+body.page-template-page-coaches #coaches-cards-section .skew-inner {
+  padding: 0;
+}
+body.page-template-page-coaches #coaches-cards-section .div-overlap-top {
+  position: relative;
+  top: -85px;
+  width: 100%;
+}
+body.page-template-page-coaches #coaches-cards-section .div-overlap-top .coaches-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body.page-template-page-coaches #coaches-cards-section a,
+body.page-template-page-coaches #coaches-cards-section a:hover {
+  text-decoration: none;
+}
+body.page-template-page-coaches .slanted-section-r-l-inner:after {
+  transform: none;
+}
+body.page-template-page-coaches #become-a-coach {
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  max-height: 400px;
+  text-align: center;
+}
+body.page-template-page-coaches #become-a-coach div {
+  margin: auto;
+  max-width: 1000px;
+}
+body.page-template-page-coaches #become-a-coach button {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 4px;
+  color: white;
+  padding: 16px;
+  width: 270px;
+}
+body.page-template-page-coaches #become-a-coach button:hover {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 4px;
+  color: #ff9b02;
 }
 
 .page-template-page-get-your-pass .hero-text-wrapper {
@@ -1936,9 +2095,21 @@ body.home.page #homepage-section-partners .partner-list img {
 }
 .page-template-page-get-your-pass .get-your-pass-price-box {
   background-color: white;
+  border-radius: 4px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.15);
-  padding: 50px 23px 23px;
+  padding: 100px 23px 23px;
   position: relative;
+}
+.page-template-page-get-your-pass .get-your-pass-price-box .most-popular {
+  background-color: #ff9b02;
+  border-radius: 4px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.15);
+  color: white;
+  font-weight: 600;
+  padding: 10px 20px;
+  position: absolute;
+  right: -10px;
+  top: 20px;
 }
 .page-template-page-get-your-pass .get-your-pass-price-box h2 {
   font-size: 24px;
@@ -2120,6 +2291,8 @@ body.home.page #homepage-section-partners .partner-list img {
   width: 100px;
 }
 .coach-card .coach-name {
+  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 600;
   margin-left: 5px;
 }

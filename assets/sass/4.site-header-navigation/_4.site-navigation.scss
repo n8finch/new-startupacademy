@@ -32,7 +32,11 @@
 }
 
 .genesis-nav-menu .menu-highlight a {
-	background-color: #ff9b02;
+	background-color: $color__orange;
+}
+
+.genesis-nav-menu .menu-highlight a:hover {
+	background-color: white;
 }
 
 .genesis-nav-menu a:focus,
