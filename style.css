@@ -1997,6 +1997,8 @@ body.home.page #homepage-section-partners .partner-list img {
 }
 .page-template-page-3-step-start .lessons .lesson-cards .lesson-card .activity-wrapper {
   background-color: #eeeeee;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
   display: flex;
   font-weight: 400;
   justify-content: space-between;
