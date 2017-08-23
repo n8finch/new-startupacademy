@@ -1,0 +1,88 @@
+body.single.single-coach {
+
+	.genesis-nav-menu a {
+		color: white;
+	}
+
+	.skew-inner {
+		display: flex;
+		justify-content: space-between;
+		max-width: 1100px;
+
+		.coach-pic-excerpt {
+			text-align: center;
+			width: 33%;
+		}
+
+		.coach-links {
+			align-items: center;
+			display: flex;
+			font-size: 22px;
+			font-size: 2.2rem;
+			justify-content: space-around;
+		}
+
+		.coach-content {
+			width: 66%;
+		}
+	}
+
+	.hero-text-wrapper {
+
+		color: white;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		justify-content: center;
+		text-align: center;
+
+		h1 {
+			@media screen and (max-width: 460px) {
+				font-size: 36px;
+				font-size: 3.6rem;
+			}
+		}
+
+
+	}
+
+
+
+	.slanted-section-r-l-inner:after {
+		transform: none;
+	}
+
+	#become-a-coach {
+
+		background-size: cover;
+		color: white;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		justify-content: center;
+		max-height: 400px;
+		text-align: center;
+
+		div {
+			margin: auto;
+			max-width: 1000px;
+		}
+
+		button {
+			background-color: transparent;
+			border: 2px solid white;
+			border-radius: 4px;
+			color: white;
+			padding: 16px;
+			width: 270px;
+		}
+
+		button:hover {
+			background-color: white;
+			border: 2px solid white;
+			border-radius: 4px;
+			color: $color__orange;
+		}
+	}
+
+}
