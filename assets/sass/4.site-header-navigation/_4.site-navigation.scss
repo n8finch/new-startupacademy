@@ -2,6 +2,11 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .page-template .genesis-nav-menu a {
+
+	@media screen and (max-width: 1023px) {
+		color: black;
+	}
+
 	border-radius: 4px;
 	color: white;
 }
@@ -32,6 +37,11 @@
 }
 
 .genesis-nav-menu .menu-highlight a {
+	@media screen and (max-width: 1023px) {
+		border-radius: 0;
+		color: white;
+	}
+
 	background-color: $color__orange;
 }
 
@@ -97,4 +107,8 @@
 
 .genesis-nav-menu > .right {
 	float: right;
+}
+
+li.moved-item-nav-header {
+	display: none !important;
 }

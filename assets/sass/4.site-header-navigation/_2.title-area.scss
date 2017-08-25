@@ -50,7 +50,7 @@
 .header-image .site-title > a {
 
 	@media screen and (max-width: 1023px) {
-		min-height: 60px;
+		min-height: 64px;
 
 	}
 
@@ -77,4 +77,9 @@
 .header-image .site-title {
 	display: block;
 	text-indent: -9999px;
+}
+
+.dashicons-menu:before {
+	font-size: 30px !important;
+	font-size: 3rem !important;
 }

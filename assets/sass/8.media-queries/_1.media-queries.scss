@@ -125,10 +125,6 @@
 		text-align: center;
 	}
 
-	.site-header .widget-area {
-		display: none;
-	}
-
 	.site-header .search-form {
 		margin: 16px auto;
 	}
@@ -141,7 +137,9 @@
 
 	.genesis-responsive-menu {
 		display: none;
-		position: relative;
+		position: absolute;
+		top: 60px;
+		width: 375px;
 	}
 
 	.genesis-skip-link .skip-link-hidden {
@@ -165,24 +163,38 @@
 	.menu-toggle:hover,
 	.sub-menu-toggle:focus,
 	.sub-menu-toggle:hover {
-		background-color: #fff;
+		background-color: $color__orange;
 		border-width: 0;
-		color: #c3251d;
+		color: white;
 	}
 
 	.menu-toggle {
+		background-color: transparent;
+		border-top: 0;
+		border-radius: 0;
+		box-shadow: none;
+		color: white;
 		float: right;
+		height: 60px;
 		line-height: 22px;
 		position: fixed;
 		right: 0;
-		width: 55px;
+		width: 65px;
 		z-index: 1000;
 	}
 
 	.menu-toggle,
 	.menu-toggle:focus,
 	.menu-toggle:hover {
-		border-top: 1px solid #eee;
+		// border-top: 1px solid #eee;
+	}
+
+	li.current-menu-item {
+	    background-color: $color__orange;
+	}
+
+	.genesis-responsive-menu .genesis-nav-menu li.current-menu-item a {
+		color: white;
 	}
 
 	.menu-toggle::before {
@@ -192,11 +204,13 @@
 	}
 
 	.sub-menu-toggle {
+		box-shadow: none;
 		float: right;
 		padding: 13px 10px;
 		position: absolute;
 		right: 0;
 		top: 0;
+		width: 65px;
 		z-index: 100;
 	}
 

@@ -1310,6 +1310,11 @@ img.alignright,
     padding-right: 0;
   }
 }
+@media screen and (max-width: 1024px) {
+  .site-header > .wrap .site-header .widget-area {
+    display: none;
+  }
+}
 
 /* ## Title Area
 --------------------------------------------- */
@@ -1366,7 +1371,7 @@ img.alignright,
 }
 @media screen and (max-width: 1023px) {
   .header-image .site-title > a {
-    min-height: 60px;
+    min-height: 64px;
   }
 }
 
@@ -1388,6 +1393,11 @@ img.alignright,
   text-indent: -9999px;
 }
 
+.dashicons-menu:before {
+  font-size: 30px !important;
+  font-size: 3rem !important;
+}
+
 /* ## Widget Area
 --------------------------------------------- */
 .site-header .widget-area {
@@ -1401,6 +1411,11 @@ img.alignright,
 .page-template .genesis-nav-menu a {
   border-radius: 4px;
   color: white;
+}
+@media screen and (max-width: 1023px) {
+  .page-template .genesis-nav-menu a {
+    color: black;
+  }
 }
 
 .genesis-nav-menu {
@@ -1429,6 +1444,12 @@ img.alignright,
 
 .genesis-nav-menu .menu-highlight a {
   background-color: #ff9b02;
+}
+@media screen and (max-width: 1023px) {
+  .genesis-nav-menu .menu-highlight a {
+    border-radius: 0;
+    color: white;
+  }
 }
 
 .genesis-nav-menu .menu-highlight a:hover {
@@ -1493,6 +1514,10 @@ img.alignright,
 
 .genesis-nav-menu > .right {
   float: right;
+}
+
+li.moved-item-nav-header {
+  display: none !important;
 }
 
 /* ## Accessible Menu
@@ -2701,10 +2726,6 @@ body.single.single-coach #become-a-coach button:hover {
     text-align: center;
   }
 
-  .site-header .widget-area {
-    display: none;
-  }
-
   .site-header .search-form {
     margin: 16px auto;
   }
@@ -2716,7 +2737,9 @@ body.single.single-coach #become-a-coach button:hover {
 
   .genesis-responsive-menu {
     display: none;
-    position: relative;
+    position: absolute;
+    top: 60px;
+    width: 375px;
   }
 
   .genesis-skip-link .skip-link-hidden {
@@ -2740,24 +2763,32 @@ body.single.single-coach #become-a-coach button:hover {
   .menu-toggle:hover,
   .sub-menu-toggle:focus,
   .sub-menu-toggle:hover {
-    background-color: #fff;
+    background-color: #ff9b02;
     border-width: 0;
-    color: #c3251d;
+    color: white;
   }
 
   .menu-toggle {
+    background-color: transparent;
+    border-top: 0;
+    border-radius: 0;
+    box-shadow: none;
+    color: white;
     float: right;
+    height: 60px;
     line-height: 22px;
     position: fixed;
     right: 0;
-    width: 55px;
+    width: 65px;
     z-index: 1000;
   }
 
-  .menu-toggle,
-  .menu-toggle:focus,
-  .menu-toggle:hover {
-    border-top: 1px solid #eee;
+  li.current-menu-item {
+    background-color: #ff9b02;
+  }
+
+  .genesis-responsive-menu .genesis-nav-menu li.current-menu-item a {
+    color: white;
   }
 
   .menu-toggle::before {
@@ -2767,11 +2798,13 @@ body.single.single-coach #become-a-coach button:hover {
   }
 
   .sub-menu-toggle {
+    box-shadow: none;
     float: right;
     padding: 13px 10px;
     position: absolute;
     right: 0;
     top: 0;
+    width: 65px;
     z-index: 100;
   }
 
