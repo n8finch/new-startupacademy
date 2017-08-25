@@ -106,8 +106,8 @@
 	}
 
 	.site-header .wrap {
-		padding-left: 5%;
-		padding-right: 5%;
+		// padding-left: 5%;
+		// padding-right: 5%;
 	}
 
 	.genesis-nav-menu li,
@@ -123,6 +123,10 @@
 	.site-header .widget-area,
 	.site-title {
 		text-align: center;
+	}
+
+	.site-header .widget-area {
+		display: none;
 	}
 
 	.site-header .search-form {
@@ -167,9 +171,11 @@
 	}
 
 	.menu-toggle {
+		float: right;
 		line-height: 22px;
-		position: relative;
-		width: 100%;
+		position: fixed;
+		right: 0;
+		width: 55px;
 		z-index: 1000;
 	}
 

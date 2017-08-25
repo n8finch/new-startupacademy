@@ -1302,6 +1302,14 @@ img.alignright,
   width: 100%;
   z-index: 99;
 }
+@media screen and (max-width: 1022px) {
+  .site-header > .wrap {
+    background: transparent !important;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 
 /* ## Title Area
 --------------------------------------------- */
@@ -1315,6 +1323,12 @@ img.alignright,
   margin: 0 auto;
   max-width: 300px;
   padding: 0;
+}
+@media screen and (max-width: 1023px) {
+  .header-image .title-area {
+    padding-left: 5%;
+    margin: 0;
+  }
 }
 
 .header-full-width .title-area {
@@ -1336,12 +1350,24 @@ img.alignright,
   text-decoration: none;
 }
 
+@media screen and (max-width: 1023px) {
+  .header-image .site-title {
+    float: left;
+    width: 250px;
+  }
+}
+
 .header-image .site-title > a {
   background-position: center !important;
   background-size: contain !important;
   float: left;
   min-height: 80px;
   width: 100%;
+}
+@media screen and (max-width: 1023px) {
+  .header-image .site-title > a {
+    min-height: 60px;
+  }
 }
 
 .site-description {
@@ -1498,6 +1524,16 @@ img.alignright,
 .nav-primary {
   background-color: #fff;
   border-top: 1px solid #eee;
+}
+@media screen and (min-width: 1023px) {
+  .nav-primary {
+    display: none;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .nav-primary {
+    display: block;
+  }
 }
 
 /* ## Footer Navigation
@@ -1697,13 +1733,19 @@ body.home.page .hero-text-wrapper {
 }
 @media screen and (max-width: 350px) {
   body.home.page .hero-text-wrapper {
-    height: 650px;
+    height: 560px;
   }
 }
 @media screen and (max-width: 460px) {
   body.home.page .hero-text-wrapper h1 {
     font-size: 36px;
     font-size: 3.6rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  body.home.page .hero-text-wrapper h1 {
+    font-size: 26px;
+    font-size: 2.6rem;
   }
 }
 body.home.page .hero-text-wrapper .homepage-hero-orange-button {
@@ -2129,6 +2171,12 @@ body.page-template-page-coaches #become-a-coach button:hover {
 
 body.single.single-coach .genesis-nav-menu a {
   color: white;
+}
+body.single.single-coach .genesis-nav-menu li.menu-highlight a {
+  border-radius: 4px;
+}
+body.single.single-coach .genesis-nav-menu li.menu-highlight a:hover {
+  color: #ff9b02;
 }
 body.single.single-coach .skew-inner {
   display: flex;
@@ -2638,11 +2686,6 @@ body.single.single-coach #become-a-coach button:hover {
     width: 100%;
   }
 
-  .site-header .wrap {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-
   .genesis-nav-menu li,
   .header-image .title-area,
   .site-header ul.genesis-nav-menu,
@@ -2656,6 +2699,10 @@ body.single.single-coach #become-a-coach button:hover {
   .site-header .widget-area,
   .site-title {
     text-align: center;
+  }
+
+  .site-header .widget-area {
+    display: none;
   }
 
   .site-header .search-form {
@@ -2699,9 +2746,11 @@ body.single.single-coach #become-a-coach button:hover {
   }
 
   .menu-toggle {
+    float: right;
     line-height: 22px;
-    position: relative;
-    width: 100%;
+    position: fixed;
+    right: 0;
+    width: 55px;
     z-index: 1000;
   }
 
