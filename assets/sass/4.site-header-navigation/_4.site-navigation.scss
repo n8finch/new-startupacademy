@@ -43,10 +43,22 @@
 	}
 
 	background-color: $color__orange;
+	color: white;
+	border-radius: 4px;
 }
 
 .genesis-nav-menu .menu-highlight a:hover {
 	background-color: white;
+	color: $color__orange;
+}
+
+.genesis-nav-menu .current-menu-item.menu-highlight > a {
+	border-radius: 4px;
+	color: white;
+}
+
+.genesis-nav-menu .current-menu-item.menu-highlight > a:hover {
+	color: $color__orange;
 }
 
 .genesis-nav-menu a:focus,

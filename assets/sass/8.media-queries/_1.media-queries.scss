@@ -136,10 +136,12 @@
 	}
 
 	.genesis-responsive-menu {
+		border-bottom: 1px solid #ccc;
 		display: none;
 		position: absolute;
 		top: 60px;
-		width: 375px;
+		width: 100%;
+		z-index: 10;
 	}
 
 	.genesis-skip-link .skip-link-hidden {
@@ -164,6 +166,7 @@
 	.sub-menu-toggle:focus,
 	.sub-menu-toggle:hover {
 		background-color: $color__orange;
+		border-radius: 0;
 		border-width: 0;
 		color: white;
 	}
@@ -177,7 +180,7 @@
 		float: right;
 		height: 60px;
 		line-height: 22px;
-		position: fixed;
+		position: absolute;
 		right: 0;
 		width: 65px;
 		z-index: 1000;
@@ -194,7 +197,7 @@
 	}
 
 	.genesis-responsive-menu .genesis-nav-menu li.current-menu-item a {
-		color: white;
+		color: black;
 	}
 
 	.menu-toggle::before {
@@ -249,6 +252,7 @@
 
 	.genesis-responsive-menu .genesis-nav-menu .menu-item a {
 		border: none;
+		color: black;
 		margin-bottom: 1px;
 		padding: 15px 20px;
 		width: 100%;

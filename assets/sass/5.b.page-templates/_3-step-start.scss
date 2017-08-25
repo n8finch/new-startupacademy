@@ -104,6 +104,10 @@
 						width: auto;
 					}
 
+					@media screen and (max-width: 768px) {
+						width: 68%;
+					}
+
 					@media screen and (max-width: 450px) {
 						width: 50%;
 					}
@@ -135,7 +139,13 @@
 
 				.activity-wrapper {
 
+					@media screen and (max-width: 768px) {
+						margin: 5px 0 5px 85px;
+						width: 86%;
+					}
+
 					@media screen and (max-width: 450px) {
+						margin: 5px 0 5px 50px;
 						width: 80%;
 					}
 
@@ -145,9 +155,9 @@
 					display: flex;
 					font-weight: 400;
 					justify-content: space-between;
-					margin: 5px 0 5px 50px;
+					margin: 5px 0 5px 85px;
 					padding: 5px 10px;
-					width: 90%;
+					width: 89%;
 				}
 			}
 		}

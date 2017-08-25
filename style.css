@@ -1302,12 +1302,13 @@ img.alignright,
   width: 100%;
   z-index: 99;
 }
-@media screen and (max-width: 1022px) {
+@media screen and (max-width: 1023px) {
   .site-header > .wrap {
     background: transparent !important;
     display: block;
     padding-left: 0;
     padding-right: 0;
+    position: absolute;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -1444,6 +1445,8 @@ img.alignright,
 
 .genesis-nav-menu .menu-highlight a {
   background-color: #ff9b02;
+  color: white;
+  border-radius: 4px;
 }
 @media screen and (max-width: 1023px) {
   .genesis-nav-menu .menu-highlight a {
@@ -1454,6 +1457,16 @@ img.alignright,
 
 .genesis-nav-menu .menu-highlight a:hover {
   background-color: white;
+  color: #ff9b02;
+}
+
+.genesis-nav-menu .current-menu-item.menu-highlight > a {
+  border-radius: 4px;
+  color: white;
+}
+
+.genesis-nav-menu .current-menu-item.menu-highlight > a:hover {
+  color: #ff9b02;
 }
 
 .genesis-nav-menu a:focus,
@@ -2040,6 +2053,11 @@ body.home.page #homepage-section-partners .partner-list img {
     width: auto;
   }
 }
+@media screen and (max-width: 768px) {
+  .page-template-page-3-step-start .lessons .lesson-cards .lesson-card .lesson-info {
+    width: 68%;
+  }
+}
 @media screen and (max-width: 450px) {
   .page-template-page-3-step-start .lessons .lesson-cards .lesson-card .lesson-info {
     width: 50%;
@@ -2069,12 +2087,19 @@ body.home.page #homepage-section-partners .partner-list img {
   display: flex;
   font-weight: 400;
   justify-content: space-between;
-  margin: 5px 0 5px 50px;
+  margin: 5px 0 5px 85px;
   padding: 5px 10px;
-  width: 90%;
+  width: 89%;
+}
+@media screen and (max-width: 768px) {
+  .page-template-page-3-step-start .lessons .lesson-cards .lesson-card .activity-wrapper {
+    margin: 5px 0 5px 85px;
+    width: 86%;
+  }
 }
 @media screen and (max-width: 450px) {
   .page-template-page-3-step-start .lessons .lesson-cards .lesson-card .activity-wrapper {
+    margin: 5px 0 5px 50px;
     width: 80%;
   }
 }
@@ -2290,7 +2315,7 @@ body.single.single-coach #become-a-coach button:hover {
 }
 @media screen and (max-width: 460px) {
   .page-template-page-get-your-pass .slanted-section.background-light .skew-inner {
-    height: 2400px;
+    height: 2500px;
   }
 }
 @media screen and (max-width: 350px) {
@@ -2420,6 +2445,198 @@ body.single.single-coach #become-a-coach button:hover {
   border: 2px solid #ff9b02;
   margin: auto;
   width: 40px;
+}
+
+body.page-template-default .site-header > .wrap {
+  background-color: white;
+}
+body.page-template-default .regular-page-class {
+  background-color: #ff9b02;
+  height: 250px;
+}
+@media screen and (max-width: 1023px) {
+  body.page-template-default .regular-page-class {
+    height: 100px;
+  }
+}
+body.page-template-default .skew-inner {
+  padding: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  top: -115px;
+  position: relative;
+  background: white;
+  max-width: 1100px;
+  border-radius: 4px;
+}
+@media screen and (max-width: 1023px) {
+  body.page-template-default .skew-inner {
+    top: 0;
+  }
+}
+body.page-template-default .slanted-section-r-l-inner:after {
+  height: 0;
+  transform: none;
+}
+
+body.single .site-header > .wrap,
+body.post-template-default .site-header > .wrap {
+  background-color: white;
+}
+body.single .regular-page-class,
+body.post-template-default .regular-page-class {
+  background-color: #ff9b02;
+  height: 250px;
+}
+@media screen and (max-width: 1023px) {
+  body.single .regular-page-class,
+  body.post-template-default .regular-page-class {
+    height: 100px;
+  }
+}
+body.single .hero-text-wrapper,
+body.post-template-default .hero-text-wrapper {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+}
+@media screen and (max-width: 1023px) {
+  body.single .hero-text-wrapper h1,
+  body.post-template-default .hero-text-wrapper h1 {
+    font-size: 35px;
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  body.single .hero-text-wrapper h1,
+  body.post-template-default .hero-text-wrapper h1 {
+    font-size: 25px;
+    font-size: 2.5rem;
+  }
+}
+body.single .skew-inner,
+body.post-template-default .skew-inner {
+  padding: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  top: -115px;
+  position: relative;
+  background: white;
+  max-width: 1100px;
+  border-radius: 4px;
+}
+@media screen and (max-width: 1023px) {
+  body.single .skew-inner,
+  body.post-template-default .skew-inner {
+    top: 0;
+  }
+}
+body.single .slanted-section-r-l-inner:after,
+body.post-template-default .slanted-section-r-l-inner:after {
+  height: 0;
+  transform: none;
+}
+
+body.archive.category .site-header > .wrap {
+  background-color: white;
+}
+body.archive.category .regular-page-class {
+  background-color: #ff9b02;
+  height: 250px;
+}
+@media screen and (max-width: 1023px) {
+  body.archive.category .regular-page-class {
+    height: 100px;
+  }
+}
+body.archive.category .archive-description {
+  display: none;
+}
+body.archive.category .skew-inner {
+  padding: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  top: -115px;
+  position: relative;
+  background: white;
+  max-width: 1100px;
+  border-radius: 4px;
+}
+@media screen and (max-width: 1023px) {
+  body.archive.category .skew-inner {
+    top: 0;
+  }
+}
+body.archive.category .slanted-section-r-l-inner:after {
+  height: 0;
+  transform: none;
+}
+
+body.search .site-header > .wrap {
+  background-color: white;
+}
+body.search .regular-page-class {
+  background-color: #ff9b02;
+  height: 250px;
+}
+@media screen and (max-width: 1023px) {
+  body.search .regular-page-class {
+    height: 100px;
+  }
+}
+body.search .skew-inner {
+  padding: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  top: -115px;
+  position: relative;
+  background: white;
+  max-width: 1100px;
+  border-radius: 4px;
+}
+@media screen and (max-width: 1023px) {
+  body.search .skew-inner {
+    top: 0;
+  }
+}
+body.search .slanted-section-r-l-inner:after {
+  height: 0;
+  transform: none;
+}
+
+body.error404 .site-header > .wrap {
+  background-color: white;
+}
+body.error404 .regular-page-class {
+  background-color: #ff9b02;
+  height: 250px;
+}
+@media screen and (max-width: 1023px) {
+  body.error404 .regular-page-class {
+    height: 100px;
+  }
+}
+body.error404 .skew-inner {
+  padding: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  top: -115px;
+  position: relative;
+  background: white;
+  max-width: 1100px;
+  border-radius: 4px;
+}
+@media screen and (max-width: 1023px) {
+  body.error404 .skew-inner {
+    top: 0;
+  }
+}
+body.error404 .slanted-section-r-l-inner:after {
+  height: 0;
+  transform: none;
 }
 
 .lesson-cards {
@@ -2736,10 +2953,12 @@ body.single.single-coach #become-a-coach button:hover {
   }
 
   .genesis-responsive-menu {
+    border-bottom: 1px solid #ccc;
     display: none;
     position: absolute;
     top: 60px;
-    width: 375px;
+    width: 100%;
+    z-index: 10;
   }
 
   .genesis-skip-link .skip-link-hidden {
@@ -2764,6 +2983,7 @@ body.single.single-coach #become-a-coach button:hover {
   .sub-menu-toggle:focus,
   .sub-menu-toggle:hover {
     background-color: #ff9b02;
+    border-radius: 0;
     border-width: 0;
     color: white;
   }
@@ -2777,7 +2997,7 @@ body.single.single-coach #become-a-coach button:hover {
     float: right;
     height: 60px;
     line-height: 22px;
-    position: fixed;
+    position: absolute;
     right: 0;
     width: 65px;
     z-index: 1000;
@@ -2788,7 +3008,7 @@ body.single.single-coach #become-a-coach button:hover {
   }
 
   .genesis-responsive-menu .genesis-nav-menu li.current-menu-item a {
-    color: white;
+    color: black;
   }
 
   .menu-toggle::before {
@@ -2843,6 +3063,7 @@ body.single.single-coach #become-a-coach button:hover {
 
   .genesis-responsive-menu .genesis-nav-menu .menu-item a {
     border: none;
+    color: black;
     margin-bottom: 1px;
     padding: 15px 20px;
     width: 100%;
