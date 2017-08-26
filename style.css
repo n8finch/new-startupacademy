@@ -616,6 +616,7 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"],
+#learndash_next_prev_link a,
 .button {
   background-color: #ff9b02;
   border: 0;
@@ -2524,7 +2525,7 @@ body.post-template-default .skew-inner {
   margin-right: auto;
   top: -115px;
   position: relative;
-  background: white;
+  background-color: white;
   max-width: 1100px;
   border-radius: 4px;
 }
@@ -2637,6 +2638,28 @@ body.error404 .skew-inner {
 body.error404 .slanted-section-r-l-inner:after {
   height: 0;
   transform: none;
+}
+
+body.single-sfwd-courses .skew-inner,
+body.single-sfwd-lessons .skew-inner,
+body.single-sfwd-activities .skew-inner {
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+body.single-sfwd-courses .skew-inner .div-overlap-top,
+body.single-sfwd-lessons .skew-inner .div-overlap-top,
+body.single-sfwd-activities .skew-inner .div-overlap-top {
+  background-color: white;
+  max-width: 70%;
+  padding-left: 25px;
+}
+body.single-sfwd-courses .skew-inner aside,
+body.single-sfwd-lessons .skew-inner aside,
+body.single-sfwd-activities .skew-inner aside {
+  background-color: white;
+  max-width: 25%;
 }
 
 .lesson-cards {

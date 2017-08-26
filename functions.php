@@ -159,6 +159,23 @@ function genesis_sample_comments_gravatar( $args ) {
 
 }
 
+//* Register Custom Post Type Sidebars
+genesis_register_sidebar( array(
+	'id'			=> 'sidebar-sessions',
+	'name'			=> __( 'Sessions Sidebar', 'CHILD_THEME_NAME' ),
+	'description'	=> __( 'Widgets for the sidebar on Sessions pages.', 'CHILD_THEME_NAME' ),
+) );
+genesis_register_sidebar( array(
+	'id'			=> 'sidebar-lessons',
+	'name'			=> __( 'Lessons Sidebar', 'CHILD_THEME_NAME' ),
+	'description'	=> __( 'Widgets for the sidebar on Lessons pages.', 'CHILD_THEME_NAME' ),
+) );
+genesis_register_sidebar( array(
+	'id'			=> 'sidebar-activities',
+	'name'			=> __( 'Activiites Sidebar', 'CHILD_THEME_NAME' ),
+	'description'	=> __( 'Widgets for the sidebar on Activities pages.', 'CHILD_THEME_NAME' ),
+) );
+
 //* Change the footer text
 add_filter('genesis_footer_creds_text', 'sp_footer_creds_filter');
 function sp_footer_creds_filter( $creds ) {

@@ -1,0 +1,27 @@
+
+//Shared styles first
+
+body.single-sfwd-courses,
+body.single-sfwd-lessons,
+body.single-sfwd-activities {
+
+	.skew-inner {
+		background-color: transparent;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		.div-overlap-top {
+			background-color: white;
+			max-width: 70%;
+			padding-left: 25px;
+		}
+
+		aside {
+			background-color: white;
+			max-width: 25%;
+		}
+	}
+
+
+}
