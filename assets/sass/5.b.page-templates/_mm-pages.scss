@@ -1,0 +1,23 @@
+body.page {
+
+	input.mm-field {
+		height: 46px;
+	}
+
+	input#mm-login-button.mm-button {
+		background: none;
+		background-color: #ff9b02;
+		border-radius: 4px;
+		box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.16);
+		font-weight: bold;
+		margin-right: 16px;
+		padding: 12px 18px;
+		width: 171px;
+	}
+
+	input#mm-login-button.mm-button:hover {
+		background: none;
+		background-color: white;
+		color: #ff9b02;
+	}
+}

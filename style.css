@@ -1172,6 +1172,7 @@ img.alignright,
   padding: 60px;
   margin-left: auto;
   margin-right: auto;
+  min-height: 200px;
 }
 @media screen and (max-width: 460px) {
   .skew-inner {
@@ -2638,6 +2639,25 @@ body.error404 .skew-inner {
 body.error404 .slanted-section-r-l-inner:after {
   height: 0;
   transform: none;
+}
+
+body.page input.mm-field {
+  height: 46px;
+}
+body.page input#mm-login-button.mm-button {
+  background: none;
+  background-color: #ff9b02;
+  border-radius: 4px;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.16);
+  font-weight: bold;
+  margin-right: 16px;
+  padding: 12px 18px;
+  width: 171px;
+}
+body.page input#mm-login-button.mm-button:hover {
+  background: none;
+  background-color: white;
+  color: #ff9b02;
 }
 
 body.single-sfwd-courses,
