@@ -58,22 +58,20 @@ function start_main_content() {
 					<h1><?php if( !$hero_url ) { the_title(); } ?></h1>
 					<?php the_content(); ?>
 				</div>
-				<aside>
+				<!-- <aside> -->
 					<?php
-					genesis_widget_area( 'sidebar-lessons', array(
-									'before' => '<div class="learndash-sidebar sidebar-lessons">',
-									'after' => '</div>',
-								) );
+					// genesis_widget_area( 'sidebar-quiz', array(
+					// 				'before' => '<div class="learndash-sidebar sidebar-quiz">',
+					// 				'after' => '</div>',
+					// 			) );
 					?>
-				</aside>
+				<!-- </aside> -->
 			</div>
 		</div>
 	</section>
 
 <?php }
 add_action( 'genesis_loop', 'genesis_get_comments_template' );
-// add_action( 'genesis_loop', 'start_custom_comments' );
-
 
 
 //* Run the Genesis loop

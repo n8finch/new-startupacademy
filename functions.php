@@ -172,8 +172,13 @@ genesis_register_sidebar( array(
 ) );
 genesis_register_sidebar( array(
 	'id'			=> 'sidebar-activities',
-	'name'			=> __( 'Activiites Sidebar', 'CHILD_THEME_NAME' ),
+	'name'			=> __( 'Activites Sidebar', 'CHILD_THEME_NAME' ),
 	'description'	=> __( 'Widgets for the sidebar on Activities pages.', 'CHILD_THEME_NAME' ),
+) );
+genesis_register_sidebar( array(
+	'id'			=> 'sidebar-quiz',
+	'name'			=> __( 'Quiz Sidebar', 'CHILD_THEME_NAME' ),
+	'description'	=> __( 'Widgets for the sidebar on Quiz pages.', 'CHILD_THEME_NAME' ),
 ) );
 
 //* Change the footer text

@@ -1,6 +1,6 @@
 <?php
 
-//* Template Name: Courses Template
+//* Template Name: Sessions Template
 //* Force full width content layout
 add_filter( 'genesis_site_layout', '__genesis_return_full_width_content' );
 
@@ -58,13 +58,21 @@ function start_main_content() {
 					<h1><?php if( !$hero_url ) { the_title(); } ?></h1>
 					<?php the_content(); ?>
 				</div>
+				<aside>
+					<?php
+					genesis_widget_area( 'sidebar-sessions', array(
+									'before' => '<div class="learndash-sidebar sidebar-sessions">',
+									'after' => '</div>',
+								) );
+					?>
+				</aside>
 			</div>
 		</div>
 	</section>
 
 <?php }
-
 add_action( 'genesis_loop', 'genesis_get_comments_template' );
+
 
 //* Run the Genesis loop
 genesis();

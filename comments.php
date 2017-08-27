@@ -24,7 +24,7 @@ if ( post_password_required() ) {
 if ( genesis_a11y( 'headings' ) ) {
 	printf( '<h2 class="screen-reader-text">%s</h2>', __( 'Reader Interactions', 'genesis' ) );
 }
-print('These are the comments!!!');
+
 do_action( 'genesis_before_comments' );
 do_action( 'genesis_comments' );
 do_action( 'genesis_after_comments' );

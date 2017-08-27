@@ -2640,26 +2640,145 @@ body.error404 .slanted-section-r-l-inner:after {
   transform: none;
 }
 
+body.single-sfwd-courses,
+body.single-sfwd-lessons,
+body.single-sfwd-topic,
+body.single-sfwd-quiz {
+  background-color: #F6F5F5;
+}
 body.single-sfwd-courses .skew-inner,
 body.single-sfwd-lessons .skew-inner,
-body.single-sfwd-activities .skew-inner {
+body.single-sfwd-topic .skew-inner,
+body.single-sfwd-quiz .skew-inner {
   background-color: transparent;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media screen and (max-width: 1023px) {
+  body.single-sfwd-courses .skew-inner,
+  body.single-sfwd-lessons .skew-inner,
+  body.single-sfwd-topic .skew-inner,
+  body.single-sfwd-quiz .skew-inner {
+    padding: 0;
+  }
+}
 body.single-sfwd-courses .skew-inner .div-overlap-top,
 body.single-sfwd-lessons .skew-inner .div-overlap-top,
-body.single-sfwd-activities .skew-inner .div-overlap-top {
+body.single-sfwd-topic .skew-inner .div-overlap-top,
+body.single-sfwd-quiz .skew-inner .div-overlap-top {
   background-color: white;
+  border-radius: 4px;
   max-width: 70%;
-  padding-left: 25px;
+  padding: 25px;
+}
+@media screen and (max-width: 1023px) {
+  body.single-sfwd-courses .skew-inner .div-overlap-top,
+  body.single-sfwd-lessons .skew-inner .div-overlap-top,
+  body.single-sfwd-topic .skew-inner .div-overlap-top,
+  body.single-sfwd-quiz .skew-inner .div-overlap-top {
+    max-width: 100%;
+  }
+}
+body.single-sfwd-courses .skew-inner .div-overlap-top h1,
+body.single-sfwd-lessons .skew-inner .div-overlap-top h1,
+body.single-sfwd-topic .skew-inner .div-overlap-top h1,
+body.single-sfwd-quiz .skew-inner .div-overlap-top h1 {
+  font-size: 34px;
+  font-size: 3.4rem;
 }
 body.single-sfwd-courses .skew-inner aside,
 body.single-sfwd-lessons .skew-inner aside,
-body.single-sfwd-activities .skew-inner aside {
-  background-color: white;
+body.single-sfwd-topic .skew-inner aside,
+body.single-sfwd-quiz .skew-inner aside {
   max-width: 25%;
+}
+@media screen and (max-width: 1023px) {
+  body.single-sfwd-courses .skew-inner aside,
+  body.single-sfwd-lessons .skew-inner aside,
+  body.single-sfwd-topic .skew-inner aside,
+  body.single-sfwd-quiz .skew-inner aside {
+    background-color: white;
+    margin: 25px 0;
+    max-width: 100%;
+    padding: 25px;
+  }
+}
+body.single-sfwd-courses .skew-inner aside a,
+body.single-sfwd-lessons .skew-inner aside a,
+body.single-sfwd-topic .skew-inner aside a,
+body.single-sfwd-quiz .skew-inner aside a {
+  color: black;
+}
+body.single-sfwd-courses .skew-inner aside .learndash-sidebar section:first-child,
+body.single-sfwd-lessons .skew-inner aside .learndash-sidebar section:first-child,
+body.single-sfwd-topic .skew-inner aside .learndash-sidebar section:first-child,
+body.single-sfwd-quiz .skew-inner aside .learndash-sidebar section:first-child {
+  background-color: white;
+  border-radius: 4px;
+  padding: 25px;
+}
+@media screen and (max-width: 1023px) {
+  body.single-sfwd-courses .skew-inner aside .learndash-sidebar section:first-child,
+  body.single-sfwd-lessons .skew-inner aside .learndash-sidebar section:first-child,
+  body.single-sfwd-topic .skew-inner aside .learndash-sidebar section:first-child,
+  body.single-sfwd-quiz .skew-inner aside .learndash-sidebar section:first-child {
+    border-radius: 4px;
+  }
+}
+body.single-sfwd-courses .entry-comments,
+body.single-sfwd-lessons .entry-comments,
+body.single-sfwd-topic .entry-comments,
+body.single-sfwd-quiz .entry-comments {
+  background-color: #F6F5F5;
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px;
+  padding-top: 0;
+  position: relative;
+  top: -115px;
+  z-index: 1;
+}
+body.single-sfwd-courses .entry-comments .comment-content,
+body.single-sfwd-lessons .entry-comments .comment-content,
+body.single-sfwd-topic .entry-comments .comment-content,
+body.single-sfwd-quiz .entry-comments .comment-content {
+  border: 1px solid #ff9b02;
+  margin-bottom: 10px;
+  max-width: 600px;
+  padding: 10px;
+}
+body.single-sfwd-courses .entry-comments .comment-content p,
+body.single-sfwd-lessons .entry-comments .comment-content p,
+body.single-sfwd-topic .entry-comments .comment-content p,
+body.single-sfwd-quiz .entry-comments .comment-content p {
+  margin-bottom: 0;
+}
+body.single-sfwd-courses .comment-respond,
+body.single-sfwd-lessons .comment-respond,
+body.single-sfwd-topic .comment-respond,
+body.single-sfwd-quiz .comment-respond {
+  background-color: #F6F5F5;
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px;
+  padding-top: 0;
+  position: relative;
+  top: -115px;
+  z-index: 1;
+}
+body.single-sfwd-courses .comment-respond textarea,
+body.single-sfwd-lessons .comment-respond textarea,
+body.single-sfwd-topic .comment-respond textarea,
+body.single-sfwd-quiz .comment-respond textarea {
+  max-width: 600px;
+}
+
+body.single-sfwd-quiz .skew-inner {
+  display: block;
+}
+body.single-sfwd-quiz .skew-inner .div-overlap-top {
+  max-width: 100%;
 }
 
 .lesson-cards {
