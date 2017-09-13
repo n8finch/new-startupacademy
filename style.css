@@ -452,7 +452,7 @@ h4,
 h5,
 h6 {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
+  font-weight: 800;
   line-height: 1.2;
   margin: 0 0 10px;
 }
@@ -780,7 +780,6 @@ th:first-child {
 .site-inner,
 .wrap {
   margin: 0 auto;
-  max-width: 1280px;
 }
 
 .site-inner {
@@ -1443,6 +1442,7 @@ img.alignright,
   display: block;
   padding: 12px 20px;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .genesis-nav-menu .menu-highlight a {
@@ -1904,7 +1904,7 @@ body.home.page #homepage-section-step-3 .lesson-cards {
   }
 }
 body.home.page #homepage-section-learn-from {
-  background-color: #222222;
+  background-color: #444444;
   color: white;
   text-align: center;
 }
@@ -1926,7 +1926,7 @@ body.home.page #homepage-section-learn-from button {
 body.home.page #homepage-section-learn-from .homepage-coaches-container {
   display: flex;
   flex-wrap: wrap;
-  height: 286px;
+  height: 370px;
   left: -185px;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -2880,26 +2880,27 @@ body.single-sfwd-quiz .skew-inner .div-overlap-top {
   border-radius: 4px;
   color: black;
   display: flex;
-  font-size: 12px;
-  font-size: 1.2rem;
-  height: 125px;
+  font-size: 15px;
+  font-size: 1.5rem;
+  height: 165px;
   margin: 12px;
   padding: 10px 5px;
   position: relative;
   text-align: left;
-  width: 300px;
+  width: 318px;
 }
 .coach-card img {
   height: 100px;
   width: 100px;
 }
 .coach-card .coach-name {
-  font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 600;
   margin-left: 5px;
 }
 .coach-card .coach_excerpt {
+  font-weight: 400;
   margin-left: 5px;
 }
 
@@ -2929,12 +2930,19 @@ body.single-sfwd-quiz .skew-inner .div-overlap-top {
 .footer-widgets h3 {
   font-weight: 600;
 }
-.footer-widgets a {
+.footer-widgets .menu a {
   color: white;
+  font-weight: 400;
+  opacity: 0.6;
 }
 .footer-widgets a:hover {
   color: #ff9b02;
   text-decoration: none;
+}
+.footer-widgets .footer-widgets-3 p {
+  color: white;
+  font-weight: 400;
+  opacity: 0.6;
 }
 
 .footer-widgets .wrap {
@@ -2971,6 +2979,8 @@ body.single-sfwd-quiz .skew-inner .div-overlap-top {
   margin-bottom: 15px;
 }
 .footer-widgets-4 .fa {
+  color: white;
+  font-size: 18px;
   margin: 0 10px;
 }
 

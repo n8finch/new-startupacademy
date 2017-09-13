@@ -4,14 +4,14 @@
 	border-radius: 4px;
 	color: black;
 	display: flex;
-	font-size: 12px;
-	font-size: 1.2rem;
-	height: 125px;
+	font-size: 15px;
+	font-size: 1.5rem;
+	height: 165px;
 	margin: 12px;
 	padding: 10px 5px;
 	position: relative;
 	text-align: left;
-	width: 300px;
+	width: 318px;
 
 	img {
 		height: 100px;
@@ -19,13 +19,14 @@
 	}
 
 	.coach-name {
-		font-size: 14px;
-		font-size: 1.4rem;
+		font-size: 18px;
+		font-size: 1.8rem;
 		font-weight: 600;
 		margin-left: 5px;
 	}
 
 	.coach_excerpt {
+		font-weight: 400;
 		margin-left: 5px;
 	}
 }
