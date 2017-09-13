@@ -1750,6 +1750,32 @@ body.home.page .hero-image-header {
   background-size: cover;
   height: 100vh;
 }
+body.home.page .hero-image-header .home-hero-social {
+  position: absolute;
+  right: 120px;
+  bottom: 50px;
+  z-index: 10;
+}
+@media screen and (max-width: 1023px) {
+  body.home.page .hero-image-header .home-hero-social {
+    bottom: auto;
+    right: auto;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+  }
+}
+body.home.page .hero-image-header .home-hero-social a {
+  color: white;
+  font-size: 18px;
+  padding: 0 10px;
+}
+@media screen and (max-width: 860px) {
+  body.home.page .hero-image-header .home-hero-social a {
+    font-size: 20px;
+  }
+}
 body.home.page .hero-text-wrapper {
   color: white;
   display: flex;
@@ -1763,17 +1789,21 @@ body.home.page .hero-text-wrapper {
 }
 @media screen and (max-width: 860px) {
   body.home.page .hero-text-wrapper {
-    height: 500px;
+    height: 800px;
   }
 }
 @media screen and (max-width: 460px) {
   body.home.page .hero-text-wrapper {
-    height: 650px;
+    height: 500px;
+    padding-top: 100px;
+    margin-bottom: 25px;
   }
 }
 @media screen and (max-width: 350px) {
   body.home.page .hero-text-wrapper {
-    height: 560px;
+    height: 440px;
+    padding-top: 50px;
+    margin-bottom: 15px;
   }
 }
 @media screen and (max-width: 460px) {
@@ -2967,12 +2997,14 @@ body.single-sfwd-quiz .skew-inner .div-overlap-top {
   height: 100%;
 }
 .footer-widgets-4 .textwidget {
+  align-items: flex-end;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   height: 100%;
 }
 .footer-widgets-4 img {
+  margin-bottom: 20px;
   max-width: 100px;
 }
 .footer-widgets-4 p {

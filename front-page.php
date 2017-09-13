@@ -51,6 +51,12 @@ function one_pager_homepage_content() {
 				</a>
 			</div>
 		</div>
+		<div class="home-hero-social">
+			<a href="https://twitter.com/startupacademyy" target="_blank"><span class="fa fa-twitter"></span></a>
+			<a href="https://www.facebook.com/startupacademy.org" target="_blank"><span class="fa fa-facebook"></span></a>
+			<a href="https://www.instagram.com/startupacademyorg/" target="_blank"><span class="fa fa-instagram"></span></a>
+			<a href="https://www.linkedin.com/company/startupacademy.org" target="_blank"><span class="fa fa-linkedin"></span></a>
+		</div>
 	</section>
 
 	<!-- Video What is StartupAcademy -->

@@ -7,20 +7,51 @@ body.home.page {
 	.hero-image-header {
 		background-size: cover;
 		height: 100vh;
+
+		.home-hero-social {
+
+			@media screen and (max-width: 1023px) {
+				bottom: auto;
+				right: auto;
+				position: relative;
+				text-align: center;
+				width: 100%;
+				z-index: 10;
+			}
+
+		    position: absolute;
+		    right: 120px;
+		    bottom: 50px;
+			z-index: 10;
+
+			a {
+				@media screen and (max-width: 860px) {
+					font-size: 20px;
+				}
+
+				color: white;
+				font-size: 18px;
+				padding: 0 10px;
+			}
+		}
 	}
 
 	.hero-text-wrapper {
 
 		@media screen and (max-width: 860px) {
-			height: 500px;
+			height: 800px;
 		}
 
 		@media screen and (max-width: 460px) {
-			height: 650px;
+			height: 500px;
+		    padding-top: 100px;
+		    margin-bottom: 25px;
 		}
 
 		@media screen and (max-width: 350px) {
-			height: 560px;
+			height: 440px;
+		    padding-top: 50px;
+		    margin-bottom: 15px;
 		}
 
 		color: white;
