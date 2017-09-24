@@ -617,9 +617,10 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 #learndash_next_prev_link a,
-.button {
+.button,
+.button-orange {
   background-color: #ff9b02;
-  border: 0;
+  border: 2px solid #ff9b02;
   border-radius: 4px;
   box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.16);
   color: #fff;
@@ -628,6 +629,7 @@ input[type="submit"],
   font-size: 1.6rem;
   font-weight: 700;
   padding: 12px 18px;
+  text-align: center;
   text-decoration: none;
   white-space: normal;
   width: 171px;
@@ -642,9 +644,13 @@ input[type="reset"]:hover,
 input[type="submit"]:focus,
 input[type="submit"]:hover,
 .button:focus,
-.button:hover {
+.button:hover,
+.button-orange:focus,
+.button-orange:hover {
   background-color: white;
+  border-color: white;
   color: #ff9b02;
+  text-decoration: none;
 }
 
 .entry-content .button:focus,
@@ -1368,12 +1374,18 @@ img.alignright,
   background-position: center !important;
   background-size: contain !important;
   float: left;
-  min-height: 80px;
+  margin-left: 45px;
+  margin-top: 24px;
+  max-height: 31px;
+  max-width: 285px;
   width: 100%;
 }
 @media screen and (max-width: 1023px) {
   .header-image .site-title > a {
-    min-height: 64px;
+    margin-left: 45px;
+    margin-top: 18px;
+    max-height: 31px;
+    max-width: 285px;
   }
 }
 
@@ -1818,35 +1830,31 @@ body.home.page .hero-text-wrapper {
     font-size: 2.6rem;
   }
 }
-body.home.page .hero-text-wrapper .homepage-hero-orange-button {
-  background-color: #ff9b02;
-  border-radius: 4px;
+body.home.page .hero-text-wrapper a.button.orange-button {
   box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.16);
-  font-weight: bold;
-  margin-right: 16px;
-  padding: 12px 18px;
-  width: 171px;
 }
 @media screen and (max-width: 460px) {
-  body.home.page .hero-text-wrapper .homepage-hero-orange-button {
+  body.home.page .hero-text-wrapper a.button.orange-button {
     margin-bottom: 10px;
     width: 90%;
   }
 }
-body.home.page .hero-text-wrapper .homepage-hero-orange-button:hover {
+body.home.page .hero-text-wrapper a.orange-button:hover {
   background-color: white;
   color: #ff9b02;
 }
-body.home.page .hero-text-wrapper .homepage-hero-transparent-button {
+body.home.page .hero-text-wrapper a.homepage-hero-transparent-button {
   background-color: transparent;
   border: 2px solid white;
   border-radius: 4px;
   font-weight: bold;
+  margin-left: 16px;
   padding: 12px 18px;
+  text-align: center;
   width: 171px;
 }
 @media screen and (max-width: 460px) {
-  body.home.page .hero-text-wrapper .homepage-hero-transparent-button {
+  body.home.page .hero-text-wrapper a.homepage-hero-transparent-button {
     width: 90%;
   }
 }
@@ -1895,13 +1903,13 @@ body.home.page .what-is h2 {
 body.home.page .what-is p {
   margin-top: 20px;
 }
-body.home.page .what-is button {
+body.home.page .what-is a.button {
   width: 250px;
 }
 body.home.page .lessons .under-header-div {
   margin: 20px 0;
 }
-body.home.page .lessons button {
+body.home.page .lessons a.button {
   margin-bottom: 20px;
 }
 body.home.page .lessons.align-left {
@@ -1950,7 +1958,7 @@ body.home.page #homepage-section-learn-from .under-header-div {
   border-color: white;
   margin: 20px auto;
 }
-body.home.page #homepage-section-learn-from button {
+body.home.page #homepage-section-learn-from a.button {
   width: 254px;
 }
 body.home.page #homepage-section-learn-from .homepage-coaches-container {

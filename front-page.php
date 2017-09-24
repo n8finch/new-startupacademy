@@ -43,11 +43,11 @@ function one_pager_homepage_content() {
 			<h1><?php echo $acf_fields['homepage_hero_title']; ?></h1>
 			<p><?php echo $acf_fields['homepage_hero_text']; ?></p>
 			<div class="">
-				<a href="<?php echo $acf_fields['homepage_orange_button_link']; ?>">
-					<button class="homepage-hero-orange-button"><?php echo $acf_fields['homepage_orange_button_text']; ?></button>
+				<a class="button button-orange" href="<?php echo $acf_fields['homepage_orange_button_link']; ?>">
+					<?php echo $acf_fields['homepage_orange_button_text']; ?>
 				</a>
-				<a href="<?php echo $acf_fields['homepage_transparent_button_link']; ?>">
-					<button class="homepage-hero-transparent-button"><?php echo $acf_fields['homepage_transparent_button_text']; ?></button>
+				<a class="button homepage-hero-transparent-button" href="<?php echo $acf_fields['homepage_transparent_button_link']; ?>">
+					<?php echo $acf_fields['homepage_transparent_button_text']; ?>
 				</a>
 			</div>
 		</div>
@@ -65,18 +65,14 @@ function one_pager_homepage_content() {
 			<div class="skew-inner">
 				<div class="div-overlap-top">
 					<div class="homepage-video-container">
-						<img src="http://newstartinno.dev/wp-content/uploads/2017/08/video-image-holder.png" />
-						<!-- <video>
-							<source src="https://player.vimeo.com/video/191234056" type="video/mp4">
-							<source src="https://player.vimeo.com/video/191234056" type="video/ogg">
-						</video> -->
+						<iframe src="https://player.vimeo.com/video/191234056" width="640" height="260" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 					</div>
 					<div class="homepage-video-content">
 						<h2><?php echo $acf_fields['homepage_video_title']?></h2>
 						<div class="under-header-div"></div>
 						<p><?php echo $acf_fields['homepage_video_text']?></p>
-						<a href="<?php echo $acf_fields['homepage_video_button_link']?>">
-							<button><?php echo $acf_fields['homepage_video_button_text']?></button>
+						<a class="button orange-button" href="<?php echo $acf_fields['homepage_video_button_link']?>">
+							<?php echo $acf_fields['homepage_video_button_text']?>
 						</a>
 					</div>
 				</div>
@@ -91,16 +87,16 @@ function one_pager_homepage_content() {
 					<h2><?php echo $acf_fields['section_1_main_title']?></h2>
 					<div class="under-header-div"></div>
 					<p><?php echo $acf_fields['section_1_main_text']?></p>
-					<a href="<?php echo $acf_fields['section_1_main_button_link']?>">
-						<button><?php echo $acf_fields['section_1_main_button_text']?></button>
+					<a class="button button-orange" href="<?php echo $acf_fields['section_1_main_button_link']?>">
+						<?php echo $acf_fields['section_1_main_button_text']?>
 					</a>
 				</div>
 				<div id="step-1-lessons" class="lessons align-left">
 					<div class="big-lesson-number">1</div>
 					<h2><?php echo $acf_fields['section_1_title']?></h2>
 					<div class="under-header-div"></div>
-					<a href="<?php echo $acf_fields['section_1_button_link']?>">
-						<button><?php echo $acf_fields['section_1_button_text']?></button>
+					<a class="button button-orange" href="<?php echo $acf_fields['section_1_button_link']?>">
+						<?php echo $acf_fields['section_1_button_text']?>
 					</a>
 					<p><small>*STEP 1 is completely free with a discovery pass</small></p>
 					<p><?php echo $acf_fields['section_1_text']?></p>
@@ -209,8 +205,8 @@ function one_pager_homepage_content() {
 			<h2><?php echo $acf_fields['homepage_learn_title']; ?></h2>
 			<div class="under-header-div"></div>
 			<p><?php echo $acf_fields['homepage_learn_text']; ?></p>
-			<a href="<?php echo $acf_fields['homepage_learn_button_link']; ?>">
-				<button><?php echo $acf_fields['homepage_learn_button_text']; ?></button>
+			<a class="button button-orange" href="<?php echo $acf_fields['homepage_learn_button_link']; ?>">
+				<?php echo $acf_fields['homepage_learn_button_text']; ?>
 			</a>
 			<div class="homepage-coaches-container">
 				<?php

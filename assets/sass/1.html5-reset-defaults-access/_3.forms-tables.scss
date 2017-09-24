@@ -40,9 +40,10 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 #learndash_next_prev_link a,
-.button {
+.button,
+.button-orange {
 	background-color: $color__orange;
-	border: 0;
+	border: 2px solid $color__orange;
 	border-radius: 4px;
     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.16);
 	color: #fff;
@@ -51,6 +52,7 @@ input[type="submit"],
 	font-size: 1.6rem;
 	font-weight: 700;
 	padding: 12px 18px;
+	text-align: center;
 	text-decoration: none;
 	white-space: normal;
 	width: 171px;
@@ -65,9 +67,13 @@ input[type="reset"]:hover,
 input[type="submit"]:focus,
 input[type="submit"]:hover,
 .button:focus,
-.button:hover {
+.button:hover,
+.button-orange:focus,
+.button-orange:hover {
 	background-color: white;
+	border-color: white;
 	color: $color__orange;
+	text-decoration: none;
 }
 
 .entry-content .button:focus,

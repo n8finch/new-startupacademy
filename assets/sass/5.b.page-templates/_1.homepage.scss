@@ -76,27 +76,21 @@ body.home.page {
 			}
 		}
 
-		.homepage-hero-orange-button {
+		a.button.orange-button {
 			@media screen and (max-width: 460px) {
 				margin-bottom: 10px;
 				width: 90%;
 			}
 
-			background-color: $color__orange;
-			border-radius: 4px;
 			box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.16);
-			font-weight: bold;
-			margin-right: 16px;
-			padding: 12px 18px;
-			width: 171px;
 		}
 
-		.homepage-hero-orange-button:hover {
+		a.orange-button:hover {
 			background-color: white;
 			color: $color__orange;
 		}
 
-		.homepage-hero-transparent-button {
+		a.homepage-hero-transparent-button {
 			@media screen and (max-width: 460px) {
 				width: 90%;
 			}
@@ -105,7 +99,9 @@ body.home.page {
 			border: 2px solid white;
 			border-radius: 4px;
 			font-weight: bold;
+			margin-left: 16px;
 			padding: 12px 18px;
+			text-align: center;
 			width: 171px;
 		}
 
@@ -167,7 +163,7 @@ body.home.page {
 			margin-top: 20px;
 		}
 
-		button {
+		a.button {
 			width: 250px;
 		}
 	}
@@ -177,7 +173,7 @@ body.home.page {
 			margin: 20px 0;
 		}
 
-		button {
+		a.button {
 			margin-bottom: 20px;
 		}
 	}
@@ -245,7 +241,7 @@ body.home.page {
 			margin: 20px auto;
 		}
 
-		button {
+		a.button {
 			width: 254px;
 		}
 

@@ -50,14 +50,20 @@
 .header-image .site-title > a {
 
 	@media screen and (max-width: 1023px) {
-		min-height: 64px;
+		margin-left: 45px;
+		margin-top: 18px;
+		max-height: 31px;
+		max-width: 285px;
 
 	}
 
 	background-position: center !important;
 	background-size: contain !important;
 	float: left;
-	min-height: 80px;
+	margin-left: 45px;
+	margin-top: 24px;
+	max-height: 31px;
+	max-width: 285px;
 	width: 100%;
 }
 
