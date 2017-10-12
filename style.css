@@ -2892,6 +2892,15 @@ body.single-sfwd-quiz .skew-inner .div-overlap-top {
     width: 50px;
   }
 }
+.lesson-cards .lesson-card .lesson-coach {
+  padding-left: 10px;
+  max-width: 95px;
+}
+@media screen and (max-width: 350px) {
+  .lesson-cards .lesson-card .lesson-coach {
+    width: 50px;
+  }
+}
 .lesson-cards .lesson-card .lesson-info {
   width: 325px;
 }
