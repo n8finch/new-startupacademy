@@ -427,7 +427,7 @@
             "collapsed": "",
             "min": "",
             "max": "",
-            "layout": "table",
+            "layout": "row",
             "button_label": "Add Row",
             "sub_fields": [
                 {
@@ -486,6 +486,30 @@
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
+                },
+                {
+                    "key": "field_59e2b98b1d637",
+                    "label": "Class Author Picture",
+                    "name": "class_author_picture",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
                 },
                 {
                     "key": "field_5992e69a1acf7",
@@ -597,7 +621,7 @@
             "collapsed": "",
             "min": "",
             "max": "",
-            "layout": "table",
+            "layout": "row",
             "button_label": "Add Row",
             "sub_fields": [
                 {
@@ -656,6 +680,30 @@
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
+                },
+                {
+                    "key": "field_59e2b9b11d638",
+                    "label": "Class Author Picture",
+                    "name": "class_author_picture",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
                 },
                 {
                     "key": "field_5993addf7c706",
@@ -767,7 +815,7 @@
             "collapsed": "",
             "min": "",
             "max": "",
-            "layout": "table",
+            "layout": "row",
             "button_label": "Add Row",
             "sub_fields": [
                 {
@@ -826,6 +874,30 @@
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
+                },
+                {
+                    "key": "field_59e2b9e51d639",
+                    "label": "Class Author Picture",
+                    "name": "class_author_picture",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
                 },
                 {
                     "key": "field_5993ae1a27afa",
@@ -1108,5 +1180,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1502888886
+    "modified": 1508031006
 }
