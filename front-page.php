@@ -241,7 +241,7 @@ function one_pager_homepage_content() {
 				?>
 			</div>
 			<p>We are also a proud supporter of</p><br />
-			<img class="gen-image" src="http://newstartinno.dev/wp-content/uploads/2016/10/img-gen@2x.png" />
+			<img class="gen-image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/img-gen@2x.png" />
 		</div>
 	</section>
 
