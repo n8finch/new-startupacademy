@@ -1300,7 +1300,7 @@ img.alignright,
 }
 
 .site-header > .wrap {
-  padding: 0 60px;
+  padding: 0 60px 20px;
   max-width: 100%;
   position: fixed;
   margin: 0 auto;
@@ -1452,15 +1452,21 @@ img.alignright,
 .genesis-nav-menu a {
   color: #333;
   display: block;
+  font-weight: 700;
   padding: 12px 20px;
   text-decoration: none;
   text-transform: uppercase;
 }
+@media screen and (max-width: 1023px) {
+  .genesis-nav-menu a {
+    font-weight: 400;
+  }
+}
 
 .genesis-nav-menu .menu-highlight a {
   background-color: #ff9b02;
-  color: white;
   border-radius: 4px;
+  color: white;
 }
 @media screen and (max-width: 1023px) {
   .genesis-nav-menu .menu-highlight a {
@@ -1472,6 +1478,18 @@ img.alignright,
 .genesis-nav-menu .menu-highlight a:hover {
   background-color: white;
   color: #ff9b02;
+}
+
+.logged-in li.menu-highlight.menu-get-started {
+  display: none;
+}
+
+li.menu-highlight.menu-member-profile {
+  display: none;
+}
+
+.logged-in li.menu-highlight.menu-member-profile {
+  display: inline-block;
 }
 
 .genesis-nav-menu .current-menu-item.menu-highlight > a {
@@ -2422,6 +2440,11 @@ body.single.single-coach #become-a-coach button:hover {
   padding: 16px;
   width: 270px;
 }
+.page-template-page-get-your-pass .get-your-pass-price-box button:hover {
+  background-color: white;
+  border-color: white;
+  color: #ff9b02;
+}
 .page-template-page-get-your-pass #get-your-pass-all-passes-include h2,
 .page-template-page-get-your-pass #get-your-pass-all-passes-include p {
   margin: 30px auto;
@@ -2475,6 +2498,11 @@ body.single.single-coach #become-a-coach button:hover {
   color: white;
   padding: 16px;
   width: 270px;
+}
+.page-template-page-get-your-pass #get-your-pass-every-pass-includes button:hover {
+  background-color: white;
+  border-color: white;
+  color: #ff9b02;
 }
 .page-template-page-get-your-pass .slanted-section-r-l-inner:after {
   height: 0;
@@ -2949,6 +2977,11 @@ body.single-sfwd-quiz .skew-inner .div-overlap-top {
 .coach-card .coach_excerpt {
   font-weight: 400;
   margin-left: 5px;
+}
+
+button.profile-continue {
+  margin: 20px;
+  width: 70%;
 }
 
 /* # Sidebars

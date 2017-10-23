@@ -30,8 +30,12 @@
 }
 
 .genesis-nav-menu a {
+	@media screen and (max-width: 1023px) {
+		font-weight: 400;
+	}
 	color: #333;
 	display: block;
+	font-weight: 700;
 	padding: 12px 20px;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -44,13 +48,27 @@
 	}
 
 	background-color: $color__orange;
-	color: white;
 	border-radius: 4px;
+	color: white;
 }
 
 .genesis-nav-menu .menu-highlight a:hover {
 	background-color: white;
 	color: $color__orange;
+}
+
+// Get Started and My Profile Button Switch
+
+.logged-in li.menu-highlight.menu-get-started {
+	display: none;
+}
+
+li.menu-highlight.menu-member-profile {
+	display: none;
+}
+
+.logged-in li.menu-highlight.menu-member-profile {
+	display: inline-block;
 }
 
 .genesis-nav-menu .current-menu-item.menu-highlight > a {
