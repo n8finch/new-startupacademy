@@ -35,13 +35,32 @@ input[type="radio"] {
 	color: #333;
 }
 
+//Reset MemberMouse buttons
+.mm-button.large.orange {
+	background: $color__orange;
+	margin-top: 20px;
+	text-shadow: none;
+}
+
+#passes-checkout-container .mm-button.orange:hover,
+#passes-checkout-container .mm-button.orange:focus {
+	background: white;
+	border: 2px solid white;
+	box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.16);
+	color: $color__orange;
+	margin-top: 20px;
+	padding: 12px 18px;
+	text-shadow: none;
+}
+
 button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"],
 #learndash_next_prev_link a,
 .button,
-.button-orange {
+.button-orange,
+.mm-button.large.orange {
 	background-color: $color__orange;
 	border: 2px solid $color__orange;
 	border-radius: 4px;
@@ -69,12 +88,15 @@ input[type="submit"]:hover,
 .button:focus,
 .button:hover,
 .button-orange:focus,
-.button-orange:hover {
+.button-orange:hover,
+.mm-button.large.orange:hover {
 	background-color: white;
 	border-color: white;
 	color: $color__orange;
 	text-decoration: none;
 }
+
+
 
 .entry-content .button:focus,
 .entry-content .button:hover {
