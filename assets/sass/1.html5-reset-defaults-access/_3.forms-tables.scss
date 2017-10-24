@@ -38,8 +38,14 @@ input[type="radio"] {
 //Reset MemberMouse buttons
 .mm-button.large.orange {
 	background: $color__orange;
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-weight: 700;
 	margin-top: 20px;
 	text-shadow: none;
+	text-transform: uppercase;
+	width: 200px !important;
 }
 
 #passes-checkout-container .mm-button.orange:hover,
@@ -60,7 +66,8 @@ input[type="submit"],
 #learndash_next_prev_link a,
 .button,
 .button-orange,
-.mm-button.large.orange {
+.mm-button.large.orange,
+.mm-button {
 	background-color: $color__orange;
 	border: 2px solid $color__orange;
 	border-radius: 4px;

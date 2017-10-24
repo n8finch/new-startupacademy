@@ -614,8 +614,14 @@ input[type="radio"] {
 
 .mm-button.large.orange {
   background: #ff9b02;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: 700;
   margin-top: 20px;
   text-shadow: none;
+  text-transform: uppercase;
+  width: 200px !important;
 }
 
 #passes-checkout-container .mm-button.orange:hover,
@@ -636,7 +642,8 @@ input[type="submit"],
 #learndash_next_prev_link a,
 .button,
 .button-orange,
-.mm-button.large.orange {
+.mm-button.large.orange,
+.mm-button {
   background-color: #ff9b02;
   border: 2px solid #ff9b02;
   border-radius: 4px;
@@ -2884,6 +2891,64 @@ body.single-sfwd-quiz .skew-inner {
 }
 body.single-sfwd-quiz .skew-inner .div-overlap-top {
   max-width: 100%;
+}
+
+#passes-checkout-container #mm-checkout-expiration-date {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#passes-checkout-container #mm-checkout-expiration-date label {
+  width: 100%;
+}
+#passes-checkout-container #mm-checkout-expiration-date select {
+  width: 47%;
+}
+#passes-checkout-container #mm_field_coupon_code {
+  margin-bottom: 25px;
+}
+#passes-checkout-container a.mm-button {
+  background: none;
+  background-color: #ff9b02;
+  border: 2px solid #ff9b02;
+  border-radius: 4px;
+  box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.1);
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: "Open Sans";
+  padding: 12px 18px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: uppercase;
+  white-space: normal;
+  width: 200px;
+}
+#passes-checkout-container #mm_field_coupon_code + a.mm-button:hover {
+  background: white;
+  border: 2px solid white;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.16);
+  color: #ff9b02;
+  margin-top: 20px;
+  padding: 12px 18px;
+  text-shadow: none;
+}
+#passes-checkout-container .mm-checkoutSection2 > p {
+  margin: 0;
+}
+#passes-checkout-container .mm-checkoutSection2 ul {
+  margin-bottom: 0 !important;
+}
+#passes-checkout-container .mm-checkoutSection2 > ul {
+  float: none;
+  font-size: 17px;
+  margin-left: 15px !important;
+}
+#passes-checkout-container .mm-purchaseSection {
+  margin-top: 30px;
 }
 
 .lesson-cards {

@@ -1,0 +1,71 @@
+#passes-checkout-container {
+
+	#mm-checkout-expiration-date {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		label {
+			width: 100%;
+		}
+
+		select {
+			width: 47%;
+		}
+	}
+
+	#mm_field_coupon_code {
+		margin-bottom: 25px;
+	}
+
+	a.mm-button {
+		background: none;
+		background-color: $color__orange;
+		border: 2px solid $color__orange;
+		border-radius: 4px;
+		box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.1);
+		color: #fff;
+		cursor: pointer;
+		font-size: 16px;
+		font-size: 1.6rem;
+		font-weight: 700;
+		font-family: "Open Sans";
+		padding: 12px 18px;
+		text-align: center;
+		text-decoration: none;
+		text-shadow: none;
+		text-transform: uppercase;
+		white-space: normal;
+		width: 200px;
+	}
+
+	#mm_field_coupon_code + a.mm-button:hover {
+		background: white;
+		border: 2px solid white;
+		box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.16);
+		color: $color__orange;
+		margin-top: 20px;
+		padding: 12px 18px;
+		text-shadow: none;
+	}
+
+
+	.mm-checkoutSection2 > p {
+		margin: 0;
+	}
+
+	.mm-checkoutSection2 ul {
+		margin-bottom: 0 !important;
+	}
+
+	.mm-checkoutSection2 > ul {
+		float: none;
+		font-size: 17px;
+		margin-left: 15px !important;
+	}
+
+	.mm-purchaseSection {
+	    margin-top: 30px;
+	}
+
+}
