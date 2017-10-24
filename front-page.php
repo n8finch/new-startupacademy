@@ -110,7 +110,7 @@ function one_pager_homepage_content() {
 									<div class="lesson-card">
 										<div class="lesson-number"><?php echo $row['class_number']?></div>
 										<div class="lesson-coach">
-											<img src="wp-content/uploads/2017/08/dan-swan-startupacademyorg.jpg" />
+											<img src="<?php echo esc_attr( $row['class_author_picture'] ); ?>" />
 										</div>
 										<div class="lesson-info">
 											<div><?php echo $row['class_title']?></div>
@@ -149,7 +149,7 @@ function one_pager_homepage_content() {
 									<div class="lesson-card">
 										<div class="lesson-number"><?php echo $row['class_number']?></div>
 										<div class="lesson-coach">
-											<img src="wp-content/uploads/2017/08/dan-swan-startupacademyorg.jpg" />
+											<img src="<?php echo esc_attr( $row['class_author_picture'] ); ?>" />
 										</div>
 										<div class="lesson-info">
 											<div><?php echo $row['class_title']?></div>
@@ -188,7 +188,7 @@ function one_pager_homepage_content() {
 									<div class="lesson-card">
 										<div class="lesson-number"><?php echo $row['class_number']?></div>
 										<div class="lesson-coach">
-											<img src="wp-content/uploads/2017/08/dan-swan-startupacademyorg.jpg" />
+											<img src="<?php echo esc_attr( $row['class_author_picture'] ); ?>" />
 										</div>
 										<div class="lesson-info">
 											<div><?php echo $row['class_title']?></div>
