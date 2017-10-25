@@ -2326,7 +2326,10 @@ body.single.single-coach .skew-inner .coach-links {
   display: flex;
   font-size: 22px;
   font-size: 2.2rem;
-  justify-content: space-around;
+  justify-content: center;
+}
+body.single.single-coach .skew-inner .coach-links a {
+  margin: 0 10px;
 }
 body.single.single-coach .skew-inner .coach-content {
   width: 66%;

@@ -38,7 +38,7 @@ module.exports = function (grunt) {
                 },
                 options: {
                     watchTask: true,
-                    proxy: 'newstartinno.dev'
+                    proxy: 'startacad.dev'
                 }
 	    }
 	},
