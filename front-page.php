@@ -9,6 +9,7 @@ remove_action( 'genesis_loop', 'genesis_do_loop' );
 
 add_action( 'wp_head', 'start_hot_switch_logo', 99 );
 function start_hot_switch_logo() {
+	global $post;
 
 	$hero_image_url = get_the_post_thumbnail_url($post->ID);
 

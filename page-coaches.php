@@ -56,7 +56,7 @@ function one_pager_homepage_content() {
 						<?php
 						$args = array(
 							'orderby'          => 'title',
-							'order'            => 'DESC',
+							'order'            => 'ASC',
 							'post_type'        => 'coach',
 							'post_status'      => 'publish',
 							'posts_per_page'   => 12,
