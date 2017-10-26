@@ -25,7 +25,6 @@ function genesis_sample_localization_setup(){
 // Add Custom Post Types and Template Parts
 include_once( get_stylesheet_directory() . '/cpts/coaches-cards.php' );
 include_once( get_stylesheet_directory() . '/template-parts/above-footer.php' );
-include_once( get_stylesheet_directory() . '/custom-comments.php' );
 
 // Add the helper functions.
 include_once( get_stylesheet_directory() . '/lib/helper-functions.php' );
@@ -198,4 +197,48 @@ function start_footer_social_shortcode() {
 		<a href="#"><span class="fa fa-instagram"></span></a>
 		<a href="#"><span class="fa fa-linkedin"></span></a>
 		</p>';
+}
+
+/**
+ * Custom Comments filter: adds private or hidden classes to Learn Dash Comments
+ * @param [type] $classes    [description]
+ * @param [type] $class      [description]
+ * @param [type] $comment_ID [description]
+ * @param [type] $comment    [description]
+ * @param [type] $post_id    [description]
+ */
+function start_add_custom_comment_class( $classes, $class, $comment_ID, $comment, $post_id ) {
+
+	//Get meta and user role
+	$comment_ID_this = $comment->comment_ID;
+	$comment_ID_parent = $comment->comment_parent;
+	$comment_is_private = get_comment_meta($comment_ID_this, 'private-comment-checkbox', true);
+	$comment_author = $comment->comment_author;
+	$comment_author_ID = $comment->user_id;
+	$parent_comment_user_ID = intval(get_comment($comment_ID_parent)->user_id);
+	$current_user = wp_get_current_user();
+	$current_user_ID = $current_user->ID;
+	$current_user_roles = $current_user->roles;
+	$user_is_admin = in_array( 'administrator', $current_user_roles);
+	$user_is_mentor = in_array( 'mentor', $current_user_roles);
+	$is_private_comment = '';
+
+	// Add CSS classes based on whether comment is public or private.
+	if ( $comment_is_private && ( $user_is_mentor || $user_is_admin || $current_user_ID == $comment_author_ID ) ) {
+
+		$is_private_comment = 'is-private-comment';
+
+	} elseif( $comment_is_private && ( $current_user_ID === $parent_comment_user_ID ) ) {
+
+		$is_private_comment = 'is-private-comment';
+
+	} elseif ($comment_is_private) {
+
+		$is_private_comment = 'hidden';
+
+	}
+
+	array_push( $classes, $is_private_comment );
+
+	return $classes;
 }

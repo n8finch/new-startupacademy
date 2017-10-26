@@ -1,7 +1,7 @@
 <?php
 function start_comments_template( $comment, $args, $depth ) {
 
-	//TODO
+	// LEGACY, here for reference, does not get called
 	// compare where the current user ID is the same as the comment user ID
 	// compare if the current user role[0] is mentor or admin.
 	// Also need to assign people with a mento role permissions in MM

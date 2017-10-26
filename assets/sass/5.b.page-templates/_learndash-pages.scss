@@ -91,6 +91,17 @@ body.single-sfwd-quiz {
 		top: -115px;
 		z-index: 1;
 
+		// Custom LearnDash Comments
+
+		.comment-list li.is-private-comment .comment-content {
+			background-color: lightblue;
+			border: 1px solid #51c0e2;
+		}
+
+		.comment-list li.hidden {
+			display: none;
+		}
+
 		.comment-content {
 			border: 1px solid $color__orange;
 			margin-bottom: 10px;

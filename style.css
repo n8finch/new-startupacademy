@@ -2884,6 +2884,19 @@ body.single-sfwd-quiz .entry-comments {
   top: -115px;
   z-index: 1;
 }
+body.single-sfwd-courses .entry-comments .comment-list li.is-private-comment .comment-content,
+body.single-sfwd-lessons .entry-comments .comment-list li.is-private-comment .comment-content,
+body.single-sfwd-topic .entry-comments .comment-list li.is-private-comment .comment-content,
+body.single-sfwd-quiz .entry-comments .comment-list li.is-private-comment .comment-content {
+  background-color: lightblue;
+  border: 1px solid #51c0e2;
+}
+body.single-sfwd-courses .entry-comments .comment-list li.hidden,
+body.single-sfwd-lessons .entry-comments .comment-list li.hidden,
+body.single-sfwd-topic .entry-comments .comment-list li.hidden,
+body.single-sfwd-quiz .entry-comments .comment-list li.hidden {
+  display: none;
+}
 body.single-sfwd-courses .entry-comments .comment-content,
 body.single-sfwd-lessons .entry-comments .comment-content,
 body.single-sfwd-topic .entry-comments .comment-content,
