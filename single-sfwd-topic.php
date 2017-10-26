@@ -6,8 +6,7 @@ add_filter( 'genesis_site_layout', '__genesis_return_full_width_content' );
 
 // Remove the default Genesis loop and default comments
 remove_action( 'genesis_loop', 'genesis_do_loop' );
-remove_action( 'genesis_comments', 'genesis_do_comments' );
-add_action( 'genesis_comments', 'start_do_comments' );
+add_filter( 'genesis_comment_list_args', 'start_html5_comment_filter', 20 );
 
 add_action( 'wp_head', 'start_hot_switch_logo', 99 );
 function start_hot_switch_logo() {
