@@ -34,6 +34,18 @@ body.single-sfwd-quiz {
 				font-size: 34px;
 				font-size: 3.4rem;
 			}
+
+			form#sfwd-mark-complete {
+				float: right;
+
+				& + br {
+					display: none;
+				}
+			}
+
+			p#learndash_next_prev_link {
+				float: left;
+			}
 		}
 
 		aside {
@@ -61,6 +73,10 @@ body.single-sfwd-quiz {
 				background-color: white;
 				border-radius: 4px;
 				padding: 25px;
+			}
+
+			.learndash-sidebar button {
+				width: 200px;
 			}
 		}
 	}

@@ -25,6 +25,7 @@ function genesis_sample_localization_setup(){
 // Add Custom Post Types and Template Parts
 include_once( get_stylesheet_directory() . '/cpts/coaches-cards.php' );
 include_once( get_stylesheet_directory() . '/template-parts/above-footer.php' );
+include_once( get_stylesheet_directory() . '/custom-comments.php' );
 
 // Add the helper functions.
 include_once( get_stylesheet_directory() . '/lib/helper-functions.php' );

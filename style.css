@@ -2598,7 +2598,13 @@ body.post-template-default .hero-text-wrapper {
   flex-direction: column;
   height: 100%;
   justify-content: center;
+  margin: auto;
+  max-width: 1100px;
   text-align: center;
+}
+body.single .hero-text-wrapper h1,
+body.post-template-default .hero-text-wrapper h1 {
+  text-shadow: 1px 1px 2px grey;
 }
 @media screen and (max-width: 1023px) {
   body.single .hero-text-wrapper h1,
@@ -2802,6 +2808,24 @@ body.single-sfwd-quiz .skew-inner .div-overlap-top h1 {
   font-size: 34px;
   font-size: 3.4rem;
 }
+body.single-sfwd-courses .skew-inner .div-overlap-top form#sfwd-mark-complete,
+body.single-sfwd-lessons .skew-inner .div-overlap-top form#sfwd-mark-complete,
+body.single-sfwd-topic .skew-inner .div-overlap-top form#sfwd-mark-complete,
+body.single-sfwd-quiz .skew-inner .div-overlap-top form#sfwd-mark-complete {
+  float: right;
+}
+body.single-sfwd-courses .skew-inner .div-overlap-top form#sfwd-mark-complete + br,
+body.single-sfwd-lessons .skew-inner .div-overlap-top form#sfwd-mark-complete + br,
+body.single-sfwd-topic .skew-inner .div-overlap-top form#sfwd-mark-complete + br,
+body.single-sfwd-quiz .skew-inner .div-overlap-top form#sfwd-mark-complete + br {
+  display: none;
+}
+body.single-sfwd-courses .skew-inner .div-overlap-top p#learndash_next_prev_link,
+body.single-sfwd-lessons .skew-inner .div-overlap-top p#learndash_next_prev_link,
+body.single-sfwd-topic .skew-inner .div-overlap-top p#learndash_next_prev_link,
+body.single-sfwd-quiz .skew-inner .div-overlap-top p#learndash_next_prev_link {
+  float: left;
+}
 body.single-sfwd-courses .skew-inner aside,
 body.single-sfwd-lessons .skew-inner aside,
 body.single-sfwd-topic .skew-inner aside,
@@ -2840,6 +2864,12 @@ body.single-sfwd-quiz .skew-inner aside .learndash-sidebar section:first-child {
   body.single-sfwd-quiz .skew-inner aside .learndash-sidebar section:first-child {
     border-radius: 4px;
   }
+}
+body.single-sfwd-courses .skew-inner aside .learndash-sidebar button,
+body.single-sfwd-lessons .skew-inner aside .learndash-sidebar button,
+body.single-sfwd-topic .skew-inner aside .learndash-sidebar button,
+body.single-sfwd-quiz .skew-inner aside .learndash-sidebar button {
+  width: 200px;
 }
 body.single-sfwd-courses .entry-comments,
 body.single-sfwd-lessons .entry-comments,
@@ -3025,6 +3055,8 @@ body.single-sfwd-quiz .skew-inner .div-overlap-top {
   }
 }
 .lesson-cards .lesson-card .lesson-chevron {
+  height: 20px;
+  margin-top: 5px;
   width: 30px;
 }
 @media screen and (max-width: 350px) {

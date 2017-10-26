@@ -37,6 +37,19 @@ function one_pager_homepage_content() {
 	$hero_url = get_the_post_thumbnail_url($post->ID);
 
 	if( $hero_url ) {
+		?>
+		<style>
+		body.single .site-header > .wrap nav li a,
+		body.post-template-default .site-header > .wrap nav li a {
+			text-shadow: 1px 1px 2px grey;
+		}
+
+		body.single .site-header > .wrap nav li a:hover,
+		body.post-template-default .site-header > .wrap nav li a:hover {
+			text-shadow: none;
+		}
+		</style>
+		<?php
 		$header_style = 'class="hero-image-header" style="background-image: url(' . $hero_url . ');"';
 	} else {
 		$header_style = 'class="regular-page-class"';
