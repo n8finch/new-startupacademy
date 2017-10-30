@@ -69,7 +69,7 @@ function one_pager_homepage_content() {
 								$coach_url = get_the_permalink($coach->ID);
 								$coach_name = $coach->post_title;
 								$coach_excerpt = $coach->post_excerpt;
-								$coach_pic = get_the_post_thumbnail_url($coach->ID);
+								$coach_pic = get_the_post_thumbnail_url( $coach->ID, 'thumbnail');
 								$counter > 6 ? $offset_class = 'offset-class' : '';
 								?>
 								<a href="<?php echo $coach_url; ?>">

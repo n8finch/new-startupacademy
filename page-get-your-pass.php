@@ -139,15 +139,15 @@ function one_pager_homepage_content() {
 					<h2>EVERY PASS INCLUDES</h2>
 					<div class="every-pass-includes-items">
 						<div class="every-pass-includes-item">
-							<img src="<?php echo $acf_fields['every_pass_includes_image_1']; ?>" />
+							<img src="<?php echo $acf_fields['every_pass_includes_image_1']['sizes']['thumbnail']; ?>" />
 							<h3><?php echo $acf_fields['every_pass_includes_text_1']; ?></h3>
 						</div>
 						<div class="every-pass-includes-item">
-							<img src="<?php echo $acf_fields['every_pass_includes_image_2']; ?>" />
+							<img src="<?php echo $acf_fields['every_pass_includes_image_2']['sizes']['thumbnail']; ?>" />
 							<h3><?php echo $acf_fields['every_pass_includes_text_2']; ?></h3>
 						</div>
 						<div class="every-pass-includes-item">
-							<img src="<?php echo $acf_fields['every_pass_includes_image_3']; ?>" />
+							<img src="<?php echo $acf_fields['every_pass_includes_image_3']['sizes']['thumbnail']; ?>" />
 							<h3><?php echo $acf_fields['every_pass_includes_text_3']; ?></h3>
 						</div>
 					</div>

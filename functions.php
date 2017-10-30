@@ -242,3 +242,24 @@ function start_add_custom_comment_class( $classes, $class, $comment_ID, $comment
 
 	return $classes;
 }
+
+
+
+/**
+ * Google Analytics Tracking Code
+ */
+add_action( 'wp_footer', 'sta_add_google_optimize', 1 );
+function sta_add_google_optimize() {
+	?>
+	<script>
+		// Add Google Optimize Script
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-54220154-2', 'auto');
+		ga('require', 'GTM-MZTCP2P');
+		ga('send', 'pageview');
+	</script>
+	<?php
+}

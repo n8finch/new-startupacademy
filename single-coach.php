@@ -33,7 +33,7 @@ function one_pager_homepage_content() {
 	global $post;
 	$acf_fields = get_fields($post->ID);
 	$hero_url = get_stylesheet_directory_uri() . '/images/img-people-standing.jpg';
-	$coach_pic = get_the_post_thumbnail_url($coach->ID);
+	$coach_pic = get_the_post_thumbnail_url( $coach->ID, 'meidum' );
 	$coach_excerpt = get_the_excerpt();
 	?>
 

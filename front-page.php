@@ -111,7 +111,7 @@ function one_pager_homepage_content() {
 									<div class="lesson-card">
 										<div class="lesson-number"><?php echo $row['class_number']?></div>
 										<div class="lesson-coach">
-											<img src="<?php echo esc_attr( $row['class_author_picture'] ); ?>" />
+											<img src="<?php echo esc_attr( $row['class_author_picture']['sizes']['thumbnail'] ); ?>" />
 										</div>
 										<div class="lesson-info">
 											<div><?php echo $row['class_title']?></div>
@@ -150,7 +150,7 @@ function one_pager_homepage_content() {
 									<div class="lesson-card">
 										<div class="lesson-number"><?php echo $row['class_number']?></div>
 										<div class="lesson-coach">
-											<img src="<?php echo esc_attr( $row['class_author_picture'] ); ?>" />
+											<img src="<?php echo esc_attr( $row['class_author_picture']['sizes']['thumbnail'] ); ?>" />
 										</div>
 										<div class="lesson-info">
 											<div><?php echo $row['class_title']?></div>
@@ -189,7 +189,7 @@ function one_pager_homepage_content() {
 									<div class="lesson-card">
 										<div class="lesson-number"><?php echo $row['class_number']?></div>
 										<div class="lesson-coach">
-											<img src="<?php echo esc_attr( $row['class_author_picture'] ); ?>" />
+											<img src="<?php echo esc_attr( $row['class_author_picture']['sizes']['thumbnail'] ); ?>" />
 										</div>
 										<div class="lesson-info">
 											<div><?php echo $row['class_title']?></div>
@@ -234,7 +234,7 @@ function one_pager_homepage_content() {
 					foreach( $rows as $row ) {
 						?>
 						<a href="<?php echo $row['partner_link']?>">
-							<img src="<?php echo $row['partner_image']?>" />
+							<img src="<?php echo $row['partner_image']['sizes']['medium_large']?>" />
 						</a>
 						<?php
 					}
