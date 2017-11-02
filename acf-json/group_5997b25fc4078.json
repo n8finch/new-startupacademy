@@ -7,6 +7,7 @@
             "label": "Hero Image Title",
             "name": "coaches_hero_image_title",
             "type": "text",
+            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -26,6 +27,7 @@
             "label": "Hero Image Text",
             "name": "coaches_hero_image_text",
             "type": "text",
+            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -51,7 +53,7 @@
         ]
     ],
     "menu_order": 44,
-    "position": "normal",
+    "position": "acf_after_title",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
@@ -71,5 +73,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1503114825
+    "modified": 1509644686
 }
