@@ -59,7 +59,7 @@ function one_pager_homepage_content() {
 							'order'            => 'ASC',
 							'post_type'        => 'coach',
 							'post_status'      => 'publish',
-							'posts_per_page'   => 12,
+							'posts_per_page'   => -1,
 							'suppress_filters' => true
 						);
 						$coaches = get_posts( $args );

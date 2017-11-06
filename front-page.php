@@ -233,7 +233,7 @@ function one_pager_homepage_content() {
 				if ( $rows ) {
 					foreach( $rows as $row ) {
 						?>
-						<a href="<?php echo $row['partner_link']?>">
+						<a href="<?php echo $row['partner_link']?>" target="_blank">
 							<img src="<?php echo $row['partner_image']['sizes']['medium_large']?>" />
 						</a>
 						<?php
@@ -242,7 +242,9 @@ function one_pager_homepage_content() {
 				?>
 			</div>
 			<p>We are also a proud supporter of</p><br />
-			<img class="gen-image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/img-gen@2x.png" />
+			<a href="https://genglobal.org/" target="_blank">
+				<img class="gen-image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/img-gen@2x.png" />
+			</a>
 		</div>
 	</section>
 

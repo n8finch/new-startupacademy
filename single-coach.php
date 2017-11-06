@@ -35,6 +35,9 @@ function one_pager_homepage_content() {
 	$hero_url = get_stylesheet_directory_uri() . '/images/img-people-standing.jpg';
 	$coach_pic = get_the_post_thumbnail_url( $coach->ID, 'meidum' );
 	$coach_excerpt = get_the_excerpt();
+	$coach_website = $acf_fields['coach_website'];
+	$coach_linkedin = $acf_fields['coach_linkedin'];
+	$coach_twitter = $acf_fields['coach_twitter'];
 	?>
 
 	<!-- Hero Image Header Section -->
@@ -54,9 +57,9 @@ function one_pager_homepage_content() {
 						<?php echo $coach_excerpt; ?>
 					</p>
 					<div class="coach-links">
-						<a href="#"><span class="fa fa-desktop"></span></a>
-						<a href="#"><span class="fa fa-linkedin"></span></a>
-						<a href="#"><span class="fa fa-twitter"></span></a>
+						<a href="<?php echo esc_url( $coach_website ); ?>"><span class="fa fa-desktop"></span></a>
+						<a href="<?php echo esc_url( $coach_linkedin ); ?>"><span class="fa fa-linkedin"></span></a>
+						<a href="<?php echo esc_url( $coach_twitter ); ?>"><span class="fa fa-twitter"></span></a>
 					</div>
 				</div>
 				<div class="coach-content">
